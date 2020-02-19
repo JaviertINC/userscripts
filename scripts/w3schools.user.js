@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         w3Schools - Editor
-// @version      0.2
-// @description  0
+// @name         W3Schools - Editor
+// @version      0.3
+// @description  Personaliza los estilos de el editor de W3Schools (GreenDark)
 // @author       @JaviertINC
 // @match        https://www.w3schools.com/*/tryit.asp*
 // @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/w3schools.user.js
