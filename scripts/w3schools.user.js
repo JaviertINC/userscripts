@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         w3Schools - Editor
-// @version      0.1
+// @version      0.2
 // @description  0
 // @author       @JaviertINC
 // @match        https://www.w3schools.com/*/tryit.asp*
+// @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/w3schools.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
