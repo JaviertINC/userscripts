@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         CakePHP - GreenCakePHP
-// @version      1.1
+// @version      1.2
 // @author       @JaviertINC
 // @match        *://*/*/debug-kit/toolbar/*
+// @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/cakephp-green.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
