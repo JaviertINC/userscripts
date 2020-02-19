@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Better BackOffice APIUX
-// @version      1.2
+// @version      1.3
 // @description  Mejoramiento para el registro de horas en el BackOffice de Apiux
 // @author       @JaviertINC
 // @match        https://backoffice.api-ux.com/web*
@@ -11,14 +11,13 @@
 
 (function() {
     'use strict';
-    function _s(css) {
-        var head, style;
-        head = document.getElementsByTagName('head')[0];
-        if (!head) { return; }
-        style = document.createElement('style');
-        style.type = 'text/css';
-        style.innerHTML = css;
-        head.appendChild(style);
+    function _s(sheet, selector, rules, index) {
+        if("insertRule" in sheet) {
+            sheet.insertRule(selector + "{" + rules + "}", index);
+        }
+        else if("addRule" in sheet) {
+            sheet.addRule(selector, rules, index);
+        }
     }
 
     //Top Anouncament Bar (Disabled)
