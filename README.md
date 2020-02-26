@@ -27,12 +27,3 @@ Para poder utilizar estos Scripts debes utilizar **uno** de estos complementos p
 | GreaseMonkey | [Sitio Web Oficial](https://www.greasespot.net/) |
 | TamperMonkey | [Sitio Web Oficial](https://www.tampermonkey.net/) |
 | ViolentMonkey | [Sitio Web Oficial](https://violentmonkey.github.io/) |
-
-
-License
-----
-
-MIT
-
-
-**Free Software, Hell Yeah!**
