@@ -1,11 +1,12 @@
 // ==UserScript==
-// @name         Green Trello
-// @version      1.0
+// @name         Trello | Green Style
+// @version      1.2
 // @description  Estilo personalizado de Trello, sin ser premium.
 // @author       @JaviertINC
 // @match        *://trello.com/b/*
 // @include      *://*.trello.com/b/*
-// @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/trello.user.js
+// @include      https://trello.com/JaviertINC
+// @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/trello.green.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
