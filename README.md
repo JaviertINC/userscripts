@@ -5,7 +5,7 @@ Userscripts para modificación de estilos y funcionalidades de sitios webs, util
 
 ### Scripts Disponibles
 
-Para poder utilizar estos Scripts debes utilizar un [complemento](./README.md#libreria-de-funciones-php) para tu navegador.
+Para poder utilizar estos Scripts debes utilizar un [complemento](./README.md#addons--complementos) para tu navegador.
 _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber varias fallas y/o cosas sin funcionar._
 
 | Script | Enlace |
