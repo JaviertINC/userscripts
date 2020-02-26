@@ -1,9 +1,10 @@
 // ==UserScript==
-// @name         Better BackOffice APIUX
-// @version      1.5
+// @name         API-UX | Better BackOffice
+// @version      1.6
 // @description  Mejoramiento para el registro de horas en el BackOffice de Apiux
 // @author       @JaviertINC
 // @match        https://backoffice.api-ux.com/web*
+// @include      https://www.api-ux.com/@JaviertINC
 // @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/api-ux.backoffice.user.js
 // @grant        GM_addStyle
 // @run-at       document-end
