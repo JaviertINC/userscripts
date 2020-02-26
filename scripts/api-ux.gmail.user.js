@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Gmail Api-ux - Dark Green Complement Style
-// @version      1.2
+// @version      1.3
 // @author       @JaviertINC
 // @match        *://mail.google.com/mail/u/*/
 // @grant        GM_addStyle
-// @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/gmail.api-ux.user.js
+// @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/api-ux.gmail.user.js
 // @run-at       document-end
 // ==/UserScript==
 
