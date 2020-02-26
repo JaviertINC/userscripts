@@ -1,9 +1,10 @@
 // ==UserScript==
-// @name         CakePHP Bugs GreenDark
-// @version      0.6
+// @name         CakePHP | Bugs GreenDark
+// @version      0.7
 // @description  Personaliza los estilos de los errores de CakePHP
 // @author       @JaviertINC
 // @match        *://localhost/*
+// @include      https://cakephp.org/@JaviertINC
 // @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/cakephp-bugs.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
