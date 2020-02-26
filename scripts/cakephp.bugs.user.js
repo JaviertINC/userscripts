@@ -5,7 +5,7 @@
 // @author       @JaviertINC
 // @match        *://localhost/*
 // @include      https://cakephp.org/@JaviertINC
-// @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/cakephp-bugs.user.js
+// @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/cakephp.bugs.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
