@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         API-UX | Better BackOffice
-// @version      1.9
+// @version      2.0
 // @description  Mejoramiento para el registro de horas en el BackOffice de Apiux
 // @author       @JaviertINC
 // @match        https://backoffice.api-ux.com/web*
@@ -13,8 +13,11 @@
 (function() {
     'use strict';
 
-	var url_profile_img = "";
-	var url_logo = "";
+	var url_profile_img = ""; //Coloca aquí el enlace a tu imágen de perfil que quieres ver en el BackOffice de API-UX
+
+	url_profile_img = "https://avatars3.githubusercontent.com/u/25622605";
+	//url_profile_img = "";
+
 
     function _s(sheet, selector, rules, index) {
         if("insertRule" in sheet) {
@@ -26,16 +29,13 @@
     }
     var sheet = document.styleSheets[0];
 
-    //Top Anouncament Bar (Disabled)
+    //Top Anouncament Bar (Hidden)
     _s(sheet, "#announcement_bar_table", "display: none;");
 
-    //TopNavBar
     _s(sheet, "#oe_main_menu_navbar", "background-color: #444; color: #4caf50; border: none; border-bottom: 1px solid #4caf50;");
     _s(sheet, "#oe_main_menu_navbar li a, #oe_main_menu_navbar li button", "padding: 6px 8px 6px 8px!important; margin: 0px!important;");
     _s(sheet, ".navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus", "background-color: #3d3d3d!important;");
 
-    //Registro de Horas
-    //_s(sheet, "[data-id=\"name\"]", "background-color: #4caf50;");
     _s(sheet, "[data-id=\"name\"]", "max-width: 300px!important;");
     _s(sheet, "[data-field=\"name\"]", "max-width: 300px!important;");
     _s(sheet, "[data-field=\"name\"]", "white-space: nowrap!important; overflow: hidden!important; display: inline-block!important; text-overflow: ellipsis!important;");
@@ -71,27 +71,51 @@
 	_s(sheet, ".oe_header_row.oe_header_row_top td","padding: 10px 20px 0 20px!important;");
 	_s(sheet, ".oe_header_row td","padding: 8px 20px!important;");
 
-	if(url_logo == "" || url_logo == null){
-		url_logo = atob("aHR0cDovL3d3dy5hcGktdXguY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE4LzEwL2xvZ28tYmxhbmNvLTIucG5n");
-    }
-	function init_0(url_logo){
-		re_logo(url_logo);
-		var footer_html = '<div style="padding: 5px 0; color: #f1f1f1;">Con tecnología de <a href="http://www.odoo.com" target="_blank"><span>Odoo</span></a><br><small>Y modificado por <a href="https://javiertinc.github.io"><span style="color: #4caf50;">@JaviertINC</span></a></small></div>';
 
-		document.getElementsByClassName("oe_footer")[0].innerHTML = footer_html;
+	var url_logo = atob("aHR0cDovL3d3dy5hcGktdXguY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE4LzEwL2xvZ28tYmxhbmNvLTIucG5n");
+
+	if(url_profile_img == "" || url_profile_img == null){
+		url_profile_img = atob("aHR0cHM6Ly9pLmltZ3VyLmNvbS9iRmwzazRmLnBuZw==");
+    }
+
+	function init_0(url_logo){
+		re_footer();
+		re_logo(url_logo);
+		re_profile_img(url_profile_img);
 	}
 	function re_logo(url_logo){
 		var logo_html = '<img src="'+ url_logo +'" style="max-width: 180px;">'
 		document.getElementsByClassName("oe_logo")[0].innerHTML = logo_html;
 	}
-	//init_0();
-	/**/
+	function re_profile_img(url_profile_img){
+		document.getElementsByClassName("oe_topbar_avatar")[0].src = url_profile_img;
+	}
+	function re_footer(){
+		var footer_html = atob('PGRpdiBzdHlsZT0icGFkZGluZzogNXB4IDA7IGNvbG9yOiAjZjFmMWYxOyI+Q29uIHRlY25vbG9nw61hIGRlIDxhIGhyZWY9Imh0dHA6Ly93d3cub2Rvby5jb20iIHRhcmdldD0iX2JsYW5rIj48c3Bhbj5PZG9vPC9zcGFuPjwvYT48YnI+PHNtYWxsPlkgbW9kaWZpY2FkbyBwb3IgPGEgaHJlZj0iaHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pbyI+PHNwYW4gc3R5bGU9ImNvbG9yOiAjNGNhZjUwOyI+QEphdmllcnRJTkM8L3NwYW4+PC9hPjwvc21hbGw+PC9kaXY+');
+		document.getElementsByClassName("oe_footer")[0].innerHTML = footer_html;
+	}
+
 	document.addEventListener("DOMContentLoaded", function(){
-		setTimeout(() => { init_0(url_logo); }, 1500);
+		setTimeout(() => {
+			init_0(url_logo);
+		}, 1500);
 	});
 	document.addEventListener("DOMContentLoaded", function(){
-		setTimeout(() => { re_logo(url_logo); }, 3000);
+		setTimeout(() => {
+			re_logo(url_logo);
+			re_profile_img(url_profile_img);
+		}, 3000);
 	});
-	/**/
-	//http://www.api-ux.com/wp-content/uploads/2018/10/logo-blanco-2.png
+	document.addEventListener("DOMContentLoaded", function(){
+		setTimeout(() => {
+			re_logo(url_logo);
+			re_profile_img(url_profile_img);
+		}, 5000);
+	});
+	document.addEventListener("DOMContentLoaded", function(){
+		setTimeout(() => {
+			re_logo(url_logo);
+			re_profile_img(url_profile_img);
+		}, 10000);
+	});
 })();
