@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         API-UX | Better BackOffice
-// @version      2.0
+// @version      2.1
 // @description  Mejoramiento para el registro de horas en el BackOffice de Apiux
 // @author       @JaviertINC
 // @match        https://backoffice.api-ux.com/web*
 // @include      https://www.api-ux.com/@JaviertINC
-// @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/api-ux.backoffice.user.js
+// @updateURL    https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js
 // @grant        GM_addStyle
 // @run-at       document-end
 // ==/UserScript==
@@ -13,12 +13,8 @@
 (function() {
     'use strict';
 
-	var url_profile_img = ""; //Coloca aquí el enlace a tu imágen de perfil que quieres ver en el BackOffice de API-UX
-
-	url_profile_img = "https://avatars3.githubusercontent.com/u/25622605";
-	//url_profile_img = "";
-
-
+    var url_profile_img = ""; //Coloca aquí el enlace a tu imágen de perfil que quieres ver en el BackOffice de API-UX
+	
     function _s(sheet, selector, rules, index) {
         if("insertRule" in sheet) {
             sheet.insertRule(selector + "{" + rules + "}", index);
@@ -57,16 +53,12 @@
 	_s(sheet, ".oe_form_field.oe_form_field_char.oe_form_required input", "width: 300px!important; height: 30px!important;");
 	_s(sheet, ".openerp .oe_list.oe_list_editable.oe_editing .oe_form_field input, .openerp .oe_list.oe_list_editable.oe_editing .oe_form_field textarea", "border: 1px solid #4caf50!important; background-color: #4caf5055 !important;");
 	_s(sheet, ".openerp .oe_form .oe_form_required input:not([disabled]):not([readonly]), .openerp .oe_form .oe_form_required select:not([disabled]):not([readonly]), .openerp .oe_form .oe_form_required textarea:not([disabled]):not([readonly])", "background-color: #4caf5055 !important;");
-
-	_s(sheet, ".openerp","background-color: #242424!important; color: #f1f1f1!important;");
+	_s(sheet, ".openerp","background-color: #4c4c4c!important; color: #f1f1f1!important;");
 	_s(sheet, ".openerp .oe_leftbar","background-color: transparent!important; border-right: 2px solid #4caf50!important;");
-
 	_s(sheet, ".nav > li > a:hover, .nav > li > a:focus","background-color: #4caf5050!important;");
 	_s(sheet, ".openerp .nav-pills li > a","color: #f1f1f1!important; border-radius: 4px 0 0 4px!important; ");
-
-	_s(sheet, ".openerp .oe_leftbar > div .oe_footer","background-color: #242424!important; padding: 8px 0!important; border-top: 2px solid #4caf50!important;");
+	_s(sheet, ".openerp .oe_leftbar > div .oe_footer","background-color: #4c4c4c!important; padding: 8px 0!important; border-top: 2px solid #4caf50!important;");
 	_s(sheet, ".openerp .oe_view_manager table.oe_view_manager_header .oe_header_row","text-shadow: none!important;");
-
 	_s(sheet, ".openerp .oe_view_manager_current > .oe_view_manager_header", "border-bottom: 2px solid #4caf50!important; background-color: #393939!important; background-image: unset!important; -moz-box-shadow: none!important;");
 	_s(sheet, ".oe_header_row.oe_header_row_top td","padding: 10px 20px 0 20px!important;");
 	_s(sheet, ".oe_header_row td","padding: 8px 20px!important;");
@@ -91,7 +83,7 @@
 		document.getElementsByClassName("oe_topbar_avatar")[0].src = url_profile_img;
 	}
 	function re_footer(){
-		var footer_html = atob('PGRpdiBzdHlsZT0icGFkZGluZzogNXB4IDA7IGNvbG9yOiAjZjFmMWYxOyI+Q29uIHRlY25vbG9nw61hIGRlIDxhIGhyZWY9Imh0dHA6Ly93d3cub2Rvby5jb20iIHRhcmdldD0iX2JsYW5rIj48c3Bhbj5PZG9vPC9zcGFuPjwvYT48YnI+PHNtYWxsPlkgbW9kaWZpY2FkbyBwb3IgPGEgaHJlZj0iaHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pbyI+PHNwYW4gc3R5bGU9ImNvbG9yOiAjNGNhZjUwOyI+QEphdmllcnRJTkM8L3NwYW4+PC9hPjwvc21hbGw+PC9kaXY+');
+		var footer_html = atob('PGRpdiBzdHlsZT0icGFkZGluZzogNXB4IDA7IGNvbG9yOiAjZjFmMWYxOyI+Q29uIHRlY25vbG9nJmlhY3V0ZTthIGRlIDxhIGhyZWY9Imh0dHA6Ly93d3cub2Rvby5jb20iIHRhcmdldD0iX2JsYW5rIj48c3Bhbj5PZG9vPC9zcGFuPjwvYT48YnI+PHNtYWxsPlkgbW9kaWZpY2FkbyBwb3IgPGEgaHJlZj0iaHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pbyI+PHNwYW4gc3R5bGU9ImNvbG9yOiAjNGNhZjUwOyI+QEphdmllcnRJTkM8L3NwYW4+PC9hPjwvc21hbGw+PC9kaXY+');
 		document.getElementsByClassName("oe_footer")[0].innerHTML = footer_html;
 	}
 
