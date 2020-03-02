@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         API-UX | Better BackOffice
-// @version      2.1
+// @version      2.2
 // @description  Mejoramiento para el registro de horas en el BackOffice de Apiux
+// @icon         https://www.google.com/s2/favicons?domain=www.api-ux.com
 // @author       @JaviertINC
 // @match        https://backoffice.api-ux.com/web*
 // @include      https://www.api-ux.com/@JaviertINC
@@ -14,7 +15,7 @@
     'use strict';
 
     var url_profile_img = ""; //Coloca aquí el enlace a tu imágen de perfil que quieres ver en el BackOffice de API-UX
-	
+
     function _s(sheet, selector, rules, index) {
         if("insertRule" in sheet) {
             sheet.insertRule(selector + "{" + rules + "}", index);
@@ -62,12 +63,16 @@
 	_s(sheet, ".openerp .oe_view_manager_current > .oe_view_manager_header", "border-bottom: 2px solid #4caf50!important; background-color: #393939!important; background-image: unset!important; -moz-box-shadow: none!important;");
 	_s(sheet, ".oe_header_row.oe_header_row_top td","padding: 10px 20px 0 20px!important;");
 	_s(sheet, ".oe_header_row td","padding: 8px 20px!important;");
+	_s(sheet, ".openerp .oe_application > div, .openerp .oe_list_content > thead, .openerp > thead","background-color: transparent!important;");
+	_s(sheet, ".openerp .oe_view_nocontent","color: #f1f1f1!important;");
+	_s(sheet, ".openerp .oe_view_nocontent .oe_view_nocontent_create","color: #ffffff!important;");
+
 
 
 	var url_logo = atob("aHR0cDovL3d3dy5hcGktdXguY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE4LzEwL2xvZ28tYmxhbmNvLTIucG5n");
 
 	if(url_profile_img == "" || url_profile_img == null){
-		url_profile_img = atob("aHR0cHM6Ly9pLmltZ3VyLmNvbS9iRmwzazRmLnBuZw==");
+		url_profile_img = atob("aHR0cHM6Ly9pLmltZ3VyLmNvbS95d1Frd2I1LnBuZw==");
     }
 
 	function init_0(url_logo){
