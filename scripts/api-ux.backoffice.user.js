@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         API-UX | Better BackOffice
-// @version      2.2
+// @version      2.3
 // @description  Mejoramiento para el registro de horas en el BackOffice de Apiux
 // @icon         https://www.google.com/s2/favicons?domain=www.api-ux.com
 // @author       @JaviertINC
@@ -14,7 +14,8 @@
 (function() {
     'use strict';
 
-    var url_profile_img = ""; //Coloca aquí el enlace a tu imágen de perfil que quieres ver en el BackOffice de API-UX
+	var url_profile_img = ""; //Coloca aquí el enlace a tu imágen de perfil que quieres ver en el BackOffice de API-UX
+
 
     function _s(sheet, selector, rules, index) {
         if("insertRule" in sheet) {
@@ -51,9 +52,11 @@
 	_s(sheet, ".openerp .oe_tag", "border: 1px solid #4caf50!important;");
 	_s(sheet, ".openerp .oe_searchview .oe_searchview_facets .oe_searchview_facet .oe_facet_value", "border-left: 1px solid #4caf50!important; text-shadow: none!important; color: #4caf50!important; font-weight: bold!important;");
 	_s(sheet, ".oe_form_field.oe_form_field_char.oe_form_required", "width: 300px!important; top: 29px!important;");
-	_s(sheet, ".oe_form_field.oe_form_field_char.oe_form_required input", "width: 300px!important; height: 30px!important;");
-	_s(sheet, ".openerp .oe_list.oe_list_editable.oe_editing .oe_form_field input, .openerp .oe_list.oe_list_editable.oe_editing .oe_form_field textarea", "border: 1px solid #4caf50!important; background-color: #4caf5055 !important;");
-	_s(sheet, ".openerp .oe_form .oe_form_required input:not([disabled]):not([readonly]), .openerp .oe_form .oe_form_required select:not([disabled]):not([readonly]), .openerp .oe_form .oe_form_required textarea:not([disabled]):not([readonly])", "background-color: #4caf5055 !important;");
+	_s(sheet, ".oe_form_field.oe_form_field_char.oe_form_required input", "width: 300px!important; height: 29px!important;");
+	_s(sheet, ".openerp .oe_list.oe_list_editable.oe_editing .oe_form_field input, .openerp .oe_list.oe_list_editable.oe_editing .oe_form_field textarea", "border: 1px solid #4caf50!important; background-color: #4caf5055 !important; color: #fff!important;");
+	_s(sheet, ".openerp .oe_form .oe_form_required input:not([disabled]):not([readonly]), .openerp .oe_form .oe_form_required select:not([disabled]):not([readonly]), .openerp .oe_form .oe_form_required textarea:not([disabled]):not([readonly])", "background-color: unset!important;");
+	_s(sheet, ".openerp .oe_form .oe_form_required input:not([disabled]):not([readonly]), .openerp .oe_form .oe_form_required select:not([disabled]):not([readonly]), .openerp .oe_form .oe_form_required textarea:not([disabled]):not([readonly])", "border: 1px solid #4caf50!important; background-color: #4caf5055 !important; color: #fff!important;");
+	//_s(sheet, ".openerp .oe_form .oe_form_required input:not([disabled]):not([readonly]), .openerp .oe_form .oe_form_required select:not([disabled]):not([readonly]), .openerp .oe_form .oe_form_required textarea:not([disabled]):not([readonly])", "background-color: #4caf5055 !important;");
 	_s(sheet, ".openerp","background-color: #4c4c4c!important; color: #f1f1f1!important;");
 	_s(sheet, ".openerp .oe_leftbar","background-color: transparent!important; border-right: 2px solid #4caf50!important;");
 	_s(sheet, ".nav > li > a:hover, .nav > li > a:focus","background-color: #4caf5050!important;");
@@ -66,6 +69,13 @@
 	_s(sheet, ".openerp .oe_application > div, .openerp .oe_list_content > thead, .openerp > thead","background-color: transparent!important;");
 	_s(sheet, ".openerp .oe_view_nocontent","color: #f1f1f1!important;");
 	_s(sheet, ".openerp .oe_view_nocontent .oe_view_nocontent_create","color: #ffffff!important;");
+	_s(sheet, ".openerp .oe_list_content > tbody > tr:nth-child(2n+1)","background-color: rgba(0,0,0,.5)!important; background-image: unset!important;");
+	_s(sheet, ".openerp .oe_list_content > thead","border-bottom: 2px solid #4caf50!important;");
+	_s(sheet, ".openerp .oe_list_content > tbody > tr","border-top: 1px solid #4caf50!important;");
+	_s(sheet, ".openerp .oe_list_content > tfoot", "border-top: unset!important; border-bottom: unset!important; background: transparent!important;");
+
+
+
 
 
 
