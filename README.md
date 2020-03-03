@@ -10,12 +10,12 @@ _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber varias
 
 | Script | Enlace |
 | ------ | ------ |
-| W3Schools \| Dark Green Editor | [Instalar](https://github.com/JaviertINC/userscripts/raw/master/scripts/w3schools.editor.user.js) |
-| API-UX \| Better BackOffice | [Instalar](https://github.com/JaviertINC/userscripts/raw/master/scripts/api-ux.backoffice.user.js) |
-| API-UX \| Gmail Dark Green Complement Style | [Instalar](https://github.com/JaviertINC/userscripts/raw/master/scripts/api-ux.gmail.user.js) |
-| CakePHP \| Bugs GreenDark | [Instalar](https://github.com/JaviertINC/userscripts/raw/master/scripts/cakephp.bugs.user.js) |
-| CakePHP \| GreenCakePHP | [Instalar](https://github.com/JaviertINC/userscripts/raw/master/scripts/cakephp.green.user.js) |
-| Trello \| Green Style | [Instalar](https://github.com/JaviertINC/userscripts/raw/master/scripts/trello.green.user.js) |
+| W3Schools \| Dark Green Editor | [Instalar](https://javiertinc.github.io/userscripts/scripts/w3schools.editor.user.js) |
+| API-UX \| Better BackOffice | [Instalar](https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js) |
+| API-UX \| Gmail Dark Green Complement Style | [Instalar](https://javiertinc.github.io/userscripts/scripts/api-ux.gmail.user.js) |
+| CakePHP \| Bugs GreenDark | [Instalar](https://javiertinc.github.io/userscripts/scripts/cakephp.bugs.user.js) |
+| CakePHP \| GreenCakePHP | [Instalar](https://javiertinc.github.io/userscripts/scripts/cakephp.green.user.js) |
+| Trello \| Green Style | [Instalar](https://javiertinc.github.io/userscripts/scripts/trello.green.user.js) |
 
 
 ### Addons & Complementos
