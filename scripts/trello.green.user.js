@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Trello | Green Style
-// @version      1.2
+// @version      1.3
 // @description  Estilo personalizado de Trello, sin ser premium.
 // @author       @JaviertINC
 // @match        *://trello.com/b/*
 // @include      *://*.trello.com/b/*
 // @include      https://trello.com/JaviertINC
-// @updateURL    https://github.com/JaviertINC/userscripts/raw/master/scripts/trello.green.user.js
+// @updateURL    https://javiertinc.github.io/userscripts/scripts/trello.green.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -46,5 +46,10 @@
     GM_addStyle("hr { background-color: #4caf5031; }");
     GM_addStyle("._24AWINHReYjNBf { background-color: #000; color: #4caf50; border: 1px solid #4caf50; }");
     GM_addStyle(".list-card-edit-title, .list-card-edit-title:focus, .list-card-edit-title:hover { background-color: #4c4c4c; padding-left: 3px; margin-bottom: 3px; }");
+    GM_addStyle(".body-light-board-background .board-header { background-color: #292929!important; } ");
+    GM_addStyle(".body-light-board-background .board-canvas { background-image: linear-gradient(to bottom, rgb(41, 41, 41), rgb(44, 44, 44), rgb(47, 47, 47), rgb(50, 50, 50), rgb(53, 53, 53), rgb(56, 56, 56), rgb(62, 62, 62), rgb(67, 67, 67), rgb(73, 73, 73), rgb(78, 78, 78), rgb(84, 84, 84), rgb(89, 89, 89)); } ");
+	GM_addStyle("#board { margin-bottom: 0px!important; }");
+	GM_addStyle(".body-light-board-background .list-wrapper.mod-add.is-idle .placeholder { color: #4caf50; border: 1px solid #4caf50; margin: 0; border-radius: 3px; }");
+
 
 })();
