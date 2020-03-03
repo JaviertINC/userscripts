@@ -24,6 +24,6 @@ Para poder utilizar estos Scripts debes utilizar **uno** de estos complementos p
 
 | Complemento | Enlace |
 | ------ | ------ |
-| GreaseMonkey | [Sitio Web Oficial](https://www.greasespot.net/) |
-| TamperMonkey | [Sitio Web Oficial](https://www.tampermonkey.net/) |
-| ViolentMonkey | [Sitio Web Oficial](https://violentmonkey.github.io/) |
+| ![GreaseMonkey](https://www.google.com/s2/favicons?domain=www.greasespot.net) GreaseMonkey | [Sitio Web Oficial](https://www.greasespot.net/) |
+| ![TamperMonkey](https://www.google.com/s2/favicons?domain=www.tampermonkey.net) TamperMonkey | [Sitio Web Oficial](https://www.tampermonkey.net/) |
+| ![TamperMonkey](https://www.google.com/s2/favicons?domain=violentmonkey.github.io) ViolentMonkey | [Sitio Web Oficial](https://violentmonkey.github.io/) |
