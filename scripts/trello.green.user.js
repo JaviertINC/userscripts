@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Trello | Green Style
-// @version      1.3
+// @version      1.4
 // @description  Estilo personalizado de Trello, sin ser premium.
 // @author       @JaviertINC
 // @match        *://trello.com/b/*
@@ -48,8 +48,13 @@
     GM_addStyle(".list-card-edit-title, .list-card-edit-title:focus, .list-card-edit-title:hover { background-color: #4c4c4c; padding-left: 3px; margin-bottom: 3px; }");
     GM_addStyle(".body-light-board-background .board-header { background-color: #292929!important; } ");
     GM_addStyle(".body-light-board-background .board-canvas { background-image: linear-gradient(to bottom, rgb(41, 41, 41), rgb(44, 44, 44), rgb(47, 47, 47), rgb(50, 50, 50), rgb(53, 53, 53), rgb(56, 56, 56), rgb(62, 62, 62), rgb(67, 67, 67), rgb(73, 73, 73), rgb(78, 78, 78), rgb(84, 84, 84), rgb(89, 89, 89)); } ");
-	GM_addStyle("#board { margin-bottom: 0px!important; }");
-	GM_addStyle(".body-light-board-background .list-wrapper.mod-add.is-idle .placeholder { color: #4caf50; border: 1px solid #4caf50; margin: 0; border-radius: 3px; }");
+    GM_addStyle("#board { margin-bottom: 0px!important; }");
+    GM_addStyle(".body-light-board-background .list-wrapper.mod-add.is-idle .placeholder { color: #4caf50; border: 1px solid #4caf50; margin: 0; border-radius: 3px; }");
 
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = atob("aHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pby9saWJzL2ljb25zL3RyZWxsby5pY28");
+    document.getElementsByTagName('head')[0].appendChild(link);
 
 })();
