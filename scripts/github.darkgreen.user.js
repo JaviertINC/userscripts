@@ -2,6 +2,7 @@
 // @name          GitHub | Dark Green
 // @namespace     https://javiertinc.github.io/userscripts
 // @description	  Github Darker Green
+// @icon         https://www.google.com/s2/favicons?domain=github.com
 // @author        JaviertINC
 // @include       *://github.com/*
 // @include       *://*.github.com/*
@@ -17,7 +18,7 @@
 		"a{color: #4caf50!important;}",
 		"::selection{background-color:#4caf50!important;color:#fff!important}",
 		"::-moz-selection{background-color:#4caf50!important;color:#fff!important}",
-		".Header{background-color: #4c4c4c!important;border-bottom: 1px solid #4caf50!important;}",
+		".Header, .user-profile-nav{background-color: #4c4c4c!important;border-bottom: 1px solid #4caf50!important;}",
 		".border, .avatar-before-user-status, .Box{border-color: #4caf50!important;}",
 		".p-name{ color: #4caf50!important; }",
 		".p-nickname{ font-size: 15px!important; }",
