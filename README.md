@@ -11,6 +11,8 @@ _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber varias
 | Script | Enlace |
 | ------ | ------ |
 | ![w3Schools](https://www.google.com/s2/favicons?domain=w3schools.com) W3Schools \| Dark Green Editor | [Instalar](https://javiertinc.github.io/userscripts/scripts/w3schools.editor.user.js) |
+| ![Github](https://www.google.com/s2/favicons?domain=github.com) Github \| DarkGreen | [Instalar](https://javiertinc.github.io/userscripts/scripts/github.darkgreen.user.js) |
+| ![JaviertINC](https://javiertinc.github.io/libs/icons/jtParty_16.ico) JaviertINC \| PartyAnimations | [Instalar](https://javiertinc.github.io/userscripts/scripts/javiertinc.party.user.js) |
 | ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX \| Better BackOffice | [Instalar](https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js) |
 | ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX \| Gmail Dark Green Complement Style | [Instalar](https://javiertinc.github.io/userscripts/scripts/api-ux.gmail.user.js) |
 | ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP \| Bugs GreenDark | [Instalar](https://javiertinc.github.io/userscripts/scripts/cakephp.bugs.user.js) |
