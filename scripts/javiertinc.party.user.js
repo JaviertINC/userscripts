@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         JaviertINC | PartyAnimations
-// @version      0.5
+// @version      0.7
 // @description  PartyAnimation
 // @icon         https://raw.githubusercontent.com/JaviertINC/javiertinc.github.io/master/libs/icons/jtParty.ico
 // @author       @JaviertINC
@@ -8,7 +8,7 @@
 // @include      *://*.*/*
 // @include      *://*/*
 // @include      *://*.*
-// @updateURL    https://javiertinc.github.io/userscripts/scripts/javiert.party.user.js
+// @updateURL    https://javiertinc.github.io/userscripts/scripts/javiertinc.party.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
