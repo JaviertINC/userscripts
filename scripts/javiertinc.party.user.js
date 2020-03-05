@@ -2,7 +2,7 @@
 // @name         JaviertINC | PartyAnimations
 // @version      0.7
 // @description  PartyAnimation
-// @icon         https://raw.githubusercontent.com/JaviertINC/javiertinc.github.io/master/libs/icons/jtParty.ico
+// @icon         https://javiertinc.github.io/libs/icons/jtParty.ico
 // @author       @JaviertINC
 // @match        *://*.*.*/*
 // @include      *://*.*/*
