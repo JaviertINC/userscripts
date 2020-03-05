@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         jtParty | PartyAnimations
+// @name         JaviertINC | PartyAnimations
 // @version      0.5
 // @description  PartyAnimation
 // @icon         https://raw.githubusercontent.com/JaviertINC/javiertinc.github.io/master/libs/icons/jtParty.ico
