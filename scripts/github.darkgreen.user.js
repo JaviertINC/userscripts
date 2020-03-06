@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @namespace     https://javiertinc.github.io/userscripts
+// @version       1.3
 // @description	  Github Darker Green
-// @icon         https://www.google.com/s2/favicons?domain=github.com
+// @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        JaviertINC
 // @include       *://github.com/*
 // @include       *://*.github.com/*
@@ -10,7 +10,6 @@
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/github.darkgreen.user.js
 // @run-at        document-start
 // @grant         GM_addStyle
-// @version       1.2
 // ==/UserScript==
 (function() {
 	var css = [
@@ -24,7 +23,13 @@
 		".p-nickname{ font-size: 15px!important; }",
 		".text-gray, .octicon{ color: #f1f1f1!important;}",
 		".Box, .user-status-container{background-color: #4c4c4c!important; }",
+		".UnderlineNav-item.selected, .UnderlineNav-item[aria-current], .UnderlineNav-item[role=\"tab\"][aria-selected=\"true\"]{ border-bottom-color: #4caf50!important;}",
 		"rect[fill=\"#ebedf0\"]{fill:#333!important}",
+		".btn-link.muted-link{color: #d1d1d1!important; text-decoration: underline!important;}",
+		".btn-link.muted-link:hover,.btn-link.muted-link:active,.btn-link.muted-link:focus{color: #4caf50!important; text-decoration: underline!important;}",
+		".btn{ background-color: #4c4c4c!important; background-image: unset!important; border: 1px solid #4caf50!important; color: #f1f1f1!important; }",
+		".btn:hover{ text-decoration: underline!important; }",
+		".bg-gray-light{ background-color: #343434!important;}",
 		/*
 		"rect[fill=\"#eee\"],ul.legend li:nth-child(1){background-color:#333!important}",
 		"rect[fill=\"#c6e48b\"],ul.legend li:nth-child(2){background-color:#a8cf6a!important;fill:#a8cf6a!important}",
