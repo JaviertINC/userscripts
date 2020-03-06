@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       2.0
+// @version       2.1
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        JaviertINC
@@ -33,7 +33,8 @@
 		".bg-gray-light{ background-color: #343434!important;}",
 		".pagehead{border-bottom: 1px solid #4caf50!important;}",
 		"span.text-gray-dark{color: #f1f1f1!important;}",
-		".message.text-inherit{color: #909090!important; }",
+		".message.text-inherit,.lh-default.v-align-middle a.link-gray,.btn-link span{color: #909090!important; }",
+		".btn-link span:hover{color: #4caf50!important; text-decoration: underline!important;}",
 		".commit-tease{color: unset!important; }",
 		".overall-summary,.repository-lang-stats-graph,.Box-body{border-color: #4caf50!important;}",
 		".reponav-item.selected{background-color: #242424!important; color: #f1f1f1!important; border-color: transparent!important;}",
