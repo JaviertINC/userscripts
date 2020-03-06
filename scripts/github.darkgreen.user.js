@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       1.9
+// @version       2.0
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        JaviertINC
@@ -20,19 +20,21 @@
 		"::-moz-selection{background-color:#4caf50!important;color:#fff!important}",
 		".Header, .user-profile-nav{background-color: #4c4c4c!important;border-bottom: 1px solid #4caf50!important;}",
 		".border, .avatar-before-user-status, .Box{border-color: #4caf50!important;}",
-		".p-name{ color: #4caf50!important; }",
+		".p-name,.pinned-item-name{ color: #4caf50!important; }",
 		".p-nickname{ font-size: 15px!important; }",
 		".text-gray, .octicon{ color: #f1f1f1!important;}",
 		".Box, .user-status-container{background-color: #4c4c4c!important; }",
 		".UnderlineNav-item.selected, .UnderlineNav-item[aria-current], .UnderlineNav-item[role=\"tab\"][aria-selected=\"true\"]{ border-bottom-color: #4caf50!important;}",
 		"rect[fill=\"#ebedf0\"]{fill:#333!important}",
-		".btn-link.muted-link,span.btn-link.f6.mb-2,.pr-2.text-mono.link-gray{color: #d1d1d1!important; text-decoration: underline!important;}",
-		".btn-link.muted-link:hover,.btn-link.muted-link:active,.btn-link.muted-link:focus,btn-link{color: #4caf50!important; text-decoration: underline!important;}",
+		".btn-link.muted-link,span.btn-link.f6.mb-2,.pr-2.text-mono.link-gray,.pinned-items-setting-link.muted-link{color: #d1d1d1!important; text-decoration: underline!important;}",
+		".btn-link.muted-link:hover,.btn-link.muted-link:active,.btn-link.muted-link:focus,btn-link,span.btn-link.f6.mb-2:hover,span.btn-link.f6.mb-2:active,span.btn-link.f6.mb-2:focus,.pr-2.text-mono.link-gray:hover,.pr-2.text-mono.link-gray:active,.pr-2.text-mono.link-gray:focus,.pinned-items-setting-link.muted-link:hover,.pinned-items-setting-link.muted-link:active,.pinned-items-setting-link.muted-link:focus{color: #4caf50!important; text-decoration: underline!important;}",
 		".btn{ background-color: #4c4c4c!important; background-image: unset!important; border: 1px solid #4caf50!important; color: #f1f1f1!important; }",
 		".btn:hover{ text-decoration: underline!important; }",
 		".bg-gray-light{ background-color: #343434!important;}",
 		".pagehead{border-bottom: 1px solid #4caf50!important;}",
 		"span.text-gray-dark{color: #f1f1f1!important;}",
+		".message.text-inherit{color: #909090!important; }",
+		".commit-tease{color: unset!important; }",
 		".overall-summary,.repository-lang-stats-graph,.Box-body{border-color: #4caf50!important;}",
 		".reponav-item.selected{background-color: #242424!important; color: #f1f1f1!important; border-color: transparent!important;}",
 		".Popover-message::after,.markdown-body h1, .markdown-body h2{ border-bottom-color: #4caf50!important; }",
@@ -43,9 +45,24 @@
 		".markdown-body .highlight pre, .markdown-body pre{background-color: #313131!important;}",
 		".pl-pds, .pl-s, .pl-s .pl-pse .pl-s1, .pl-sr, .pl-sr .pl-cce, .pl-sr .pl-sra, .pl-sr .pl-sre {	color: #0ff!important; }",
 		".pl-c { color: #6a737d; }",
-
-
-
+		".markdown-body table td, .markdown-body table th { border-color: #4caf50!important; }",
+		".markdown-body table tr,.markdown-body table tr:nth-child(2n) { background-color: transparent!important; }",
+		".Box-header { background-color: #4c4c4c!important; border-color: #4caf50!important; }",
+		".social-count { color: #4caf50!important; background-color: #313131!important; border-color: #4caf50!important; }",
+		"table.files{ background-color: #333!important; }",
+		"table.files tr.navigation-focus td, table.files tr[aria-selected=\"true\"] td{ background-color: #303030!important; }",
+		".profile-timeline.discussion-timeline::before { background-color: #4caf50!important; }",
+		".profile-timeline-month-heading{background-color: #4caf50!important; padding: 10px!important; }",
+		".discussion-item-icon { color: #e1e1e1!important; background-color: #4c4c4c!important;	border: 1px solid #4caf50!important; }",
+		".profile-rollup-wrapper + .profile-rollup-wrapper { border-top: 1px solid #4caf50!important; }",
+		".profile-timeline-year-list{background-color: #242424!important; }",
+		".js-year-link{text-align: center!important; }",
+		".js-year-link:hover{background-color: #4c4c4c!important;}",
+		".filter-item.selected, .filter-item[aria-current], .filter-item[aria-selected=\"true\"]{background-color: #4caf50!important; color: #f1f1f1!important;}",
+		".form-control.width-full.js-pinned-items-filter-input{ color: #4caf50; background-color: #333!important; border: 1px solid #4caf50!important;}",
+		".form-control.width-full.js-pinned-items-filter-input:focus { border-color: #4caf50!important; box-shadow: inset 0 1px 2px rgba(27,255,35,.075),0 0 0 .2em rgba(3,102,3,.3)!important; }",
+		".pinned-item-checkbox:checked + .pinned-item-name { color: #4caf50!important; background-color: #333!important; }",
+		".js-remaining-pinned-items-count{padding: 12px!important; background-color: #252525!important; border-radius: 6px!important; }",
 
 
 
