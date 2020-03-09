@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       2.7
+// @version       2.8
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        JaviertINC
@@ -79,10 +79,11 @@
 		".text-gray-dark.css-truncate.css-truncate-target,.text-gray-dark.css-truncate.css-truncate-target a{color: #4caf50!important;}",
 		".team-breadcrumb-item.team-breadcrumb-item-selected.text-gray-dark{color: #4caf50!important; text-decoration: underline!important; }",
 		".flash{ background-color: #000!important; color: #f1f1f1!important; }",
-		".border-gray-light{border-color: #4caf50!important;}",
-		".btn-link{ color: #4caf50!important; }",
-		".btn-link:hover,.btn-link:active,.btn-link:focus{ color: #008000!important; text-decoration: underline!important; }",
-		".SelectMenu-item{background-color: #393939!important;}",
+        ".border-gray-light{border-color: #4caf50!important;}",
+        ".btn-link{ color: #4caf50!important; }",
+        ".btn-link:hover,.btn-link:active,.btn-link:focus{ color: #008000!important; text-decoration: underline!important; }",
+        ".SelectMenu-item{background-color: #393939!important;}",
+        ".profile-timeline.discussion-timeline .profile-timeline-month-heading::after{background-color: #4caf50!important;}",
 
 
 
