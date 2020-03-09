@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       2.4
+// @version       2.5
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        JaviertINC
 // @include       *://github.com/*
-// @include       *://*.github.com/*
 // @include       https://github.com/JaviertINC
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/github.darkgreen.user.js
 // @run-at        document-start
@@ -72,11 +71,13 @@
 		".Box-footer{ border-top: 1px solid #4caf50!important; }",
 		".border-top{border-top-color: #4caf50!important;}",
 		".border-bottom{border-bottom-color: #4caf50!important;}",
-		".muted-link{color: #008000!important; }",
+		".muted-link{color: #6f6f6f!important; }",
+		".muted-link:hover,.muted-link:active,.muted-link:focus{color: #008000!important; text-decoration: underline!important; }",
 		".orghead{ background-color: #343434!important; border-bottom: 1px solid #4caf50; color: #f1f1f1!important; }",
 		".pagehead-tabs-item.selected{background-color: #242424!important; border: none!important;}",
 		".pagehead-tabs-item{border: none!important; }",
 		".text-gray-dark.css-truncate.css-truncate-target,.text-gray-dark.css-truncate.css-truncate-target a{color: #4caf50!important;}",
+		".team-breadcrumb-item.team-breadcrumb-item-selected.text-gray-dark{color: #4caf50!important; text-decoration: underline!important; }",
 
 
 
