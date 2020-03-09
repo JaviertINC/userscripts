@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       2.6
+// @version       2.7
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        JaviertINC
@@ -20,11 +20,11 @@
 		"::selection{background-color:#4caf50!important;color:#fff!important}",
 		"::-moz-selection{background-color:#4caf50!important;color:#fff!important}",
 		".Header, .user-profile-nav,.user-profile-sticky-bar::after{background-color: #4c4c4c!important;border-bottom: 1px solid #4caf50!important;}",
-		".border, .avatar-before-user-status, .Box{border-color: #4caf50!important;}",
+		".border, .avatar-before-user-status, .Box,.SelectMenu-modal{border-color: #4caf50!important;}",
 		".p-name,.pinned-item-name{ color: #4caf50!important; }",
 		".p-nickname{ font-size: 15px!important; }",
 		".text-gray, .octicon{ color: #f1f1f1!important;}",
-		".Box, .user-status-container{background-color: #4c4c4c!important; }",
+		".Box, .user-status-container,.SelectMenu-modal{background-color: #4c4c4c!important; }",
 		".UnderlineNav-item.selected, .UnderlineNav-item[aria-current], .UnderlineNav-item[role=\"tab\"][aria-selected=\"true\"]{ border-bottom-color: #4caf50!important;}",
 		"rect[fill=\"#ebedf0\"]{fill:#333!important}",
 		".btn-link.muted-link,span.btn-link.f6.mb-2,.pr-2.text-mono.link-gray,.pinned-items-setting-link.muted-link,.f6.text-gray-light.muted-link.no-wrap{color: #d1d1d1!important; text-decoration: underline!important;}",
@@ -69,8 +69,8 @@
 		".profile-timeline-card.border.bg-white.border-gray-dark.rounded-1.p-3{ background-color: #4c4c4c!important; }",
 		".Box-footer.Box-row--gray{ background-color: #3d3d3d!important; }",
 		".Box-footer{ border-top: 1px solid #4caf50!important; }",
-		".border-top,table.files td{border-top-color: #4caf50!important;}",
-		".border-bottom{border-bottom-color: #4caf50!important;}",
+		".border-top,table.files td,.SelectMenu-filter{border-top-color: #4caf50!important;}",
+		".border-bottom,.SelectMenu-item{border-bottom-color: #4caf50!important;}",
 		".muted-link,.link-gray{color: #6f6f6f!important; }",
 		".muted-link:hover,.muted-link:active,.muted-link:focus,.link-gray:hover,.link-gray:active,.link-gray:focus{color: #008000!important; text-decoration: underline!important; }",
 		".orghead{ background-color: #343434!important; border-bottom: 1px solid #4caf50; color: #f1f1f1!important; }",
@@ -79,6 +79,10 @@
 		".text-gray-dark.css-truncate.css-truncate-target,.text-gray-dark.css-truncate.css-truncate-target a{color: #4caf50!important;}",
 		".team-breadcrumb-item.team-breadcrumb-item-selected.text-gray-dark{color: #4caf50!important; text-decoration: underline!important; }",
 		".flash{ background-color: #000!important; color: #f1f1f1!important; }",
+		".border-gray-light{border-color: #4caf50!important;}",
+		".btn-link{ color: #4caf50!important; }",
+		".btn-link:hover,.btn-link:active,.btn-link:focus{ color: #008000!important; text-decoration: underline!important; }",
+		".SelectMenu-item{background-color: #393939!important;}",
 
 
 
