@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       2.1
+// @version       2.4
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        JaviertINC
@@ -14,11 +14,13 @@
 (function() {
 	var css = [
 		"body,.Counter{background-color: #242424!important; color: #f1f1f1!important; }",
-		"a,.text-bold.link-gray-dark.lh-default.v-align-middle{color: #4caf50!important;}",
+		"a,.text-bold.link-gray-dark.lh-default.v-align-middle,.f3.lh-condensed.link-gray-dark.no-underline.text-bold,.link-gray-dark,.f4.text-normal.mb-3,.text-gray-dark.lh-condensed.mb-1{color: #4caf50!important;}",
+		"a.link-gray-dark:hover,.link-gray-dark:active;.link-gray-dark:focus,.link-gray-dark{ color: #008000!important; text-decoration: underline!important; }",
+		".f4.text-normal.mb-3:hover,.link-gray-dark,.f4.text-normal.mb-3:active,.link-gray-dark,.f4.text-normal.mb-3:focus{ color: #4caf50!important; text-decoration: underline!important; }",
 		":focus{outline: none!important;}",
 		"::selection{background-color:#4caf50!important;color:#fff!important}",
 		"::-moz-selection{background-color:#4caf50!important;color:#fff!important}",
-		".Header, .user-profile-nav{background-color: #4c4c4c!important;border-bottom: 1px solid #4caf50!important;}",
+		".Header, .user-profile-nav,.user-profile-sticky-bar::after{background-color: #4c4c4c!important;border-bottom: 1px solid #4caf50!important;}",
 		".border, .avatar-before-user-status, .Box{border-color: #4caf50!important;}",
 		".p-name,.pinned-item-name{ color: #4caf50!important; }",
 		".p-nickname{ font-size: 15px!important; }",
@@ -26,8 +28,8 @@
 		".Box, .user-status-container{background-color: #4c4c4c!important; }",
 		".UnderlineNav-item.selected, .UnderlineNav-item[aria-current], .UnderlineNav-item[role=\"tab\"][aria-selected=\"true\"]{ border-bottom-color: #4caf50!important;}",
 		"rect[fill=\"#ebedf0\"]{fill:#333!important}",
-		".btn-link.muted-link,span.btn-link.f6.mb-2,.pr-2.text-mono.link-gray,.pinned-items-setting-link.muted-link{color: #d1d1d1!important; text-decoration: underline!important;}",
-		".btn-link.muted-link:hover,.btn-link.muted-link:active,.btn-link.muted-link:focus,btn-link,span.btn-link.f6.mb-2:hover,span.btn-link.f6.mb-2:active,span.btn-link.f6.mb-2:focus,.pr-2.text-mono.link-gray:hover,.pr-2.text-mono.link-gray:active,.pr-2.text-mono.link-gray:focus,.pinned-items-setting-link.muted-link:hover,.pinned-items-setting-link.muted-link:active,.pinned-items-setting-link.muted-link:focus{color: #4caf50!important; text-decoration: underline!important;}",
+		".btn-link.muted-link,span.btn-link.f6.mb-2,.pr-2.text-mono.link-gray,.pinned-items-setting-link.muted-link,.f6.text-gray-light.muted-link.no-wrap{color: #d1d1d1!important; text-decoration: underline!important;}",
+		".btn-link.muted-link:hover,.btn-link.muted-link:active,.btn-link.muted-link:focus,btn-link,span.btn-link.f6.mb-2:hover,span.btn-link.f6.mb-2:active,span.btn-link.f6.mb-2:focus,.pr-2.text-mono.link-gray:hover,.pr-2.text-mono.link-gray:active,.pr-2.text-mono.link-gray:focus,.pinned-items-setting-link.muted-link:hover,.pinned-items-setting-link.muted-link:active,.pinned-items-setting-link.muted-link:focus,.f6.text-gray-light.muted-link.no-wrap:hover,.f6.text-gray-light.muted-link.no-wrap:active,.f6.text-gray-light.muted-link.no-wrap:focus{color: #4caf50!important; text-decoration: underline!important;}",
 		".btn{ background-color: #4c4c4c!important; background-image: unset!important; border: 1px solid #4caf50!important; color: #f1f1f1!important; }",
 		".btn:hover{ text-decoration: underline!important; }",
 		".bg-gray-light{ background-color: #343434!important;}",
@@ -64,6 +66,17 @@
 		".form-control.width-full.js-pinned-items-filter-input:focus { border-color: #4caf50!important; box-shadow: inset 0 1px 2px rgba(27,255,35,.075),0 0 0 .2em rgba(3,102,3,.3)!important; }",
 		".pinned-item-checkbox:checked + .pinned-item-name { color: #4caf50!important; background-color: #333!important; }",
 		".js-remaining-pinned-items-count{padding: 12px!important; background-color: #252525!important; border-radius: 6px!important; }",
+		".profile-timeline-card-wrapper{border-top: 0!important; border-bottom: 0!important; }",
+		".profile-timeline-card.border.bg-white.border-gray-dark.rounded-1.p-3{ background-color: #4c4c4c!important; }",
+		".Box-footer.Box-row--gray{ background-color: #3d3d3d!important; }",
+		".Box-footer{ border-top: 1px solid #4caf50!important; }",
+		".border-top{border-top-color: #4caf50!important;}",
+		".border-bottom{border-bottom-color: #4caf50!important;}",
+		".muted-link{color: #008000!important; }",
+		".orghead{ background-color: #343434!important; border-bottom: 1px solid #4caf50; color: #f1f1f1!important; }",
+		".pagehead-tabs-item.selected{background-color: #242424!important; border: none!important;}",
+		".pagehead-tabs-item{border: none!important; }",
+		".text-gray-dark.css-truncate.css-truncate-target,.text-gray-dark.css-truncate.css-truncate-target a{color: #4caf50!important;}",
 
 
 
