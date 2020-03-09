@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       2.5
+// @version       2.6
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        JaviertINC
@@ -69,15 +69,16 @@
 		".profile-timeline-card.border.bg-white.border-gray-dark.rounded-1.p-3{ background-color: #4c4c4c!important; }",
 		".Box-footer.Box-row--gray{ background-color: #3d3d3d!important; }",
 		".Box-footer{ border-top: 1px solid #4caf50!important; }",
-		".border-top{border-top-color: #4caf50!important;}",
+		".border-top,table.files td{border-top-color: #4caf50!important;}",
 		".border-bottom{border-bottom-color: #4caf50!important;}",
-		".muted-link{color: #6f6f6f!important; }",
-		".muted-link:hover,.muted-link:active,.muted-link:focus{color: #008000!important; text-decoration: underline!important; }",
+		".muted-link,.link-gray{color: #6f6f6f!important; }",
+		".muted-link:hover,.muted-link:active,.muted-link:focus,.link-gray:hover,.link-gray:active,.link-gray:focus{color: #008000!important; text-decoration: underline!important; }",
 		".orghead{ background-color: #343434!important; border-bottom: 1px solid #4caf50; color: #f1f1f1!important; }",
 		".pagehead-tabs-item.selected{background-color: #242424!important; border: none!important;}",
 		".pagehead-tabs-item{border: none!important; }",
 		".text-gray-dark.css-truncate.css-truncate-target,.text-gray-dark.css-truncate.css-truncate-target a{color: #4caf50!important;}",
 		".team-breadcrumb-item.team-breadcrumb-item-selected.text-gray-dark{color: #4caf50!important; text-decoration: underline!important; }",
+		".flash{ background-color: #000!important; color: #f1f1f1!important; }",
 
 
 
