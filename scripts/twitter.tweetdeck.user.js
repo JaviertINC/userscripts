@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          Twitter | TweetDeck DarkGreen
-// @version       0.4
+// @version       0.6
 // @description	  Twitter - TweetDeck DarkGreen Style
 // @icon          https://www.google.com/s2/favicons?domain=tweetdeck.twitter.com
 // @author        @JaviertINC
@@ -30,6 +30,14 @@
 		".js-column-nav-menu-flyover.column-nav-flyout {background-color: transparent!important; }",
 		".js-column-nav-menu-flyover.column-nav-flyout div{ margin-left: 5px!important; border: 1px solid #4caf50!important; color: #f1f1f1!important; border-radius: 5px!important; }",
 		".attribution.txt-mute.txt-sub-antialiased.txt-ellipsis.vertical-align--baseline{ color: #4caf50!important; }",
+		"html.dark .focus, html.dark input:focus, html.dark select:focus, html.dark textarea:focus { border-color: #4caf50!important; box-shadow: inset 0 1px 3px rgba(20,253,20,.1),0 0 8px rgba(29,161,29,.6); }",
+		"html.dark .column-title-edit-box { background-color: #5c5c5c!important; border-color: #4caf50!important; }",
+		'html.dark .Button, html.dark .Button.is-visited, html.dark .Button:visited, html.dark button, html.dark button.is-visited, html.dark button:visited, html.dark input.is-visited[type="button"], html.dark input:visited[type="button"], html.dark input[type="button"]{ border-color: #4caf50!important; color: #4caf50!important; }',
+		'html.dark button.btn-on-dark:focus, html.dark input[type="button"].btn-on-dark:focus {	box-shadow: 0 0 0 2px #4c4c4c,0 0 0 4px #4caf50!important; }',
+		'html.dark button.btn-on-dark.is-selected, html.dark button.btn-on-dark:active, html.dark button.btn-on-dark:focus, html.dark button.btn-on-dark:hover, html.dark input[type="button"].btn-on-dark.is-selected, html.dark input[type="button"].btn-on-dark:active, html.dark input[type="button"].btn-on-dark:focus, html.dark input[type="button"].btn-on-dark:hover{ background-color: #4c4c4c!important; }',
+		'html.dark .Button.is-focus, html.dark .Button:focus, html.dark button.is-focus, html.dark button:focus, html.dark input.is-focus[type="button"], html.dark input:focus[type="button"] { box-shadow: 0 0 0 2px #4c4c4c,0 0 0 4px #4caf50!important; background: #4c4c4c!important; border-color: #4caf50!important; color: #4caf50!important; }',
+		".Icon.icon-compose{color: #fff!important;}",
+		"html.dark .attach-compose-buttons .tweet-button:active, html.dark .attach-compose-buttons .tweet-button:focus, html.dark .attach-compose-buttons .tweet-button:hover { border: 1px solid #4caf50 !important; box-shadow: none !important; border-right: none !important; }",
 	].join("\n");
 	GM_addStyle(css);
 })();
