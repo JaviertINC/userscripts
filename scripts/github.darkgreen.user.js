@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       2.8
+// @version       2.9
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
-// @author        JaviertINC
+// @author        @JaviertINC
 // @include       *://github.com/*
 // @include       https://github.com/JaviertINC
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/github.darkgreen.user.js
@@ -79,11 +79,14 @@
 		".text-gray-dark.css-truncate.css-truncate-target,.text-gray-dark.css-truncate.css-truncate-target a{color: #4caf50!important;}",
 		".team-breadcrumb-item.team-breadcrumb-item-selected.text-gray-dark{color: #4caf50!important; text-decoration: underline!important; }",
 		".flash{ background-color: #000!important; color: #f1f1f1!important; }",
-        ".border-gray-light{border-color: #4caf50!important;}",
-        ".btn-link{ color: #4caf50!important; }",
-        ".btn-link:hover,.btn-link:active,.btn-link:focus{ color: #008000!important; text-decoration: underline!important; }",
-        ".SelectMenu-item{background-color: #393939!important;}",
-        ".profile-timeline.discussion-timeline .profile-timeline-month-heading::after{background-color: #4caf50!important;}",
+		".border-gray-light{border-color: #4caf50!important;}",
+		".btn-link{ color: #4caf50!important; }",
+		".btn-link:hover,.btn-link:active,.btn-link:focus{ color: #008000!important; text-decoration: underline!important; }",
+		".SelectMenu-item{background-color: #393939!important;}",
+		".profile-timeline.discussion-timeline .profile-timeline-month-heading::after{background-color: #4caf50!important;}",
+		".repo-file-upload-text.alternate-text, p.repo-file-upload-choose{ color: #f1f1f1!important; }",
+		".js-manifest-file-entry .name{ color: #4caf50!important; }",
+		".repo-file-upload-progress .repo-file-upload-meter{ background-color: #4c4c4c!important; color: #f1f1f1!important; border: 1px solid #4caf50!important; border-bottom: none!important; }",
 
 
 
@@ -97,4 +100,20 @@
 
 	].join("\n");
 	GM_addStyle(css);
+
+	var url_favicon = "https://javiertinc.github.io/libs/icons/github.ico";
+	re_favicon(url_favicon);
+
+    	function re_favicon(url_favicon){
+		var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+		link.type = 'image/x-icon';
+		link.rel = 'shortcut icon';
+		link.href = url_favicon;
+		document.getElementsByTagName('head')[0].appendChild(link);
+    	}
+	document.addEventListener("DOMContentLoaded", function(){
+		setTimeout(() => {
+			re_favicon(url_favicon);
+		}, 1500);
+	});
 })();
