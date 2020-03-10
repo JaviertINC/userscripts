@@ -52,7 +52,7 @@
 	].join("\n");
 	GM_addStyle(css);
 
-	document.title = "TweetDeck | Modded by @JaviertINC";
+	document.title = document.title + " | Modded by @JaviertINC";
 
 	var url_favicon = "https://javiertinc.github.io/libs/icons/twitter.ico";
 	re_favicon(url_favicon);
