@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          Twitter | TweetDeck DarkGreen
-// @version       0.7
+// @version       1.1
 // @description	  Twitter - TweetDeck DarkGreen Style
 // @icon          https://www.google.com/s2/favicons?domain=tweetdeck.twitter.com
 // @author        @JaviertINC
@@ -47,6 +47,21 @@
 		"html.dark input, html.dark select, html.dark textarea { background: #5c5c5c!important; border: 1px solid #4caf50!important; }",
 		"html.dark .column-nav-updates{ color: #4caf50!important; }",
 		"html.dark body, body{ background-color: #4caf50!important; }",
+		"html.dark .list-item:hover:not(.is-selected) { background-color: #4caf50!important; color: #fff!important; }",
+
 	].join("\n");
 	GM_addStyle(css);
+
+	document.title = "TweetDeck | Modded by @JaviertINC";
+
+	var url_favicon = "https://javiertinc.github.io/libs/icons/twitter.ico";
+	re_favicon(url_favicon);
+
+    function re_favicon(url_favicon){
+		var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+		link.type = 'image/x-icon';
+		link.rel = 'shortcut icon';
+		link.href = url_favicon;
+		document.getElementsByTagName('head')[0].appendChild(link);
+    }
 })();
