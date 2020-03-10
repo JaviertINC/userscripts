@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          Twitter | TweetDeck DarkGreen
-// @version       1.1
+// @version       1.2
 // @description	  Twitter - TweetDeck DarkGreen Style
 // @icon          https://www.google.com/s2/favicons?domain=tweetdeck.twitter.com
 // @author        @JaviertINC
