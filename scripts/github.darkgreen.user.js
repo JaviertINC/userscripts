@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       3.0
+// @version       3.1
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        @JaviertINC
@@ -99,10 +99,17 @@
 		".previous_page.disabled,.previous_page.disabled:hover{ color: #9a9a9a!important; text-decoration: none!important; }",
 		".pagination .current, .pagination .current:hover, .pagination [aria-current], .pagination [aria-current]:hover { color: #fff!important; background-color: #4caf50!important; border-color: #0f0!important; }",
 		".menu-item { border-bottom: 1px solid #4caf50!important; background-color: #4c4c4c!important; color: #f1f1f1 !important; }",
-		".menu-item:hover{ background-color: #4caf50!important; color: #f1f1f1!important; }",
+		".menu-item:hover,.user-status-org-button.selected{ background-color: #4caf50!important; color: #f1f1f1!important; }",
 		".menu-item.selected, .menu-item[aria-current], .menu-item[aria-selected=\"true\"] { background-color: #4caf50!important; color: #f1f1f1!important; }",
 		".menu-item.selected::before, .menu-item[aria-current]::before, .menu-item[aria-selected=\"true\"]::before { width: 5px; background-color: #fff; }",
 		".col-12.col-md-3.float-left.px-md-2 .border.rounded-1.p-3.mb-3.d-none.d-md-block { background-color: #4c4c4c!important; }",
+		".dropdown-menu { background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+		".dropdown-item,h4.text-normal,label.text-gray-dark,.octicon.octicon-star,.form-group .form-control::placeholder{ color: #4fca50!important; }",
+		".dropdown-item:hover { background-color: #4caf50!important; color: #f1f1f1!important; }",
+		".dropdown-divider { border-top-color: #4caf50!important; }",
+		".Box-title.f5.text-bold.text-gray-dark,.form-checkbox .note, div.d-inline-block.mr-1,.btn-link span{color: #f1f1f1!important; }",
+		".form-group .form-control{background-color: #5f5f5f!important; color: #f1f1f1!important; border-color: #4caf50!important;}",
+		".js-user-status-expire-drop-down .btn-link,.dropdown .btn-link{ text-decoration: none!important; }",
 
 
 
