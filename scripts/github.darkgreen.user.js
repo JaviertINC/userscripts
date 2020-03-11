@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       3.1
+// @version       3.2
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        @JaviertINC
@@ -110,10 +110,15 @@
 		".Box-title.f5.text-bold.text-gray-dark,.form-checkbox .note, div.d-inline-block.mr-1,.btn-link span{color: #f1f1f1!important; }",
 		".form-group .form-control{background-color: #5f5f5f!important; color: #f1f1f1!important; border-color: #4caf50!important;}",
 		".js-user-status-expire-drop-down .btn-link,.dropdown .btn-link{ text-decoration: none!important; }",
+		".team-left-column.col-12.col-md-4.col-lg-3.bg-white.border-right.border-bottom.hide-md.hide-sm { background-color: #4c4c4c!important; border-right: 1px solid #4caf50!important; }",
+		".d-flex.flex-wrap.bg-gray{ background-color: #242424!important; }",
+		".ajax-pagination-form .ajax-pagination-btn { color: #f1f1f1!important; background: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+		".ajax-pagination-form .ajax-pagination-btn:hover{ text-decoration: underline!important; }",
+		".dashboard-notice { background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
 
 
 
-		/*
+		/* Colores de los cuadraditos de contribuciones del año
 		"rect[fill=\"#eee\"],ul.legend li:nth-child(1){background-color:#333!important}",
 		"rect[fill=\"#c6e48b\"],ul.legend li:nth-child(2){background-color:#a8cf6a!important;fill:#a8cf6a!important}",
 		"rect[fill=\"#7bc96f\"],ul.legend li:nth-child(3){background-color:#93c346!important;fill:#93c346!important}",
