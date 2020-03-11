@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       2.9
+// @version       3.0
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        @JaviertINC
@@ -85,8 +85,24 @@
 		".SelectMenu-item{background-color: #393939!important;}",
 		".profile-timeline.discussion-timeline .profile-timeline-month-heading::after{background-color: #4caf50!important;}",
 		".repo-file-upload-text.alternate-text, p.repo-file-upload-choose{ color: #f1f1f1!important; }",
-		".js-manifest-file-entry .name{ color: #4caf50!important; }",
+		".js-manifest-file-entry .name,.blob-num,.gap{ color: #4caf50!important; }",
+		".blob-code-inner{ color: #f1f1f1!important; }",
 		".repo-file-upload-progress .repo-file-upload-meter{ background-color: #4c4c4c!important; color: #f1f1f1!important; border: 1px solid #4caf50!important; border-bottom: none!important; }",
+		".markdown-body hr{ background-color: #4caf50!important; }",
+		".code-list .file-box { border: 1px solid #4caf50!important; background: #5d5d5d!important; }",
+		".code-list .divider .blob-num,.code-list .divider .blob-code, .code-list .divider .blob-num{ background-color: #4a4a4a!important; }",
+		".text-bold.bg-yellow-light.rounded-1.d-inline-block{ background-color: #4c4c4c!important; color: #fff!important; font-weight: bold!important; border: 1px solid #4caf50!important; padding: 1px 2px!important;}",
+		".previous_page{ background-color: #4c4c4c!important; color: #4caf50!important; border-radius: 5px 0 0 5px!important; border: 1px solid #4caf50!important; }",
+		".pagination a, .pagination em, .pagination span { background-color: #4c4c4c!important; border: 1px solid #4caf50!important;}",
+		".next_page{ background-color: #4c4c4c!important; color: #4caf50!important; border-radius: 0 5px 5px 0!important; border: 1px solid #4caf50!important; }",
+		".previous_page:hover{ text-decoration: underline!important; }",
+		".previous_page.disabled,.previous_page.disabled:hover{ color: #9a9a9a!important; text-decoration: none!important; }",
+		".pagination .current, .pagination .current:hover, .pagination [aria-current], .pagination [aria-current]:hover { color: #fff!important; background-color: #4caf50!important; border-color: #0f0!important; }",
+		".menu-item { border-bottom: 1px solid #4caf50!important; background-color: #4c4c4c!important; color: #f1f1f1 !important; }",
+		".menu-item:hover{ background-color: #4caf50!important; color: #f1f1f1!important; }",
+		".menu-item.selected, .menu-item[aria-current], .menu-item[aria-selected=\"true\"] { background-color: #4caf50!important; color: #f1f1f1!important; }",
+		".menu-item.selected::before, .menu-item[aria-current]::before, .menu-item[aria-selected=\"true\"]::before { width: 5px; background-color: #fff; }",
+		".col-12.col-md-3.float-left.px-md-2 .border.rounded-1.p-3.mb-3.d-none.d-md-block { background-color: #4c4c4c!important; }",
 
 
 
