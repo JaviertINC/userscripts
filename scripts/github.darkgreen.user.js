@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       3.2
+// @version       3.3
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        @JaviertINC
@@ -115,6 +115,7 @@
 		".ajax-pagination-form .ajax-pagination-btn { color: #f1f1f1!important; background: #4c4c4c!important; border: 1px solid #4caf50!important; }",
 		".ajax-pagination-form .ajax-pagination-btn:hover{ text-decoration: underline!important; }",
 		".dashboard-notice { background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+		".tabnav-tab.selected, .tabnav-tab[aria-current], .tabnav-tab[aria-selected=\"true\"] { background-color: #242424!important; border-color: #4caf50!important; }",
 
 
 
