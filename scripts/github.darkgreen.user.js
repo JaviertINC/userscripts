@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       3.6
+// @version       3.7
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        @JaviertINC
@@ -117,13 +117,17 @@
 		".ajax-pagination-form .ajax-pagination-btn:hover,.jump-to-suggestion-name mark{ text-decoration: underline!important; }",
 		".dashboard-notice { background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
 		".tabnav-tab.selected, .tabnav-tab[aria-current], .tabnav-tab[aria-selected=\"true\"] { background-color: #242424!important; border-color: #4caf50!important; }",
-		".dashboard-notice h2,.jump-to-suggestion-name{color: #f1f1f1!important;}",
+		".dashboard-notice h2,.jump-to-suggestion-name,.text-gray-light.text-small{color: #f1f1f1!important;}",
 		".dashboard-notice h2 strong,.dashboard-notice ul li strong,.jump-to-suggestion-name mark,.form-control::placeholder{color: #4caf50!important;}",
 		".js-jump-to-badge-search,.js-jump-to-badge-jump,.form-control, .form-select{background-color: #4c4c4c!important; color: #f1f1f1!important; }",
 		".jump-to-field-active {background-color: #5f5f5f!important; color: #f1f1f1!important; border: 1px solid #4caf50!important; border-bottom: none!important;} ",
 		".form-control, .form-select{border: 1px solid #4caf50!important; }",
 		".jump-to-field { border: none!important; }",
 		".form-control.focus, .form-control:focus, .form-select.focus, .form-select:focus { box-shadow: inset 0 1px 2px rgba(27,31,35,.075),0 0 5px 0.5px #4caf50!important; }",
+        ".box-shadow-extra-large{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+        ".MarketplaceHeader,.MarketplaceBackground-buffer { background-color: #343434!important; }",
+        ".btn-mktg.btn-outline-mktg { background-color: #4c4c4c!important; color: #f1f1f1!important; border-color: #4caf50!important; }",
+
 
 
 
