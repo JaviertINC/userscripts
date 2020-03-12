@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       3.4
+// @version       3.5
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        @JaviertINC
@@ -107,17 +107,20 @@
 		".dropdown-item,h4.text-normal,label.text-gray-dark,.octicon.octicon-star,.form-group .form-control::placeholder{ color: #4fca50!important; }",
 		".dropdown-item:hover { background-color: #4caf50!important; color: #f1f1f1!important; }",
 		".dropdown-divider { border-top-color: #4caf50!important; }",
+		".jump-to-suggestions-results-container .navigation-item{ border-bottom-color: #4caf50!important; }",
 		".Box-title.f5.text-bold.text-gray-dark,.form-checkbox .note, div.d-inline-block.mr-1,.btn-link span{color: #f1f1f1!important; }",
 		".form-group .form-control{background-color: #5f5f5f!important; color: #f1f1f1!important; border-color: #4caf50!important;}",
-		".js-user-status-expire-drop-down .btn-link,.dropdown .btn-link{ text-decoration: none!important; }",
+		".js-user-status-expire-drop-down .btn-link,.dropdown .btn-link, sumary.btn{ text-decoration: none!important; }",
 		".team-left-column.col-12.col-md-4.col-lg-3.bg-white.border-right.border-bottom.hide-md.hide-sm { background-color: #4c4c4c!important; border-right: 1px solid #4caf50!important; }",
 		".d-flex.flex-wrap.bg-gray{ background-color: #242424!important; }",
 		".ajax-pagination-form .ajax-pagination-btn { color: #f1f1f1!important; background: #4c4c4c!important; border: 1px solid #4caf50!important; }",
-		".ajax-pagination-form .ajax-pagination-btn:hover{ text-decoration: underline!important; }",
+		".ajax-pagination-form .ajax-pagination-btn:hover,.jump-to-suggestion-name mark{ text-decoration: underline!important; }",
 		".dashboard-notice { background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
 		".tabnav-tab.selected, .tabnav-tab[aria-current], .tabnav-tab[aria-selected=\"true\"] { background-color: #242424!important; border-color: #4caf50!important; }",
-		".dashboard-notice h2{color: #f1f1f1!important;}",
-		".dashboard-notice h2 strong,.dashboard-notice ul li strong{color: #4caf50!important;}",
+		".dashboard-notice h2,.jump-to-suggestion-name{color: #f1f1f1!important;}",
+		".dashboard-notice h2 strong,.dashboard-notice ul li strong,.jump-to-suggestion-name mark{color: #4caf50!important;}",
+		".js-jump-to-badge-search,.js-jump-to-badge-jump{background-color: #4c4c4c!important; color: #f1f1f1!important; }",
+		".jump-to-field-active {background-color: #5f5f5f!important; color: #f1f1f1!important; border: 1px solid #4caf50!important; border-bottom: none!important;} ",
 
 
 
