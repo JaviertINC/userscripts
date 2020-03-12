@@ -10,15 +10,15 @@ _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber varias
 
 | Script | Enlace |
 | ------ | ------ |
-| ![w3Schools](https://www.google.com/s2/favicons?domain=w3schools.com) W3SchoolsEditor \| DarkGreen | [Instalar](https://javiertinc.github.io/userscripts/scripts/w3schools.editor.user.js) |
+| ![w3Schools](https://www.google.com/s2/favicons?domain=w3schools.com) W3SchoolsEditor \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/w3schools.editor.user.js) |
 | ![Github](https://www.google.com/s2/favicons?domain=github.com) Github \| DarkGreen | [Instalar](https://javiertinc.github.io/userscripts/scripts/github.darkgreen.user.js) |
-| ![JaviertINC](https://www.google.com/s2/favicons?domain=youtube.com) YoutubeEmbed \| DarkGreen | [Instalar](https://javiertinc.github.io/userscripts/scripts/youtube.embed.user.js) |
-| ![JaviertINC](https://www.google.com/s2/favicons?domain=tweetdeck.twitter.com) TweetDeck \| DarkGreen | [Instalar](https://javiertinc.github.io/userscripts/scripts/twitter.tweetdeck.user.js) |
-| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX \| BackOffice DarkGreen | [Instalar](https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js) |
-| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX \| Gmail DarkGreen Complement DarkTheme | [Instalar](https://javiertinc.github.io/userscripts/scripts/api-ux.gmail.user.js) |
-| ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP \| Bugs DarkGreen | [Instalar](https://javiertinc.github.io/userscripts/scripts/cakephp.bugs.user.js) |
-| ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP \| GreenCakePHP | [Instalar](https://javiertinc.github.io/userscripts/scripts/cakephp.green.user.js) |
-| ![Trello](https://www.google.com/s2/favicons?domain=trello.com) Trello \| DarkGreen | [Instalar](https://javiertinc.github.io/userscripts/scripts/trello.green.user.js) |
+| ![JaviertINC](https://www.google.com/s2/favicons?domain=youtube.com) YoutubeEmbed \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/youtube.embed.user.js) |
+| ![JaviertINC](https://www.google.com/s2/favicons?domain=tweetdeck.twitter.com) TweetDeck \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/twitter.tweetdeck.user.js) |
+| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX \| BackOffice DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js) |
+| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX \| Gmail DarkGreen Complement DarkTheme | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.gmail.user.js) |
+| ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP \| Bugs DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.bugs.user.js) |
+| ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP \| GreenCakePHP | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.green.user.js) |
+| ![Trello](https://www.google.com/s2/favicons?domain=trello.com) Trello \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/trello.green.user.js) |
 
 ---
 ### Addons & Complementos
