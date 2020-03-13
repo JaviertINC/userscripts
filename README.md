@@ -20,6 +20,7 @@ _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber varias
 | ![Trello](https://www.google.com/s2/favicons?domain=trello.com) Trello \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/trello.green.user.js) |
 | ![TweetDeck](https://www.google.com/s2/favicons?domain=tweetdeck.twitter.com) TweetDeck \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/twitter.tweetdeck.user.js) |
 | ![w3Schools](https://www.google.com/s2/favicons?domain=w3schools.com) W3SchoolsEditor \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/w3schools.editor.user.js) |
+| ![w3Schools](https://www.google.com/s2/favicons?domain=whatsapp.com) WhatsappWeb \| DarkDefault | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/whatsapp.darkdefault.user.js) |
 | ![YoutubeEmbed](https://www.google.com/s2/favicons?domain=youtube.com) YoutubeEmbed \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/youtube.embed.user.js) |
 
 ---
