@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         API-UX | Better BackOffice
-// @version      2.7
+// @version      2.8
 // @description  Mejoramiento para el registro de horas en el BackOffice de Apiux
 // @icon         https://www.google.com/s2/favicons?domain=www.api-ux.com
 // @author       @JaviertINC
@@ -90,7 +90,7 @@
 	_s(sheet, ".oe_header_row.oe_header_row_top td","padding: 0 20px!important; ");
 	_s(sheet, ".openerp .oe_mail .oe_msg","border: none!important; border-radius: 0!important; border-bottom: 1px solid #4caf50!important; ");
 	_s(sheet, ".openerp .oe_mail .oe_attach_label,.openerp .oe_mail button.oe_attach, .openerp .oe_mail button.oe_full","color: #4caf50!important; ");
-	_s(sheet, ".openerp a.button:link, .openerp a.button:visited, .openerp button, .openerp .oe_button, .openerp input[type=\"submit\"]{ border: 1px solid #4caf50!important; color: #f1f1f1!important; background-color: #4c4c4c!important; background-image: unset!important; -moz-box-shadow: unset!important; -webkit-box-shadow: unset!important; box-shadow: unset!important; text-shadow: unset!important; ");
+	_s(sheet, ".oe_suggestion_join,.oe_suggestion_follow{ border: 1px solid #4caf50!important; color: #f1f1f1!important; background-color: #4c4c4c!important; background-image: unset!important; -moz-box-shadow: unset!important; -webkit-box-shadow: unset!important; box-shadow: unset!important; text-shadow: unset!important; ");
 
 	var url_logo = atob("aHR0cDovL3d3dy5hcGktdXguY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE4LzEwL2xvZ28tYmxhbmNvLTIucG5n");
 	var url_favicon = atob("aHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pby9saWJzL2ljb25zL29kb28uaWNv");
