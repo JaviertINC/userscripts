@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Metro.cl | DarkGreen
-// @version      1.3
+// @version      1.5
 // @icon         https://www.google.com/s2/favicons?domain=metro.cl
 // @author       @JaviertINC
 // @match        https://metro.cl/
@@ -24,10 +24,11 @@
 		".popover.bs-popover-auto[x-placement^=\"bottom\"] .arrow::after, .popover.bs-popover-bottom .arrow::after { border-bottom-color: #4caf50; }",
 		".row.bColorRojo,.row.pTop10 .col-md-6{ display:none;}",
 		"a.fColorRojo{ display: none!important; }",
-		".jt-metro-map { position: fixed!important; padding: 15px!important; background-color: #4c4c4c!important; color: #4caf50!important; text-decoration: underline!important; border: 2px solid #4caf50!important; max-width: 7%; text-align: center; }",
+		".jt-metro-map { position: fixed!important; padding: 15px!important; background-color: #4c4c4c!important; color: #4caf50!important; text-decoration: none!important; border: 2px solid #4caf50!important; max-width: 7%; width: 7%; text-align: center; }",
+		".jt-metro-map:hover{ background-color: #5d5d5d!important; color: #f1f1f1!important; text-decoration: underline!important; }",
 		".jt-metro-map.h{top: 20px!important; left: 10px!important; border-radius: 5px 5px 0 0!important;}",
-		".jt-metro-map.m{top: 90px!important; left: 10px!important; border-radius: 0 0 5px 5px!important;}",
-		"a.fColorRojo:hover, #jtMetroMap:hover{ background-color: #5d5d5d!important; color: #f1f1f1!important; text-decoration: underline!important; }",
+		".jt-metro-map.m{top: 90px!important; left: 10px!important; border-radius: 0!important;}",
+		".jt-metro-map.c{top: 163px!important; left: 10px!important; border-radius: 0 0 5px 5px!important;}",
 		//".estadoL2 > li:nth-child(14){ background: url(\"../images/estadoL5.png\") left top no-repeat transparent!important; }",
 
 	].join("\n");
@@ -36,6 +37,7 @@
 		GM_addStyle(css);
 		document.body.innerHTML += '<a href="https://metro.cl/home" class="jt-metro-map h">Ir al Sitio Normal</a>';
 		document.body.innerHTML += '<a href="https://metro.cl/mapa" target="_blank" class="jt-metro-map m">Ver el mapa de la Red</a>';
+		document.body.innerHTML += '<a href="https://cargatubip.metro.cl/CargaTuBipV2/" target="_blank" class="jt-metro-map c">Carga tu BIP</a>';
 
 		document.addEventListener("DOMContentLoaded", function(){
 			setTimeout(() => {
