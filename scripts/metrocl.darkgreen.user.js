@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Metro.cl | DarkGreen
-// @version      1.2
+// @version      1.3
 // @icon         https://www.google.com/s2/favicons?domain=metro.cl
 // @author       @JaviertINC
 // @match        https://metro.cl/
@@ -28,7 +28,6 @@
 		".jt-metro-map.h{top: 20px!important; left: 10px!important; border-radius: 5px 5px 0 0!important;}",
 		".jt-metro-map.m{top: 90px!important; left: 10px!important; border-radius: 0 0 5px 5px!important;}",
 		"a.fColorRojo:hover, #jtMetroMap:hover{ background-color: #5d5d5d!important; color: #f1f1f1!important; text-decoration: underline!important; }",
-		".oi.oi-x{ display: none; }",
 		//".estadoL2 > li:nth-child(14){ background: url(\"../images/estadoL5.png\") left top no-repeat transparent!important; }",
 
 	].join("\n");
@@ -47,6 +46,7 @@
 		var map = [
 			"body{ background-color: #242424!important; }",
 		].join("\n");
+		document.title = "Mapa de la Red | Metro.cl - Modificado por @JaviertINC";
 		GM_addStyle(map);
 		document.body.innerHTML = '<img src="'+ url_map +'">';
 	}
