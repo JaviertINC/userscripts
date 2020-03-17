@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Metro.cl | DarkGreen
-// @version      0.6
+// @version      0.8
 // @icon         https://www.google.com/s2/favicons?domain=metro.cl
 // @author       @JaviertINC
 // @match        https://metro.cl/
-// @exclude        https://metro.cl/home
-// @updateURL    https://javiertinc.github.io/userscripts/scripts/metro.dark.user.js
+// @include      https://metro.cl/mapa
+// @exclude      https://metro.cl/*
+// @updateURL    https://javiertinc.github.io/userscripts/scripts/metrocl.darkgreen.user.js
 // @grant        GM_addStyle
 // @run-at       document-end
 // ==/UserScript==
@@ -27,6 +28,10 @@
 
 	].join("\n");
 
-	GM_addStyle(css);
+    	if(window.location.href == "https://metro.cl/"){
+		GM_addStyle(css);
+	}else if(window.location.href == "https://metro.cl/mapa"){
+		alert("Mapa");
+	}
 
 })();
