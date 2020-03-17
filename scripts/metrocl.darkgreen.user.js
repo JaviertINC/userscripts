@@ -37,7 +37,7 @@
 		GM_addStyle(css);
 		document.body.innerHTML += '<a href="https://metro.cl/home" class="jt-metro-map h">Ir al Sitio Normal</a>';
 		document.body.innerHTML += '<a href="https://metro.cl/mapa" target="_blank" class="jt-metro-map m">Ver el mapa de la Red</a>';
-		document.body.innerHTML += '<a href="https://cargatubip.metro.cl/CargaTuBipV2/" target="_blank" class="jt-metro-map c">Carga tu BIP</a>';
+		document.body.innerHTML += '<a href="https://cargatubip.metro.cl/CargaTuBipV2/" target="_blank" class="jt-metro-map c">Carga tu Bip!</a>';
 
 		document.addEventListener("DOMContentLoaded", function(){
 			setTimeout(() => {
