@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Metro.cl | DarkGreen
-// @version      1.6
+// @version      1.7
 // @icon         https://www.google.com/s2/favicons?domain=metro.cl
 // @author       @JaviertINC
 // @match        https://metro.cl/
-// @include      https://metro.cl/mapa
+// @include      https://metro.cl/plano
 // @updateURL    https://javiertinc.github.io/userscripts/scripts/metrocl.darkgreen.user.js
 // @grant        GM_addStyle
 // @run-at       document-end
@@ -13,7 +13,7 @@
 (function() {
     'use strict';
 
-	var url_img_map = "https://www.metro.cl/images/metrored_servicios_full_2020_03_01.jpg";
+	var url_img_plano = "https://www.metro.cl/images/metrored_servicios_full_2020_03_01.jpg";
 	var url_img_logo = "https://www.metro.cl/images/metrored_servicios_full_2020_03_01.jpg";
 	var url_img_bip = "https://cargatubip.metro.cl/CargaTuBipV2/assets/imgMetro/bip_small.png";
 
@@ -38,8 +38,9 @@
 
     if(window.location.href == "https://metro.cl/"){
 		GM_addStyle(css);
+		document.title = "Estado de la Red | Metro de Santiago | Metro.cl - Modificado por @JaviertINC";
 		document.body.innerHTML += '<a href="https://metro.cl/home" class="jt-metro-map h">Ir al Sitio Normal</a>';
-		document.body.innerHTML += '<a href="https://metro.cl/mapa" target="_blank" class="jt-metro-map m">Plano de la Red</a>';
+		document.body.innerHTML += '<a href="https://metro.cl/plano" target="_blank" class="jt-metro-map m">Plano de la Red</a>';
 		document.body.innerHTML += '<a href="https://cargatubip.metro.cl/CargaTuBipV2/" target="_blank" class="jt-metro-map c">Carga tu Bip!</a>';
 
 		document.addEventListener("DOMContentLoaded", function(){
@@ -47,13 +48,13 @@
 				window.location.reload();
 			}, 500000);
 		});
-	}else if(window.location.href == "https://metro.cl/mapa"){
+	}else if(window.location.href == "https://metro.cl/plano"){
 		var map = [
 			"body{ background-color: #242424!important; }",
 		].join("\n");
-		document.title = "Mapa de la Red | Metro.cl - Modificado por @JaviertINC";
+		document.title = "Plano de la Red | Metro de Santiago | Metro.cl - Modificado por @JaviertINC";
 		GM_addStyle(map);
-		document.body.innerHTML = '<img src="'+ url_img_map +'">';
+		document.body.innerHTML = '<img src="'+ url_img_plano +'">';
 	}
 
 })();
