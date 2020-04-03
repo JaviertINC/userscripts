@@ -16,6 +16,7 @@ _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber varias
 | ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP \| GreenCakePHP | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.green.user.js) |
 | ![ClipWatching](https://www.google.com/s2/favicons?domain=clipwatching.com) ClipWatching \| Embed DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/clipwatching.embed.user.js) |
 | ![Github](https://www.google.com/s2/favicons?domain=github.com) Github \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/github.darkgreen.user.js) |
+| ![MercadoLibreCL](https://www.google.com/s2/favicons?domain=mercadolibre.cl) MercadoLibre Chile \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js) |
 | ![MetroCL](https://www.google.com/s2/favicons?domain=metro.cl) Metro.cl \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/metrocl.darkgreen.user.js) |
 | ![Pastebin](https://www.google.com/s2/favicons?domain=pastebin.com) Pastebin \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/pastebin.darkgreen.user.js) |
 | ![Trello](https://www.google.com/s2/favicons?domain=trello.com) Trello \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/trello.green.user.js) |
