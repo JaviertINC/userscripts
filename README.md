@@ -8,26 +8,26 @@ Para poder utilizar estos Scripts debes instalar un [complemento](./README.md#ad
 
 _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber fallas y/o cosas sin funcionar._
 
-| Focus | Descripción | Tipo | Enlace |
-| ------ | ------ | ------ | ------ |
-| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX | BackOffice DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js) |
-| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX | Gmail DarkGreen Complement DarkTheme | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.gmail.user.js) |
-| ![Aternos](https://www.google.com/s2/favicons?domain=aternos.org) Aternos | AntiAdblock | Funcional | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/aternos.antiadblock.user.js) |
-| ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP | Bugs DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.bugs.user.js) |
-| ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP | GreenCakePHP | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.green.user.js) |
-| ![ClipWatching](https://www.google.com/s2/favicons?domain=clipwatching.com) ClipWatching | Embed DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/clipwatching.embed.user.js) |
-| ![Github](https://www.google.com/s2/favicons?domain=github.com) Github | DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/github.darkgreen.user.js) |
-| ![MercadoLibreCL](https://www.google.com/s2/favicons?domain=mercadolibre.cl) MercadoLibre Chile | DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js) |
-| ![MetroCL](https://www.google.com/s2/favicons?domain=metro.cl) Metro.cl | DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/metrocl.darkgreen.user.js) |
-| ![Pastebin](https://www.google.com/s2/favicons?domain=pastebin.com) Pastebin | DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/pastebin.darkgreen.user.js) |
-| ![Trello](https://www.google.com/s2/favicons?domain=trello.com) Trello | DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/trello.green.user.js) |
-| ![TweetDeck](https://www.google.com/s2/favicons?domain=tweetdeck.twitter.com) TweetDeck | DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/twitter.tweetdeck.user.js) |
-| ![w3Schools](https://www.google.com/s2/favicons?domain=w3schools.com) W3Schools | DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/w3schools.darkgreen.user.js) |
-| ![w3Schools](https://www.google.com/s2/favicons?domain=w3schools.com) W3SchoolsEditor | DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/w3schools.editor.user.js) |
-| ![w3Schools](https://www.google.com/s2/favicons?domain=whatsapp.com) WhatsappWeb | DarkDefault | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/whatsapp.darkdefault.user.js) |
-| ![Youtube](https://www.google.com/s2/favicons?domain=youtube.com) Youtube | DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/youtube.darkgreen.user.js) |
-| ![YoutubeEmbed](https://www.google.com/s2/favicons?domain=youtube.com) YoutubeEmbed | DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/youtube.embed.user.js) |
-| ![YTmp3.cc](https://www.google.com/s2/favicons?domain=ytmp3.cc) YTmp3cc | Dark Default | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/ytmp3cc.dark.user.js) |
+| Focus | Descripción | Tipo | Completado | Enlace |
+| ------ | ------ | ------ | ------ | ------ |
+| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX | BackOffice DarkGreen | Estilos | 75% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js) |
+| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX | Gmail DarkGreen Complement DarkTheme | Estilos | 75% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.gmail.user.js) |
+| ![Aternos](https://www.google.com/s2/favicons?domain=aternos.org) Aternos | AntiAdblock | Funcional | 100% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/aternos.antiadblock.user.js) |
+| ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP | Bugs DarkGreen | Estilos | 45% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.bugs.user.js) |
+| ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP | GreenCakePHP | Estilos | 45% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.green.user.js) |
+| ![ClipWatching](https://www.google.com/s2/favicons?domain=clipwatching.com) ClipWatching | Embed DarkGreen | 95% | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/clipwatching.embed.user.js) |
+| ![Github](https://www.google.com/s2/favicons?domain=github.com) Github | DarkGreen | Estilos | 65% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/github.darkgreen.user.js) |
+| ![MercadoLibreCL](https://www.google.com/s2/favicons?domain=mercadolibre.cl) MercadoLibre Chile | DarkGreen | Estilos | 20% |  [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js) |
+| ![MetroCL](https://www.google.com/s2/favicons?domain=metro.cl) Metro.cl | DarkGreen | Estilos y Funcional | 50% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/metrocl.darkgreen.user.js) |
+| ![Pastebin](https://www.google.com/s2/favicons?domain=pastebin.com) Pastebin | DarkGreen | Estilos | 30% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/pastebin.darkgreen.user.js) |
+| ![Trello](https://www.google.com/s2/favicons?domain=trello.com) Trello | DarkGreen | Estilos | 10% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/trello.green.user.js) |
+| ![TweetDeck](https://www.google.com/s2/favicons?domain=tweetdeck.twitter.com) TweetDeck | DarkGreen | 90% | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/twitter.tweetdeck.user.js) |
+| ![w3Schools](https://www.google.com/s2/favicons?domain=w3schools.com) W3Schools | DarkGreen | Estilos | 5% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/w3schools.darkgreen.user.js) |
+| ![w3Schools](https://www.google.com/s2/favicons?domain=w3schools.com) W3SchoolsEditor | DarkGreen | Estilos | 95% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/w3schools.editor.user.js) |
+| ![w3Schools](https://www.google.com/s2/favicons?domain=whatsapp.com) WhatsappWeb | DarkDefault | Estilos | 100% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/whatsapp.darkdefault.user.js) |
+| ![Youtube](https://www.google.com/s2/favicons?domain=youtube.com) Youtube | DarkGreen | Estilos | 85% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/youtube.darkgreen.user.js) |
+| ![YoutubeEmbed](https://www.google.com/s2/favicons?domain=youtube.com) YoutubeEmbed | DarkGreen | Estilos | 90% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/youtube.embed.user.js) |
+| ![YTmp3.cc](https://www.google.com/s2/favicons?domain=ytmp3.cc) YTmp3cc | Dark Default | Estilos | 100% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/ytmp3cc.dark.user.js) |
 
 ---
 ### Addons & Complementos
