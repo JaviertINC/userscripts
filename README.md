@@ -8,11 +8,12 @@ Para poder utilizar estos Scripts debes utilizar un [complemento](./README.md#ad
 
 _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber varias fallas y/o cosas sin funcionar._
 
-| Script | Enlace |
-| ------ | ------ |
-| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX \| BackOffice DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js) |
-| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX \| Gmail DarkGreen Complement DarkTheme | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.gmail.user.js) |
-| ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP \| Bugs DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.bugs.user.js) |
+| Script | Tipo | Enlace |
+| ------ | ------ | ------ |
+| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX \| BackOffice DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js) |
+| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX \| Gmail DarkGreen Complement DarkTheme | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.gmail.user.js) |
+| ![Aternos](https://www.google.com/s2/favicons?domain=aternos.org) Aternos \| AntiAdblock | Funcional | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/aternos.antiadblock.user.js) |
+| ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP \| Bugs DarkGreen | Estilos | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.bugs.user.js) |
 | ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP \| GreenCakePHP | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.green.user.js) |
 | ![ClipWatching](https://www.google.com/s2/favicons?domain=clipwatching.com) ClipWatching \| Embed DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/clipwatching.embed.user.js) |
 | ![Github](https://www.google.com/s2/favicons?domain=github.com) Github \| DarkGreen | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/github.darkgreen.user.js) |
