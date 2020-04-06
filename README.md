@@ -4,9 +4,9 @@ Userscripts para modificación de estilos y funcionalidades de sitios webs, util
 
 ### Scripts Disponibles
 
-Para poder utilizar estos Scripts debes utilizar un [complemento](./README.md#addons--complementos) para tu navegador.
+Para poder utilizar estos Scripts debes instalar un [complemento](./README.md#addons--complementos) en tu navegador.
 
-_**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber varias fallas y/o cosas sin funcionar._
+_**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber fallas y/o cosas sin funcionar._
 
 | Focus | Descripción | Tipo | Enlace |
 | ------ | ------ | ------ | ------ |
@@ -32,7 +32,7 @@ _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber varias
 ---
 ### Addons & Complementos
 
-Para poder utilizar estos Scripts debes utilizar **uno** de estos complementos para tu navegador.
+Para poder utilizar estos Scripts, debes instalar _**UNO**_ de estos complementos en tu navegador.
 
 | Complemento | Enlace |
 | ------ | ------ |
