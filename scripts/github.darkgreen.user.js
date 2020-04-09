@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       3.7
+// @version       3.8
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.com
 // @author        @JaviertINC
@@ -127,6 +127,7 @@
         ".box-shadow-extra-large{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         ".MarketplaceHeader,.MarketplaceBackground-buffer { background-color: #343434!important; }",
         ".btn-mktg.btn-outline-mktg { background-color: #4c4c4c!important; color: #f1f1f1!important; border-color: #4caf50!important; }",
+        ".blob-num{ border-right: 1px solid #4caf50!important; }",
 
 
 
