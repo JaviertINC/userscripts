@@ -2,7 +2,7 @@
 // @name          MercadoLibre Chile | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       0.4
+// @version       0.8
 // @icon          https://www.google.com/s2/favicons?domain=mercadolibre.cl
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js
 // @match         https://*.mercadolibre.cl/*
@@ -14,7 +14,7 @@
     'use strict';
 
 	var css = [
-        "body{ background-color: #242424!important; }",
+        "body,main{ background-color: #242424!important; }",
 		".nav-header{ background-color: #4c4c4c!important; border-bottom: 1px solid #4caf50!important;  }",
         ".nav-bounds.nav-bounds-with-cp .nav-menu-cp.nav-menu-cp-logged .nav-menu-cp-send, .nav-menu-item a, .nav-menu-item a:link, .nav-menu-item a:visited,#nav-header-menu a,.quantity-results{ color: #f1f1f1!important; }",
         ".nav-bounds.nav-bounds-with-cp .nav-menu-cp .nav-menu-link-cp{ color: #d5d5d5!important; }",
@@ -25,6 +25,30 @@
         ".andes-pagination__button .andes-pagination__link{color: #f1f1f1!important; background-color: #4c4c4c!important; border: 1px solid #4caf50!important; height: 36px!important; }",
         ".andes-pagination__button:hover .andes-pagination__link{ color: #4caf50!important; background-color: #5f5f5f!important; border: 2px solid #4caf50!important; height: 36px!important; }",
         ".andes-pagination__arrow{ border-color: #f1f1f1!important; }",
+        ".section-header h1,.ui-item__title{ color: #f1f1f1!important; }",
+        ".section-header .ui-link, .section-header a,.ui-item__price,.andes-modal--loose .andes-modal-dialog__button-close::after, .andes-modal--loose .andes-modal-dialog__button-close::before{ color: #4caf50!important; }",
+        ".official-stores{ background-image: linear-gradient(0,#111,#242424 100%)!important; }",
+        ".ui-item{ border: 1px solid #4caf50!important; background-color: #4c4c4c!important; }",
+        ".ui-item__attributes, .ui-item__installments{ color: #888!important; font-size: .8rem!important; }",
+        ".carousel-container .next-button::after, .carousel-container .next-button::before, .carousel-container .prev-button::after, .carousel-container .prev-button::before,.categories .slick-dots li.slick-active button{ background-color: #4caf50!important; }",
+        ".carousel-container .next-button, .carousel-container .prev-button,.ui-item__bookmark,.ui-card{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+        ".ui-item__bookmark-icon{ fill: #4caf50!important; }",
+        ".ui-dropdown__link .ui-dropdown__indicator .ui-icon{ stroke: #4caf50!important; }",
+        ".official-stores-slide-action a,.official-stores-slide-title,.collections .cb-title{ color: #f1f1f1!important; }",
+        ".ui-card:hover .official-stores-slide-action a,.collections .ui-dropdown__link,.collection .main-item .main-item-title,.categories .icon .nc-icon{ color: #4caf50!important; }",
+        ".official-stores-slide-item{ border-color: #4caf50!important; }",
+        ".collection .main-item .main-item-label{ color: #ddd!important; }",
+        ".ui-card.foot-main{ border: none!important; }",
+        ".recommendations .highlight-seed.trigger-item__wrapper h2, .recommendations .highlight-seeds .trigger-item__wrapper h2,button.nav-search-btn, button.nav-search-btn:focus{ color: #fff!important; }",
+        ".categories .category{ background-color: #4c4c4c!important; color: #f1f1f1!important; }",
+        ".categories .category:hover { background-color: #5d5d5d!important; }",
+        ".categories .category, .categories .filler{ outline-color: #4caf50!important; }",
+        ".categories .category + .category:hover{ bottom: unset!important; }",
+        "input[type=\"text\"].nav-search-input, input[type=\"search\"].nav-search-input{ background-color: #666!important; border: 1px solid #4caf50!important; color: #fff!important; }",
+        "::placeholder{ color: #aaa!important; }",
+        "button.nav-search-btn, button.nav-search-btn:focus{ background-color: #666!important; border: 1px solid #4caf50!important; border-left: none!important;}",
+        ".andes-modal-dialog{ background-color: #4c4c4c!important; }",
+        ".andes-modal--loose .andes-modal-dialog__header-title,.payment-wrapper{ color: #fff!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
