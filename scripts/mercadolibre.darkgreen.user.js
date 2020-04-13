@@ -2,8 +2,8 @@
 // @name          MercadoLibre Chile | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       0.8
-// @icon          https://www.google.com/s2/favicons?domain=mercadolibre.cl
+// @version       0.9
+// @icon          https://www.google.com/s2/favicons?domain=mercadolibre.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js
 // @match         https://*.mercadolibre.cl/*
 // @run-at        document-start
@@ -34,7 +34,7 @@
         ".carousel-container .next-button, .carousel-container .prev-button,.ui-item__bookmark,.ui-card{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         ".ui-item__bookmark-icon{ fill: #4caf50!important; }",
         ".ui-dropdown__link .ui-dropdown__indicator .ui-icon{ stroke: #4caf50!important; }",
-        ".official-stores-slide-action a,.official-stores-slide-title,.collections .cb-title{ color: #f1f1f1!important; }",
+        ".official-stores-slide-action a,.official-stores-slide-title,.collections .cb-title,.myml-nav__section-title{ color: #f1f1f1!important; }",
         ".ui-card:hover .official-stores-slide-action a,.collections .ui-dropdown__link,.collection .main-item .main-item-title,.categories .icon .nc-icon{ color: #4caf50!important; }",
         ".official-stores-slide-item{ border-color: #4caf50!important; }",
         ".collection .main-item .main-item-label{ color: #ddd!important; }",
@@ -48,7 +48,12 @@
         "::placeholder{ color: #aaa!important; }",
         "button.nav-search-btn, button.nav-search-btn:focus{ background-color: #666!important; border: 1px solid #4caf50!important; border-left: none!important;}",
         ".andes-modal-dialog{ background-color: #4c4c4c!important; }",
-        ".andes-modal--loose .andes-modal-dialog__header-title,.payment-wrapper{ color: #fff!important; }",
+        ".andes-modal--loose .andes-modal-dialog__header-title,.payment-wrapper,.myml-nav__section--toggle .myml-nav__user-permalink,.myml-title{ color: #fff!important; }",
+        ".myml-nav{ background-color: #4c4c4c!important; border-right: 1px solid #4caf50!important; }",
+        ".menu-myml-ads{ display: none!important; }",
+        ".app-wrapper--menu-expanded.app-wrapper--menu-expanded-static [class^=\"myml-nav__ham\"]{ background-color: #fff!important; }",
+        "a, a:active, a:link{ color: #4caf50!important; }",
+        "a:hover{ color: #3b9e40!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
