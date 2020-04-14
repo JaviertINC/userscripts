@@ -11,7 +11,6 @@ _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber fallas
 | Focus | Descripción | Tipo | Completado | Enlace |
 | ------ | ------ | ------ | ------ | ------ |
 | ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX | BackOffice DarkGreen | Estilos | 75% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js) |
-| ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX | Gmail DarkGreen Complement DarkTheme | Estilos | 75% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.gmail.user.js) |
 | ![Aternos](https://www.google.com/s2/favicons?domain=aternos.org) Aternos | AntiAdblock | Funcional | 100% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/aternos.antiadblock.user.js) |
 | ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP | Bugs DarkGreen | Estilos | 45% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.bugs.user.js) |
 | ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP | GreenCakePHP | Estilos | 45% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.green.user.js) |
