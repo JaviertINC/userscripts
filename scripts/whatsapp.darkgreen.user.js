@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      1.3
+// @version      1.4
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
 // @match        *://web.whatsapp.com/*
 // @include      https://web.whatsapp.com/JaviertINC
-// @updateURL    https://javiertinc.github.io/userscripts/scripts/whatsapp.darkgreen.user.js
+// @updateURL    https://javiertinc.github.io/userscripts/scripts/whatsapp.darkdefault.user.js
 // @grant        GM_addStyle
 // @run-at       document-start
 // ==/UserScript==
@@ -60,12 +60,17 @@
         "    --conversation-panel-background: #242424;",
         "    --unread-background: #4caf50;",
         "    --media-viewer-background-rgb: 51,51,51;",
+        "    --border-panel: #4caf50;",
         "}",
         "a{ color: #4caf50!important; }",
         "._1i1U7.jZ4tp,._1i1U7._2DNgV{ background-unset!important; }",
         "#startup{ background-color: #242424!important; }",
         "#startup._1UDDE{ fill: #4caf50!important; }",
         "._1RQfk{ background-color: #393939!important; }",
+        "._3pkkz{ border-bottom: 1px solid #4caf50!important; border-right: 1px solid #4caf50!important; }",
+        "._2nmDZ{ border-right: 1px solid #4caf50!important; }",
+        "._3auIg{ border: 1px solid #4caf50!important; }",
+        "._2y17h::after{ border: unset!important; background-color: unset!important; }",
         "[data-asset-intro-image] { background-image: url(\"https://javiertinc.github.io/images/whatsapp-connection.png\") !important; }",
     ].join("\n");
 	GM_addStyle(css);
