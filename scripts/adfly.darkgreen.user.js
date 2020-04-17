@@ -2,7 +2,7 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       0.9
+// @version       1.0
 // @icon          https://www.google.com/s2/favicons?domain=adf.ly
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -44,8 +44,8 @@
         "div.latest-news aside{ background-color: "+ main_color +"!important; }",
         ".page table tbody tr:nth-child(2n){ background-color: "+ bg3_color +"!important; }",
         "section.dashboard .highlight nav.sort ul.time > li a.current, section.dashboard .highlight nav.sort ul.time > li.current a, #monthly-earnings-summary a.current,.chzn-container-single .chzn-single div,section.page > .container section.bar{ background: unset!important; background-color: "+ bg_color +"!important; border-color: "+ main_color +"!important; }",
-        "section.page > .container .highlight ul.earnings.totals,section.page > .container section.bar section.profile,section.page > .container section.bar section.profile figure, #editAvatarResult figure,.data .panels{ border-color: "+ main_color +"!important; }",
-        "section.page > .container section.bar section.profile,section.page > .container section.bar .shadow,section.page > .container section.bar section.shorten{ background: unset!important; background-image: unset!important; }",
+        "section.page > .container .highlight ul.earnings.totals,section.page > .container section.bar section.profile,section.page > .container section.bar section.profile figure, #editAvatarResult figure,.data .panels,.data nav.menu{ border-color: "+ main_color +"!important; }",
+        "section.page > .container section.bar section.profile,section.page > .container section.bar .shadow,section.page > .container section.bar section.shorten,section.page form#shrink #shrink_link,.blueButton2{ background: unset!important; background-image: unset!important; }",
         "section.page > .container section.bar section.profile p{ color: "+ legend +"!important; }",
         "section.page > .container section.bar section.profile #editAvatarLink{ font-weight: bold!important; background-color: "+ bg3_color +"!important; color: "+ title_color +"!important; padding: 4px; }",
         "section.page > .container section.bar section.profile figure, #editAvatarResult figure{ box-shadow: unset!important; }",
@@ -53,6 +53,8 @@
         "path[stroke=\"rgba(192,192,192,0.0001)\"]{ stroke: rgba("+ main_rgb +",0.0001)!important; }",
         "path[stroke=\"#7cb5ec\"]{ stroke: "+ main_color +"!important; }",
         "rect[fill=\"#FFFFFF\"]{ fill: "+ bg_color +"!important; }",
+        "section.page form#shrink #shrink_link,.blueButton2{ background-color: "+ bg_input+"!important; border: 1px solid "+ main_color +"!important; }",
+
 	].join("\n");
 	GM_addStyle(css);
 
