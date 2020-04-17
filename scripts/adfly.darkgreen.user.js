@@ -2,7 +2,7 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.3
+// @version       1.4
 // @icon          https://www.google.com/s2/favicons?domain=adf.ly
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -59,11 +59,14 @@
         "section.page > .container section.bar section.profile figure{ border-radius: 50%!important; }",
         "section.vertiser #fullFilter h4.active, h4.lightBlueButton.active, .lightBlueButton.active, #monthly-earnings-summary h4.current,.button{ background-color: "+ bg2_color +"!important; border-color: "+ main_color +"!important; text-shadow: unset!important; }",
         "#monthly-earnings-summary a,.page h2{ text-shadow: unset!important; }",
-        ".highcharts-xaxis-title,.page h2,.page h3,.page h4,#payment-email,#next-payment-date{ color: "+ title_color +"!important; }",
+        ".highcharts-xaxis-title,.page h2,.page h3,.page h4,#payment-email,#next-payment-date,.button{ color: "+ title_color +"!important; }",
         "section.withdraw section.payment #counter{ background: url(\"https://javiertinc.github.io/images/adfly_downcounter.png\")!important; }",
         ".button[href=\"/account/instantpay\"]{ padding: 10px 20px!important; border-width: 2px; border-radius: 5px; }",
         ".button[href=\"/account/instantpay\"]:hover{ background-color: "+bg3_color +"!important; }",
         "section.withdraw section.payment article section{ background-color: "+ bg2_color +"!important; border: 1px solid "+main_color+"!important; border-radius: 8px; background: unset!important; background-image: unset!important; }",
+        "section.page > .container section.bar{ border-top: 1px solid "+ main_color +"!important;}",
+        ".multiplebgs #header nav,.multiplebgs #header nav li{ background: unset!important; }",
+        "li.forum{ display: none!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
