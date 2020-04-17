@@ -2,7 +2,7 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.0
+// @version       1.1
 // @icon          https://www.google.com/s2/favicons?domain=adf.ly
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -47,13 +47,16 @@
         "section.page > .container .highlight ul.earnings.totals,section.page > .container section.bar section.profile,section.page > .container section.bar section.profile figure, #editAvatarResult figure,.data .panels,.data nav.menu{ border-color: "+ main_color +"!important; }",
         "section.page > .container section.bar section.profile,section.page > .container section.bar .shadow,section.page > .container section.bar section.shorten,section.page form#shrink #shrink_link,.blueButton2{ background: unset!important; background-image: unset!important; }",
         "section.page > .container section.bar section.profile p{ color: "+ legend +"!important; }",
-        "section.page > .container section.bar section.profile #editAvatarLink{ font-weight: bold!important; background-color: "+ bg3_color +"!important; color: "+ title_color +"!important; padding: 4px; }",
-        "section.page > .container section.bar section.profile figure, #editAvatarResult figure{ box-shadow: unset!important; }",
+        "section.page > .container section.bar section.profile #editAvatarLink{ font-weight: bold!important; background-color: "+ bg3_color +"!important; top:0!important; width:100%!important; text-align: center!important; color: "+ title_color +"!important; padding: 4px; border-bottom: 1px solid "+ main_color +"!important; }",
+        "section.page > .container section.bar section.profile figure, #editAvatarResult figure,.blueButton2{ box-shadow: unset!important; }",
         "path[fill=\"#7cb5ec\"]{ fill: "+ main_color +"!important; }",
         "path[stroke=\"rgba(192,192,192,0.0001)\"]{ stroke: rgba("+ main_rgb +",0.0001)!important; }",
         "path[stroke=\"#7cb5ec\"]{ stroke: "+ main_color +"!important; }",
         "rect[fill=\"#FFFFFF\"]{ fill: "+ bg_color +"!important; }",
-        "section.page form#shrink #shrink_link,.blueButton2{ background-color: "+ bg_input+"!important; border: 1px solid "+ main_color +"!important; }",
+        "section.page form#shrink #shrink_link{ background-color: "+ bg_input+"!important; border: 1px solid "+ main_color +"!important; }",
+        ".blueButton2{ border: none!important; border-left: 1px solid "+ main_color +"!important; height: 39px!important; right: 10px!important; }",
+        ".blueButton2:hover{ background-color: "+ bg2_color +"!important; }",
+        "section.page > .container section.bar section.profile figure{ border-radius: 50%!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
