@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      1.4
+// @version      2.0
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
@@ -13,6 +13,9 @@
 
 (function() {
     'use strict';
+
+    var hidden_privacy = true; // Protege tus otros chats (true, false)
+    var img_background = ""; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
 
 	var css = [
         "body.darkgreen{ background-color: #242424!important; background-image: unset!important;}",
@@ -61,6 +64,14 @@
         "    --unread-background: #4caf50;",
         "    --media-viewer-background-rgb: 51,51,51;",
         "    --border-panel: #4caf50;",
+        "    --system-message-background: #4c4c4c;",
+        "    --conversation-panel-border: #4caf50;",
+        "    --teal: #4caf50;",
+        "    --panel-background-deep: #4c4c4c;",
+        "    --thumb-border-active: #4caf50;",
+        "    --button-alternative-background: #4caf50;",
+        "    --button-alternative: #fff;",
+        "    --input-border-active: #4caf50;",
         "}",
         "a{ color: #4caf50!important; }",
         "._1i1U7.jZ4tp,._1i1U7._2DNgV{ background-unset!important; }",
@@ -71,9 +82,25 @@
         "._2nmDZ{ border-right: 1px solid #4caf50!important; }",
         "._3auIg{ border: 1px solid #4caf50!important; }",
         "._2y17h::after{ border: unset!important; background-color: unset!important; }",
-        "[data-asset-intro-image] { background-image: url(\"https://javiertinc.github.io/images/whatsapp-connection.png\") !important; }",
+        "._1-iDe.Wu52Z{ border-right: 1px solid #4caf50!important; }",
+        "._2y17h,.gQzdc{ border-top: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }",
+        "_1vDUw B5rWa{ border-left: 1px solid #4caf50!important; }",
+        "[data-asset-intro-image] { background-image: url(\""+ atob('aHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pby9pbWFnZXMvd2hhdHNhcHAtY29ubmVjdGlvbi5wbmc=') +"\") !important; }",
+        "[data-asset-chat-background] {background-image: url(\""+ img_background +"\") !important;}",
+        ".Zq3Mc{ border: 1px solid #4caf50!important; color: #fff!important; }",
+        ".rRAIq[style\"background-color: rgb(251, 251, 251);\"]{ background-color: #222!important; }",
+        "",
     ].join("\n");
 	GM_addStyle(css);
+
+    if(hidden_privacy){
+        var hidden_privacy_css = [
+            "._2EXPL{ transition: all 0.3s; filter: blur(5px)!important; }",
+            "._2EXPL._1f1zm,._2EXPL._1f1zm:hover{ filter: blur(0px)!important; }",
+            "._2EXPL:hover{ filter: blur(1px)!important; }",
+        ].join("\n");
+        GM_addStyle(hidden_privacy_css);
+    }
 
     document.querySelector('body').classList.add('darkgreen');
 
