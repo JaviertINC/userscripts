@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      2.0
+// @version      2.1
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
@@ -15,7 +15,7 @@
     'use strict';
 
     var hidden_privacy = true; // Protege tus otros chats (true, false)
-    var img_background = ""; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
+    var img_background = "https://sypkrum/img/bg1.jpeg"; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
 
 	var css = [
         "body.darkgreen{ background-color: #242424!important; background-image: unset!important;}",
@@ -89,6 +89,7 @@
         "[data-asset-chat-background] {background-image: url(\""+ img_background +"\") !important;}",
         ".Zq3Mc{ border: 1px solid #4caf50!important; color: #fff!important; }",
         ".rRAIq[style\"background-color: rgb(251, 251, 251);\"]{ background-color: #222!important; }",
+        ".YUoyu{ opacity: 0.18!important; }",
         "",
     ].join("\n");
 	GM_addStyle(css);
