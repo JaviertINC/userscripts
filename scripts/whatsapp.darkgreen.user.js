@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      2.3
+// @version      2.4
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
@@ -15,7 +15,7 @@
     'use strict';
 
     var hidden_privacy = true; // Protege tus otros chats (true, false)
-    var background_img = "https://sypkrum/img/bg1.jpeg"; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
+    var background_img = ""; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
     var background_opacity = "0.18"; //Modifica la opacidad de tu fondo
 
 	var css = [
@@ -75,6 +75,7 @@
         "    --input-border-active: #4caf50;",
         "    --highlight: #4caf50;",
         "    --panel-background-hover: #333;",
+        "    --gray-200: #4caf50;",
         "}",
         "a{ color: #4caf50!important; }",
         "._1i1U7.jZ4tp,._1i1U7._2DNgV{ background-unset!important; }",
@@ -96,6 +97,10 @@
         "span[data-icon=\"back-blue\"]{ color: #4caf50!important; }",
         ".B5rWa{ border-left: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }",
         ".gQzdc{ border-top: none!important; border-left: 1px solid #4caf50!important; }",
+        ".message-in .tail-container, .message-in .tail-override-right .tail-container, .message-out .tail-override-right .tail-container, .message-in .tail-override-left .tail-container{ background-image: unset!important; }",
+        ".message-out .tail-container,.message-out .tail-container.highlight{ background-image: unset!important; }",
+        ".Pg7Si progress{ background-color: #4c4c4c!important; color: #4caf50!important; }",
+        ".Pg7Si progress[value]::-webkit-progress-value{ background-color: #4caf50!important; }",
     ].join("\n");
 	GM_addStyle(css);
 
