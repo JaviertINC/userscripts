@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      2.2
+// @version      2.3
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
@@ -73,6 +73,8 @@
         "    --button-alternative-background: #4caf50;",
         "    --button-alternative: #fff;",
         "    --input-border-active: #4caf50;",
+        "    --highlight: #4caf50;",
+        "    --panel-background-hover: #333;",
         "}",
         "a{ color: #4caf50!important; }",
         "._1i1U7.jZ4tp,._1i1U7._2DNgV{ background-unset!important; }",
@@ -91,6 +93,7 @@
         ".Zq3Mc{ border: 1px solid #4caf50!important; color: #fff!important; }",
         ".rRAIq[style\"background-color: rgb(251, 251, 251);\"]{ background-color: #222!important; }",
 		"path[fill=\"#009588\"]{ fill:#4caf50!important; }",
+        "span[data-icon=\"back-blue\"]{ color: #4caf50!important; }",
         ".B5rWa{ border-left: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }",
         ".gQzdc{ border-top: none!important; border-left: 1px solid #4caf50!important; }",
     ].join("\n");
