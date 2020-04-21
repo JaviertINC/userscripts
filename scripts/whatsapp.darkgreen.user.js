@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      2.1
+// @version      2.2
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
@@ -15,7 +15,8 @@
     'use strict';
 
     var hidden_privacy = true; // Protege tus otros chats (true, false)
-    var img_background = "https://sypkrum/img/bg1.jpeg"; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
+    var background_img = "https://sypkrum/img/bg1.jpeg"; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
+    var background_opacity = "0.18"; //Modifica la opacidad de tu fondo
 
 	var css = [
         "body.darkgreen{ background-color: #242424!important; background-image: unset!important;}",
@@ -86,11 +87,12 @@
         "._2y17h,.gQzdc{ border-top: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }",
         "_1vDUw B5rWa{ border-left: 1px solid #4caf50!important; }",
         "[data-asset-intro-image] { background-image: url(\""+ atob('aHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pby9pbWFnZXMvd2hhdHNhcHAtY29ubmVjdGlvbi5wbmc=') +"\") !important; }",
-        "[data-asset-chat-background] {background-image: url(\""+ img_background +"\") !important;}",
+        "[data-asset-chat-background] {background-image: url(\""+ background_img +"\") !important;}",
         ".Zq3Mc{ border: 1px solid #4caf50!important; color: #fff!important; }",
         ".rRAIq[style\"background-color: rgb(251, 251, 251);\"]{ background-color: #222!important; }",
-        ".YUoyu{ opacity: 0.18!important; }",
-        "",
+		"path[fill=\"#009588\"]{ fill:#4caf50!important; }",
+        ".B5rWa{ border-left: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }",
+        ".gQzdc{ border-top: none!important; border-left: 1px solid #4caf50!important; }",
     ].join("\n");
 	GM_addStyle(css);
 
@@ -99,6 +101,7 @@
             "._2EXPL{ transition: all 0.3s; filter: blur(5px)!important; }",
             "._2EXPL._1f1zm,._2EXPL._1f1zm:hover{ filter: blur(0px)!important; }",
             "._2EXPL:hover{ filter: blur(1px)!important; }",
+            ".YUoyu{ opacity: "+ background_opacity +"!important; }",
         ].join("\n");
         GM_addStyle(hidden_privacy_css);
     }
