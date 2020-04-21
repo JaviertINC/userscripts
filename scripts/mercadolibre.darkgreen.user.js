@@ -2,7 +2,7 @@
 // @name          MercadoLibre Chile | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.1
+// @version       1.2
 // @icon          https://www.google.com/s2/favicons?domain=mercadolibre.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js
 // @match         https://*.mercadolibre.cl/*
@@ -63,11 +63,14 @@
         ".nav-footer, [for=\"nav-footer-access-switch\"],.nav-footer a.nav-footer-downloadapp,.review-wrapper,#nav-header-menu .user-menu{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
         "#nav-header-menu .user-menu .user-menu__user-info-outer-container{ border-color: #4caf50!important; }",
         ".user-menu__user-badge-email{ color: #4caf50!important; }",
-        "#nav-header-menu .user-menu .ui-button--primary,#nav-header-menu .user-menu,.payment-data .payment-data-container{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+        "#nav-header-menu .user-menu .ui-button--primary,#nav-header-menu .user-menu,.payment-data .payment-data-container,.ui-button--primary,.item__result-container{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         "#nav-header-menu .user-menu .user-menu__loyalty-components,#nav-header-menu .user-menu .user-menu__chevron,.payment-data-section-leading, .payment-data-section-trailing{ border-color: transparent!important;}",
         ".base[stroke=\"#eee\"]{ stroke: #222!important;  }",
         "#nav-header-menu .user-menu .user-menu__avatar-text{ background-color: #4caf50!important; box-shadow: unset!important; }",
         "#nav-header-menu .user-menu .user-menu__shortcuts a:hover{ background-color: #4caf50!important; }",
+        ".ui-button--primary,.itemList .price-info .price,.mfOrders .rightControls,.ui-recommendations__header__title{ color: #fff!important; }",
+        ".ui-checkbox__mimic::before{ content: ' '!important; background-color: #666!important; border: 1px solid #4caf50!important; }",
+        ".outline-section,.carousel-common__section{ background-color: #111!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
