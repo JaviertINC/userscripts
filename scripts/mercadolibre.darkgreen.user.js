@@ -2,7 +2,7 @@
 // @name          MercadoLibre Chile | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.2
+// @version       1.3
 // @icon          https://www.google.com/s2/favicons?domain=mercadolibre.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js
 // @match         https://*.mercadolibre.cl/*
@@ -71,6 +71,9 @@
         ".ui-button--primary,.itemList .price-info .price,.mfOrders .rightControls,.ui-recommendations__header__title{ color: #fff!important; }",
         ".ui-checkbox__mimic::before{ content: ' '!important; background-color: #666!important; border: 1px solid #4caf50!important; }",
         ".outline-section,.carousel-common__section{ background-color: #111!important; }",
+        ".myml-ui-relevant-box,.iframe-modal.ui-button.ui-button--secondary{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+        "#trackShipment{ text-decoration: underline!important;}",
+        ".myml-ui-arrange-box__title,.iframe-modal.ui-button.ui-button--secondary{ color: #fff!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
