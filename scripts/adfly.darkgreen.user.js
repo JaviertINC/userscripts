@@ -2,8 +2,8 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.4
-// @icon          https://www.google.com/s2/favicons?domain=adf.ly
+// @version       1.5
+// @icon          https://external-content.duckduckgo.com/ip3/www.adf.ly.ico
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
 // @run-at        document-start
@@ -67,6 +67,9 @@
         "section.page > .container section.bar{ border-top: 1px solid "+ main_color +"!important;}",
         ".multiplebgs #header nav,.multiplebgs #header nav li{ background: unset!important; }",
         "li.forum{ display: none!important; }",
+        "section.tools .data .panels{background-color: "+ bg_color +"!important; }",
+        "#tools-tabs .panel .code{ background-color: "+ bg2_color +"!important; }",
+        "form input{ background-image:unset!important; background: unset!important; box-shadow: unset!important; background-color: "+ bg_input +"!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
