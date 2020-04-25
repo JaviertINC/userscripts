@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       3.9
+// @version       4.0
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.io
 // @author        @JaviertINC
@@ -39,14 +39,14 @@
 		".commit-tease{color: unset!important; }",
 		".overall-summary,.repository-lang-stats-graph,.Box-body{border-color: #4caf50!important;}",
 		".reponav-item.selected{background-color: #242424!important; color: #f1f1f1!important; border-color: transparent!important;}",
-		".Popover-message::after,.markdown-body h1, .markdown-body h2{ border-bottom-color: #4caf50!important; }",
+		".markdown-body h1, .markdown-body h2{ border-bottom-color: #4caf50!important; }",
 		"a.f5.text-bold.link-gray-dark.no-underline{color: #4caf50!important;}",
 		"a.link-gray.no-underline{color: #4caf50!important;}",
 		".final-path{color: #4caf50!important; text-decoration: underline!important; }",
 		".bg-blue-light { background-color: #4c4c4c !important; }",
 		".markdown-body .highlight pre, .markdown-body pre{background-color: #313131!important;}",
 		".pl-pds, .pl-s, .pl-s .pl-pse .pl-s1, .pl-sr, .pl-sr .pl-cce, .pl-sr .pl-sra, .pl-sr .pl-sre {	color: #0ff!important; }",
-		".pl-c { color: #6a737d; }",
+        ".pl-c { color: #bbb!important; }",
 		".markdown-body table td, .markdown-body table th { border-color: #4caf50!important; }",
 		".markdown-body table tr,.markdown-body table tr:nth-child(2n) { background-color: transparent!important; }",
 		".Box-header { background-color: #4c4c4c!important; border-color: #4caf50!important; }",
@@ -131,10 +131,7 @@
         ".bg-gray.rounded-1.box-shadow{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         ".menu{ background-color: #4c4c4c!important; color: #f1f1f1!important; border-color: #4caf50!important; }",
 
-
-
-
-		/* Colores de los cuadraditos de contribuciones del año
+		/* contribuciones del año
 		"rect[fill=\"#eee\"],ul.legend li:nth-child(1){background-color:#333!important}",
 		"rect[fill=\"#c6e48b\"],ul.legend li:nth-child(2){background-color:#a8cf6a!important;fill:#a8cf6a!important}",
 		"rect[fill=\"#7bc96f\"],ul.legend li:nth-child(3){background-color:#93c346!important;fill:#93c346!important}",
