@@ -2,7 +2,7 @@
 // @name          MercadoLibre Chile | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.3
+// @version       1.4
 // @icon          https://www.google.com/s2/favicons?domain=mercadolibre.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js
 // @match         https://*.mercadolibre.cl/*
@@ -71,9 +71,17 @@
         ".ui-button--primary,.itemList .price-info .price,.mfOrders .rightControls,.ui-recommendations__header__title{ color: #fff!important; }",
         ".ui-checkbox__mimic::before{ content: ' '!important; background-color: #666!important; border: 1px solid #4caf50!important; }",
         ".outline-section,.carousel-common__section{ background-color: #111!important; }",
-        ".myml-ui-relevant-box,.iframe-modal.ui-button.ui-button--secondary{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+        ".myml-ui-relevant-box,.iframe-modal.ui-button.ui-button--secondary,.loyalty-user-rewards-container{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         "#trackShipment{ text-decoration: underline!important;}",
-        ".myml-ui-arrange-box__title,.iframe-modal.ui-button.ui-button--secondary{ color: #fff!important; }",
+        ".myml-ui-arrange-box__title,.iframe-modal.ui-button.ui-button--secondary,.tracking-submilestone--last,.tracking-status__title{ color: #fff!important; }",
+        ".tracking-timeline__dot--pending,.tracking-timeline__dot--pending::before {background-color: #333!important; }",
+        ".loyalty-user-rewards.interactive:active, .loyalty-user-rewards.interactive:hover{ background-color: #5c5c5c!important; }",
+        ".tracking-timeline__node--gray{ border-left-color: #333!important; }",
+        ".loyalty-user-rewards{ border-right-color: #4caf50!important; }",
+        ".loyalty-user-dynamic-section .loyalty-user-dynamic-section-row{ border-top-color: #4caf50!important; }",
+        ".loyalty-user-dynamic-section-subtitle{ border-bottom-color: #4caf50!important; }",
+        ".ui-button--tertiary, .ui-button--tertiary:link, .ui-button--tertiary:visited{ color: #4caf50!important; text-decoration: underline; }",
+        ".loyalty-arrow .loyalty-arrow-path{ stroke: #4caf50!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
