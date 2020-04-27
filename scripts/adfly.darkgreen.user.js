@@ -2,7 +2,7 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.6
+// @version       1.7
 // @icon          https://external-content.duckduckgo.com/ip3/www.adf.ly.ico
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -72,6 +72,7 @@
         "form input{ background-image:unset!important; background: unset!important; box-shadow: unset!important; background-color: "+ bg_input +"!important; }",
         ".highcharts-yaxis-title{ color: "+ title_color +"!important; }",
         ".data nav.menu li:hover{ background-color: "+ bg2_color +"!important; }",
+        ".highcharts-title,text tspan,g text{ fill: "+ title_color +"!important; color: "+ title_color +"!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
