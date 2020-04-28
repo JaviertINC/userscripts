@@ -2,7 +2,7 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.7
+// @version       1.8
 // @icon          https://external-content.duckduckgo.com/ip3/www.adf.ly.ico
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -60,10 +60,10 @@
         "section.vertiser #fullFilter h4.active, h4.lightBlueButton.active, .lightBlueButton.active, #monthly-earnings-summary h4.current,.button{ background-color: "+ bg2_color +"!important; border-color: "+ main_color +"!important; text-shadow: unset!important; }",
         "#monthly-earnings-summary a,.page h2,.data nav.menu li{ text-shadow: unset!important; }",
         ".highcharts-xaxis-title,.page h2,.page h3,.page h4,#payment-email,#next-payment-date,.button{ color: "+ title_color +"!important; }",
-        "section.withdraw section.payment #counter{ background: url(\"https://javiertinc.github.io/images/adfly_downcounter.png\")!important; }",
+        "section.withdraw section.payment #counter{ background: unset!important; }",
         ".button[href=\"/account/instantpay\"]{ padding: 10px 20px!important; border-width: 2px; border-radius: 5px; }",
         ".button[href=\"/account/instantpay\"]:hover{ background-color: "+bg3_color +"!important; }",
-        "section.withdraw section.payment article section{ background-color: "+ bg2_color +"!important; border: 1px solid "+main_color+"!important; border-radius: 8px; background: unset!important; background-image: unset!important; }",
+        "section.withdraw section.payment article section{ background-color: "+ bg2_color +"!important; border: 1px solid "+main_color+"!important; border-radius: 8px; background-image: unset!important; }",
         "section.page > .container section.bar{ border-top: 1px solid "+ main_color +"!important;}",
         ".multiplebgs #header nav,.multiplebgs #header nav li,.data nav.menu{ background: unset!important; }",
         "li.forum{ display: none!important; }",
@@ -73,6 +73,9 @@
         ".highcharts-yaxis-title{ color: "+ title_color +"!important; }",
         ".data nav.menu li:hover{ background-color: "+ bg2_color +"!important; }",
         ".highcharts-title,text tspan,g text{ fill: "+ title_color +"!important; color: "+ title_color +"!important; }",
+        "section.withdraw section.payment #counter ul li.d1,section.withdraw section.payment #counter ul li.d2,section.withdraw section.payment #counter ul li.d3,section.withdraw section.payment #counter ul li.d4,section.withdraw section.payment #counter ul li.d5,section.withdraw section.payment #counter ul li.d6{ line-height: 40px!important; border-bottom: 3px solid "+ main_color +"!important; background: linear-gradient(0deg, rgba(76,175,80,0.7035014689469538) 0%, rgba(76,76,76,0) 53%); }",
+        ".page table thead th{ background: unset!important; background-image: unset!important; background-color: "+ bg2_color +"!important;}",
+        ".page table thead{ text-shadow: unset!important; color: "+ title_color +"!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
