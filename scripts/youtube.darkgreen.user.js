@@ -2,7 +2,7 @@
 // @name          YouTube | DarkGreen
 // @description	  Una versión oscura, ayuda a cuidar tu vista :´3
 // @author        @JaviertINC
-// @version       0.6
+// @version       0.7
 // @match         *://www.youtube.com/*
 // @icon          https://www.google.com/s2/favicons?domain=youtube.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/youtube.darkgreen.user.js
@@ -55,7 +55,8 @@
         "{ color: "+ main_color +"!important; }",
 
         //Color White
-        "paper-button.ytd-subscribe-button-renderer[subscribed]",
+        "paper-button.ytd-subscribe-button-renderer[subscribed],",
+        "ytd-subscribe-button-renderer[button-style=\"COMPACT_GRAY\"] paper-button.ytd-subscribe-button-renderer",
 
         "{ color: "+ white_color +"!important; }",
 
