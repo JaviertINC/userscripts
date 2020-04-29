@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name          GitHub | Dark Green
-// @version       4.0
+// @version       4.1
 // @description	  Github Darker Green
 // @icon          https://www.google.com/s2/favicons?domain=github.io
 // @author        @JaviertINC
@@ -129,7 +129,9 @@
         ".btn-mktg.btn-outline-mktg { background-color: #4c4c4c!important; color: #f1f1f1!important; border-color: #4caf50!important; }",
         ".blob-num{ border-right: 1px solid #4caf50!important; }",
         ".bg-gray.rounded-1.box-shadow{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
-        ".menu{ background-color: #4c4c4c!important; color: #f1f1f1!important; border-color: #4caf50!important; }",
+        ".menu,.signup-plan-card{ background-color: #4c4c4c!important; color: #f1f1f1!important; border-color: #4caf50!important; }",
+        ".markdown-body code, .markdown-body tt{ background-color: #666; border: 1px solid #4caf50;}",
+        "",
 
 		/* contribuciones del año
 		"rect[fill=\"#eee\"],ul.legend li:nth-child(1){background-color:#333!important}",
