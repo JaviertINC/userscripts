@@ -15,8 +15,6 @@
 
     var main_color = "#4caf50";
     var main_rgb = "76, 175, 80";
-    main_color = "#f00";
-    main_rgb = "255, 0, 0";
     var bg_color = "#4c4c4c";
     var bg2_color = "#242424";
     var bg3_color = "#666";
