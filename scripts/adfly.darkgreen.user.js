@@ -2,7 +2,7 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.8
+// @version       1.9
 // @icon          https://external-content.duckduckgo.com/ip3/www.adf.ly.ico
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -15,6 +15,8 @@
 
     var main_color = "#4caf50";
     var main_rgb = "76, 175, 80";
+    main_color = "#f00";
+    main_rgb = "255, 0, 0";
     var bg_color = "#4c4c4c";
     var bg2_color = "#242424";
     var bg3_color = "#666";
@@ -73,7 +75,7 @@
         ".highcharts-yaxis-title{ color: "+ title_color +"!important; }",
         ".data nav.menu li:hover{ background-color: "+ bg2_color +"!important; }",
         ".highcharts-title,text tspan,g text{ fill: "+ title_color +"!important; color: "+ title_color +"!important; }",
-        "section.withdraw section.payment #counter ul li.d1,section.withdraw section.payment #counter ul li.d2,section.withdraw section.payment #counter ul li.d3,section.withdraw section.payment #counter ul li.d4,section.withdraw section.payment #counter ul li.d5,section.withdraw section.payment #counter ul li.d6{ line-height: 40px!important; border-bottom: 3px solid "+ main_color +"!important; background: linear-gradient(0deg, rgba(76,175,80,0.7035014689469538) 0%, rgba(76,76,76,0) 53%); }",
+        "section.withdraw section.payment #counter ul li.d1,section.withdraw section.payment #counter ul li.d2,section.withdraw section.payment #counter ul li.d3,section.withdraw section.payment #counter ul li.d4,section.withdraw section.payment #counter ul li.d5,section.withdraw section.payment #counter ul li.d6{ line-height: 40px!important; border-bottom: 3px solid "+ main_color +"!important; background: linear-gradient(0deg, rgba("+ main_rgb +",0.7035014689469538) 0%, rgba(76,76,76,0) 53%); }",
         ".page table thead th{ background: unset!important; background-image: unset!important; background-color: "+ bg2_color +"!important;}",
         ".page table thead{ text-shadow: unset!important; color: "+ title_color +"!important; }",
 
