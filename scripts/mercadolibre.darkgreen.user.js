@@ -2,7 +2,7 @@
 // @name          MercadoLibre Chile | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.6
+// @version       1.7
 // @icon          https://www.google.com/s2/favicons?domain=mercadolibre.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js
 // @match         https://*.mercadolibre.cl/*
@@ -14,7 +14,7 @@
     'use strict';
 
 	var css = [
-        "body,main,main > div{ background-color: #242424!important; }",
+        "body,main,main > div,.vip-body,body{ background-color: #242424!important; }",
 		".nav-header{ background-color: #4c4c4c!important; border-bottom: 1px solid #4caf50!important;  }",
         ".nav-bounds.nav-bounds-with-cp .nav-menu-cp.nav-menu-cp-logged .nav-menu-cp-send, .nav-menu-item a, .nav-menu-item a:link, .nav-menu-item a:visited,#nav-header-menu a,.quantity-results{ color: #f1f1f1!important; }",
         ".nav-bounds.nav-bounds-with-cp .nav-menu-cp .nav-menu-link-cp{ color: #d5d5d5!important; }",
@@ -77,7 +77,7 @@
         ".tracking-timeline__dot--pending,.tracking-timeline__dot--pending::before {background-color: #333!important; }",
         ".loyalty-user-rewards.interactive:active, .loyalty-user-rewards.interactive:hover,.loyalty-user-milestones:hover,.loyalty-user-accomplished-milestones-carousel .carousel-container .loyalty-user-accomplished-milestones:hover{ background-color: #5c5c5c!important; }",
         ".tracking-timeline__node--gray{ border-left-color: #333!important; }",
-        ".loyalty-user-rewards,.loyalty-user-milestones,.loyalty-user-accomplished-milestones{ border-right-color: #4caf50!important; }",
+        ".loyalty-user-rewards,.loyalty-user-milestones,.loyalty-user-accomplished-milestones,.layout-main .layout-col--left{ border-right-color: #4caf50!important; }",
         ".loyalty-user-dynamic-section .loyalty-user-dynamic-section-row{ border-top-color: #4caf50!important; }",
         ".loyalty-user-dynamic-section-subtitle{ border-bottom-color: #4caf50!important; }",
         ".ui-button--tertiary, .ui-button--tertiary:link, .ui-button--tertiary:visited{ color: #4caf50!important; text-decoration: underline; }",
@@ -87,10 +87,16 @@
         ".loyalty-modal .controls .next-button::after, .loyalty-modal .controls .next-button::before, .loyalty-modal .controls .prev-button::after, .loyalty-modal .controls .prev-button::before,.loyalty-modal .controls .loyalty-navigable-modal-dots.active,.andes-modal--tight .andes-modal-dialog__button-close::after, .andes-modal--tight .andes-modal-dialog__button-close::before{ background-color: #4caf50!important; }",
         ".loyalty-user-outerhead{ opacity: 0.1; }",
         "[for=\"nav-footer-access-switch\"],.loyalty-modal .loyalty-user-modal-content-title,.ml-addresses-data__item--strong{ color: #fff!important; }",
-        ".loyalty-user-modal-content-description{ color: #ddd!important; }",
+        ".loyalty-user-modal-content-description,.item-description__text{ color: #ddd!important; }",
         ".andes-modal-dialog{ border: 1px solid #4caf50!important;}",
         ".app-wrapper{ background-color: #222!important; }",
         ".andes-card{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+        ".layout-main{ background-color: #4c4c4c!important; }",
+        ".section-details .card-subtitle.card-subtitle__secondary, .section-details .card-subtitle__secondary.subscription-payment-method-title{ color: #f1f1f1!important; }",
+        ".questions__form .questions__input{ background-color: #666!important; border-color: #4caf50!important; }",
+        ".questions__item--question p, .questions__item--question p .card-link-wrapper:link, .questions__item--question p .card-link-wrapper:visited,.item-description__title,.main-section__title{ color: #fff!important; }",
+        ".gallery__thumbnail{ background-color: #242424!important; border-color: #4caf50!important; }",
+        ".gallery__thumbnail.gallery__thumbnail--selected::after, .gallery__thumbnail:not(.gallery__thumbnail--more):hover::after{ border-left-color: #4caf50!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
