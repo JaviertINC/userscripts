@@ -2,7 +2,7 @@
 // @name          MercadoLibre Chile | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.7
+// @version       1.8
 // @icon          https://www.google.com/s2/favicons?domain=mercadolibre.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js
 // @match         https://*.mercadolibre.cl/*
@@ -66,6 +66,7 @@
         "#nav-header-menu .user-menu .ui-button--primary,#nav-header-menu .user-menu,.payment-data .payment-data-container,.ui-button--primary,.item__result-container{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         "#nav-header-menu .user-menu .user-menu__loyalty-components,#nav-header-menu .user-menu .user-menu__chevron,.payment-data-section-leading, .payment-data-section-trailing{ border-color: transparent!important;}",
         ".base[stroke=\"#eee\"]{ stroke: #222!important;  }",
+        "svg g[fill=\"#3483fa\"]{ fill: #4caf50!important;  }",
         "#nav-header-menu .user-menu .user-menu__avatar-text{ background-color: #4caf50!important; box-shadow: unset!important; }",
         "#nav-header-menu .user-menu .user-menu__shortcuts a:hover{ background-color: #4caf50!important; }",
         ".ui-button--primary,.itemList .price-info .price,.mfOrders .rightControls,.ui-recommendations__header__title{ color: #fff!important; }",
@@ -79,9 +80,9 @@
         ".tracking-timeline__node--gray{ border-left-color: #333!important; }",
         ".loyalty-user-rewards,.loyalty-user-milestones,.loyalty-user-accomplished-milestones,.layout-main .layout-col--left{ border-right-color: #4caf50!important; }",
         ".loyalty-user-dynamic-section .loyalty-user-dynamic-section-row{ border-top-color: #4caf50!important; }",
-        ".loyalty-user-dynamic-section-subtitle{ border-bottom-color: #4caf50!important; }",
+        ".loyalty-user-dynamic-section-subtitle,.gallery-content,.ui-view-more{ border-bottom-color: #4caf50!important; }",
         ".ui-button--tertiary, .ui-button--tertiary:link, .ui-button--tertiary:visited{ color: #4caf50!important; text-decoration: underline; }",
-        ".ui-button--tertiary:hover{ color: #4caa50!important; }",
+        ".ui-button--tertiary:hover,.actions-secondary__btn small{ color: #4caa50!important; }",
         ".loyalty-arrow .loyalty-arrow-path{ stroke: #4caf50!important; }",
         ".loyalty-user-info-rewards{ color: #f1f1f1!important; }",
         ".loyalty-modal .controls .next-button::after, .loyalty-modal .controls .next-button::before, .loyalty-modal .controls .prev-button::after, .loyalty-modal .controls .prev-button::before,.loyalty-modal .controls .loyalty-navigable-modal-dots.active,.andes-modal--tight .andes-modal-dialog__button-close::after, .andes-modal--tight .andes-modal-dialog__button-close::before{ background-color: #4caf50!important; }",
@@ -91,12 +92,26 @@
         ".andes-modal-dialog{ border: 1px solid #4caf50!important;}",
         ".app-wrapper{ background-color: #222!important; }",
         ".andes-card{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
-        ".layout-main{ background-color: #4c4c4c!important; }",
+        ".layout-main,.product-gallery .gallery-image-container{ background-color: #4c4c4c!important; }",
         ".section-details .card-subtitle.card-subtitle__secondary, .section-details .card-subtitle__secondary.subscription-payment-method-title{ color: #f1f1f1!important; }",
         ".questions__form .questions__input{ background-color: #666!important; border-color: #4caf50!important; }",
         ".questions__item--question p, .questions__item--question p .card-link-wrapper:link, .questions__item--question p .card-link-wrapper:visited,.item-description__title,.main-section__title{ color: #fff!important; }",
         ".gallery__thumbnail{ background-color: #242424!important; border-color: #4caf50!important; }",
         ".gallery__thumbnail.gallery__thumbnail--selected::after, .gallery__thumbnail:not(.gallery__thumbnail--more):hover::after{ border-left-color: #4caf50!important; }",
+        ".specs-layout-default .specs-item span, .specs-layout-default .specs-item strong,.carousel-common__item-title,.benefit__text,.variations .variations-title span,.average-legend, .zero-reviews-legend,.ui-dropdown-quantity .dropdown-quantity-button > span{ color: #ddd!important; }",
+        ".outline-section, .carousel-common__section,.carousel-common__item-wrapper,.layout-description-wrapper{ background-color: #4c4c4c!important;}",
+        ".carousel-common__title,.item-title__primary{ color: #fff!important; }",
+        ".carousel-common__section.main-section.related-ads-section .carousel-common__item-wrapper{ border-color: #4caf50!important; }",
+        ".carousel-common__price, .carousel-common__price .item-price{ color: #4caf50!important; }",
+        ".item-conditions{ background-color: #666!important; border: 1px solid #4caf50!important; color: #fff!important; width: 50px!important; padding: 5px; border-radius: 5px; }",
+        ".item-price{ color: #4caf50!important; }",
+        ".stock-information--available--title{ color: #0f0!important; }",
+        ".vip-shipping-method .shipping-detail__highlight,.stock-string-last-item,.benefit__text::ntchild(2){ color: #fff!important; }",
+        ".stock-string-last-item,.benefit__text{ text-decoration: underline!important; }",
+        ".benefit__text{ font-weight: bold!important; }",
+        ".actions-secondary__btn--like .ui-icon,.ui-dropdown-quantity .dropdown-quantity-button .dropdown-quantity-indicator .dropdown-quantity-icon,path[stroke=\"#3483fa\"]{ stroke: #4caf50!important; }",
+        "strong[data-js=\"variations-title\"],.ui-dropdown-quantity .dropdown-quantity-button > span.dropdown-quantity-units,.vip-section-seller-info .card-title{ color: #fff!important; }",
+        ".star-icon-full::before, .star-icon-hidden-input:checked ~ .star-icon{ color: #4caf50!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
