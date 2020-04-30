@@ -2,7 +2,7 @@
 // @name          MercadoLibre Chile | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.8
+// @version       1.9
 // @icon          https://www.google.com/s2/favicons?domain=mercadolibre.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js
 // @match         https://*.mercadolibre.cl/*
@@ -103,15 +103,21 @@
         ".carousel-common__title,.item-title__primary{ color: #fff!important; }",
         ".carousel-common__section.main-section.related-ads-section .carousel-common__item-wrapper{ border-color: #4caf50!important; }",
         ".carousel-common__price, .carousel-common__price .item-price{ color: #4caf50!important; }",
-        ".item-conditions{ background-color: #666!important; border: 1px solid #4caf50!important; color: #fff!important; width: 50px!important; padding: 5px; border-radius: 5px; }",
+        ".item-conditions{ border-bottom: 1px solid #4caf50!important; color: #fff!important; padding-bottom: 5px; text-align: center; }",
         ".item-price{ color: #4caf50!important; }",
-        ".stock-information--available--title{ color: #0f0!important; }",
-        ".vip-shipping-method .shipping-detail__highlight,.stock-string-last-item,.benefit__text::ntchild(2){ color: #fff!important; }",
-        ".stock-string-last-item,.benefit__text{ text-decoration: underline!important; }",
-        ".benefit__text{ font-weight: bold!important; }",
+        ".stock-information--available--title,.price-tag.discount-arrow,.vip-shipping-method .shipment-methods p.shipping-text .green,.vip-payment-method .pay-methods-row .ui-icon.ui-icon--installments.green{ color: #0f0!important; }",
+        ".vip-shipping-method .shipping-detail__highlight,.stock-string-last-item,.reputation-relevant,.ui-view-more__title{ color: #fff!important; }",
+        ".stock-string-last-item{ text-decoration: underline!important; }",
+        ".ui-view-more .card-subtitle, .ui-view-more .subscription-payment-method-title,.vip-section-seller-info .ui-icon--content .ui-icon--location-mark{ color: #f1f1f1!important; }",
         ".actions-secondary__btn--like .ui-icon,.ui-dropdown-quantity .dropdown-quantity-button .dropdown-quantity-indicator .dropdown-quantity-icon,path[stroke=\"#3483fa\"]{ stroke: #4caf50!important; }",
         "strong[data-js=\"variations-title\"],.ui-dropdown-quantity .dropdown-quantity-button > span.dropdown-quantity-units,.vip-section-seller-info .card-title{ color: #fff!important; }",
         ".star-icon-full::before, .star-icon-hidden-input:checked ~ .star-icon{ color: #4caf50!important; }",
+        "path[fill=\"#333\"]{ fill: #f1f1f1!important; }",
+        ".vip-section-seller-info .card-description{ color: #ddd!important;}",
+        ".vip-shipping-method .shipment-methods .ui-icon.ui-icon--free-shipping.green, .vip-shipping-method .shipment-methods .ui-icon.ui-icon--international-shipping.green, .vip-shipping-method .shipment-methods .ui-icon.ui-icon--motoexpress.green, .vip-shipping-method .shipment-methods .ui-icon.ui-icon--seller-agreement.green{ fill: #0f0!important; stroke: #0f0!important; }",
+        ".ui-item__shipping{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
+        ".exhibitor .slick-dots li.slick-active button{ background-color: #4caf50!important; }",
+        ".exhibitor .slick-dots li button{ background-color: green!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
