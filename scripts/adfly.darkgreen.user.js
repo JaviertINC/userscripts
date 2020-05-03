@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name          Adf.ly | DarkGreen
-// @description   Una versión oscura, cuida tus ojos :D
+// @description   Una versión oscura, ayuda a cuidar tus ojos :D
 // @author        @JaviertINC
-// @version       1.9
+// @version       2.0
 // @icon          https://external-content.duckduckgo.com/ip3/www.adf.ly.ico
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -18,6 +18,8 @@
     var bg_color = "#4c4c4c";
     var bg2_color = "#242424";
     var bg3_color = "#666";
+    var bg4_color = "#3d3d3d";
+    var bg5_color = "#333";
     var title_color = "#fff";
     var subtitle = "#f1f1f1";
     var legend = "#ccc";
@@ -76,6 +78,10 @@
         "section.withdraw section.payment #counter ul li.d1,section.withdraw section.payment #counter ul li.d2,section.withdraw section.payment #counter ul li.d3,section.withdraw section.payment #counter ul li.d4,section.withdraw section.payment #counter ul li.d5,section.withdraw section.payment #counter ul li.d6{ line-height: 40px!important; border-bottom: 3px solid "+ main_color +"!important; background: linear-gradient(0deg, rgba("+ main_rgb +",0.7035014689469538) 0%, rgba(76,76,76,0) 53%); }",
         ".page table thead th{ background: unset!important; background-image: unset!important; background-color: "+ bg2_color +"!important;}",
         ".page table thead{ text-shadow: unset!important; color: "+ title_color +"!important; }",
+        "#footer a.paypal{ background: unset!important; }",
+        "#footer a.payoneer{ background: unset!important; }",
+        "#top_bar .language_switcher.hover h5,#top_bar .language_switcher ul{ background-color: "+ bg4_color +"!important; }",
+        "#top_bar .language_switcher li:hover{ background: unset!important; background-color: "+ bg5_color +"!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
