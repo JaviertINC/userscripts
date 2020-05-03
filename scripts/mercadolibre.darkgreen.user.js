@@ -2,7 +2,7 @@
 // @name          MercadoLibre Chile | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       1.9
+// @version       2.0
 // @icon          https://www.google.com/s2/favicons?domain=mercadolibre.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js
 // @match         https://*.mercadolibre.cl/*
@@ -113,11 +113,27 @@
         "strong[data-js=\"variations-title\"],.ui-dropdown-quantity .dropdown-quantity-button > span.dropdown-quantity-units,.vip-section-seller-info .card-title{ color: #fff!important; }",
         ".star-icon-full::before, .star-icon-hidden-input:checked ~ .star-icon{ color: #4caf50!important; }",
         "path[fill=\"#333\"]{ fill: #f1f1f1!important; }",
-        ".vip-section-seller-info .card-description{ color: #ddd!important;}",
+        ".vip-section-seller-info .card-description,.u-truncate,.purchases-payment-method__history-error{ color: #ddd!important;}",
         ".vip-shipping-method .shipment-methods .ui-icon.ui-icon--free-shipping.green, .vip-shipping-method .shipment-methods .ui-icon.ui-icon--international-shipping.green, .vip-shipping-method .shipment-methods .ui-icon.ui-icon--motoexpress.green, .vip-shipping-method .shipment-methods .ui-icon.ui-icon--seller-agreement.green{ fill: #0f0!important; stroke: #0f0!important; }",
         ".ui-item__shipping{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
-        ".exhibitor .slick-dots li.slick-active button{ background-color: #4caf50!important; }",
+        ".exhibitor .slick-dots li.slick-active button,[class^=\"myml-nav__ham\"]{ background-color: #4caf50!important; }",
         ".exhibitor .slick-dots li button{ background-color: green!important; }",
+        ".purchases-payment__subtitle,.purchases-payment__emphasize-txt,#nav-header-menu-mobile #nav-header-menu-mobile-user-info #nav-header-user-mail-or-level{ color: #fff!important; }",
+        ".price-tag,.purchases-payment-method__history-label{ color: #4caf50!important; }",
+        ".myml-ui-package-actions__action{ background-color: #666!important; border: 1px solid #4caf50!important; color: #fff!important; }",
+        ".myml-ui-collapsible__arrow::after, .myml-ui-collapsible__arrow::before { background-color: #4caf50!important; }",
+        ".myml-nav__section--active .myml-nav__section-icon path, .myml-nav__section--has-active-item .myml-nav__section-icon path{ fill: #4caf50!important; }",
+        ".myml-nav__menu .myml-nav__section-heading:hover{ border-left-color: #4caf50!important; }",
+        "#nav-header-menu-mobile,#nav-header-menu-mobile ul{ background-color: #4c4c4c!important; color: #f1f1f1!important; border-top-color: #4caf50!important; }",
+        ".hamburger-bottom-bread, .hamburger-patty, .hamburger-top-bread{ background-color: #fff!important; }",
+        "#nav-header-menu-mobile ul li.nav-mobile-menu-selected{ background-color: #4caf50!important; }",
+        "#nav-header-menu-mobile ul li.nav-mobile-menu-selected a,#nav-header-menu-mobile #nav-header-menu-mobile-user-info.nav-header-menu-mobile-with-loyalty #nav-header-user-greetings{ color: #fff!important; }",
+        "#nav-header-menu-mobile::before { background-color: #4c4c4c!important; border-top-color: #4caf50!important; border-left-color: #4caf50!important; }",
+        "#nav-header-menu-mobile #nav-header-menu-mobile-user-info.nav-header-menu-mobile-with-loyalty #nav-header-user-mail-or-level path{ stroke: #4caf50!important; }",
+        "a.nav-header-cp-anchor:active::after, a.nav-header-cp-anchor::after, a.nav-header-cp-anchor:hover::after, a.nav-header-cp-anchor:link::after, a.nav-header-cp-anchor:visited::after { border-color: #4caf50!important; }",
+        "@media (max-width:512px){ button.nav-search-btn, button.nav-search-btn:focus { background-color: unset!important; border: unset!important; } }",
+        ".sb-suggestions{ background-color: #4c4c4c!important; }",
+        ".site-shopping-info{ background-color: #333!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
