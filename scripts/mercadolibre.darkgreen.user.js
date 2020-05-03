@@ -2,7 +2,7 @@
 // @name          MercadoLibre Chile | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       2.0
+// @version       2.1
 // @icon          https://www.google.com/s2/favicons?domain=mercadolibre.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/mercadolibre.darkgreen.user.js
 // @match         https://*.mercadolibre.cl/*
@@ -43,7 +43,7 @@
         ".categories .category{ background-color: #4c4c4c!important; color: #f1f1f1!important; }",
         ".categories .category:hover { background-color: #5d5d5d!important; }",
         ".categories .category, .categories .filler{ outline-color: #4caf50!important; }",
-        ".categories .category + .category:hover{ bottom: unset!important; }",
+        ".categories .category + .category:hover{ bottom: 0!important; }",
         "input[type=\"text\"].nav-search-input, input[type=\"search\"].nav-search-input{ background-color: #666!important; border: 1px solid #4caf50!important; color: #fff!important; }",
         "::placeholder{ color: #aaa!important; }",
         "button.nav-search-btn, button.nav-search-btn:focus{ background-color: #666!important; border: 1px solid #4caf50!important; border-left: none!important;}",
@@ -134,6 +134,9 @@
         "@media (max-width:512px){ button.nav-search-btn, button.nav-search-btn:focus { background-color: unset!important; border: unset!important; } }",
         ".sb-suggestions{ background-color: #4c4c4c!important; }",
         ".site-shopping-info{ background-color: #333!important; }",
+        ".site-shopping-info .info-slide h1{ color: #fff!important; }",
+        ".info-slide .img-container img{ background-color: #fff!important; padding: 10px!important; border-radius: 10px!important; }",
+        ".payment-data .payment-data-icon {	background-color: #fff!important; border-radius: 50%!important; width: 48px!important; height: 48px!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
