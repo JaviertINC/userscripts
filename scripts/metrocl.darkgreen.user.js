@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Metro.cl | DarkGreen
-// @version      1.7
+// @version      1.8
 // @icon         https://www.google.com/s2/favicons?domain=metro.cl
 // @author       @JaviertINC
 // @match        https://metro.cl/
@@ -13,7 +13,7 @@
 (function() {
     'use strict';
 
-	var url_img_plano = "https://www.metro.cl/images/metrored_servicios_full_2020_03_01.jpg";
+	var url_img_plano = "https://www.metro.cl/images/metrored_servicios_full_2020_04_23.jpg";
 	var url_img_logo = "https://www.metro.cl/images/metrored_servicios_full_2020_03_01.jpg";
 	var url_img_bip = "https://cargatubip.metro.cl/CargaTuBipV2/assets/imgMetro/bip_small.png";
 
