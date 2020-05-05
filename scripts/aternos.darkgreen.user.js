@@ -2,7 +2,7 @@
 // @name          Aternos | DarkGreen
 // @description   Una versión oscura, ayuda a cuidar tus ojos :D
 // @author        @JaviertINC
-// @version       0.2
+// @version       0.3
 // @icon          https://www.google.com/s2/favicons?domain=aternos.org
 // @updateURL     https://javiertinc.github.io/aternos-antiadblock/aternos.darkgreen.user.js
 // @match         *://aternos.org/*
@@ -24,8 +24,10 @@
         ".btn.btn-blue.btn-notext-mobile,.btn.btn-green.btn-small.btn-no-margin{ background-color: #666!important; border: 1px solid #4caf50!important; }",
         ".server-info-box-title{ background-color: #4c4c4c!important; border-top: 1px solid #4caf50!important; border-left: 1px solid #4caf50!important; border-right: 1px solid #4caf50!important; }",
         ".server-info-box-body,.server-tutorials{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
-        ".btn.btn-white.btn-small,.friend-access-small-button.friend-access-page.btn.btn-white{ color: #fff!important; }",
+        ".btn.btn-white.btn-small,.friend-access-small-button.friend-access-page.btn.btn-white,.content h1{ color: #fff!important; }",
         ".navigation .item:hover,.navigation .item.active{ background-color: #666!important; }",
+        ".console-title{ background-color: #4c4c4c!important; border-bottom-color: #4caf50!important; }",
+        ".console{ background-color: #000!important; color: #4caf50!important; border: 1px solid #4caf50!important; }",
 
 	].join("\n");
     GM_addStyle(css);
