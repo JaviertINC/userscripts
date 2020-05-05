@@ -2,7 +2,7 @@
 // @name          Aternos | DarkGreen
 // @description   Una versión oscura, ayuda a cuidar tus ojos :D
 // @author        @JaviertINC
-// @version       0.6
+// @version       0.7
 // @icon          https://www.google.com/s2/favicons?domain=aternos.org
 // @updateURL     https://javiertinc.github.io/aternos-antiadblock/aternos.darkgreen.user.js
 // @match         *://aternos.org/*
@@ -18,7 +18,7 @@
         ".header{ background-color: #4c4c4c!important; border-bottom: 1px solid #4caf50!important; }",
         ".navigation{ background-color: #4c4c4c!important; border-right: 1px solid #4caf50!important; }",
         ".navigation .item{ border-top-color: #4caf50!important; border-left-color: #333!important; border-bottom-color: #4caf50!important; }",
-        ".navigation .item:last-of-type{ border-bottom-color: #4caf50!important; }",
+        ".navigation .item:last-of-type,.select.up .select-options .option, .select.up .option-category-back{ border-bottom-color: #4caf50!important; }",
         ".server-ip,.btn.btn-huge.btn-green,.btn.btn-blue.btn-small.btn-clickme,.btn.btn-white.btn-small,.friend-access-small-button.friend-access-page.btn.btn-white,.btn.btn-white,.btn.btn-green,.mclogs-share.btn.btn-blue.btn-large.btn-no-margin{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         ".server-status{ border: 1px solid #4caf50!important; }",
         ".btn.btn-blue.btn-notext-mobile,.btn.btn-green.btn-small.btn-no-margin{ background-color: #666!important; border: 1px solid #4caf50!important; }",
@@ -42,8 +42,10 @@
         ".servericon{ border-color: #4caf50!important; }",
         ".account-setting,.account-setting{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         ".line-number{ color: #ccc!important; }",
+        ".content h2{ color: #f1f1f1!important; }",
         ".level-INFO .level-prefix, .level-NOTICE .level-prefix, .level-DEBUG .level-prefix, .level-TRACE .level-prefix{ color: #4caf50!important; }",
         ".log{ background-color: #000!important; color: #f1f1f1!important; }",
+        ".software-type{ background-color: #4caf50!important; }",
 
 	].join("\n");
     GM_addStyle(css);
