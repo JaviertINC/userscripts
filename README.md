@@ -13,7 +13,7 @@ _**Nota:** Estos scripts **no** estan terminados, por lo que pueden haber fallas
 | ![Adf.ly](https://external-content.duckduckgo.com/ip3/www.adf.ly.ico) Adf.ly | DarkGreen | Estilos | 55% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js) |
 | ![API-UX](https://www.google.com/s2/favicons?domain=api-ux.com) API-UX | BackOffice DarkGreen | Estilos | 75% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/api-ux.backoffice.user.js) |
 | ![Aternos](https://www.google.com/s2/favicons?domain=aternos.org) Aternos | AntiAdblock | Funcional | 100% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/aternos.antiadblock.user.js) |
-| ![Aternos](https://www.google.com/s2/favicons?domain=aternos.org) Aternos | DarkGreen | Estilos | 20% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/aternos.darkgreen.user.js) |
+| ![Aternos](https://www.google.com/s2/favicons?domain=aternos.org) Aternos | DarkGreen | Estilos | 60% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/aternos.darkgreen.user.js) |
 | ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP | Bugs DarkGreen | Estilos | 45% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.bugs.user.js) |
 | ![CakePHP](https://www.google.com/s2/favicons?domain=cakephp.org) CakePHP | GreenCakePHP | Estilos | 45% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/cakephp.green.user.js) |
 | ![ClipWatching](https://www.google.com/s2/favicons?domain=clipwatching.com) ClipWatching | Embed DarkGreen | Estilos | 95% | [Instalar/Actualizar](https://javiertinc.github.io/userscripts/scripts/clipwatching.embed.user.js) |
