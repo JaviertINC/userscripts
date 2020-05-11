@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      2.7
+// @version      2.8
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
 // @match        *://web.whatsapp.com/*
 // @include      https://web.whatsapp.com/JaviertINC
-// @updateURL    https://javiertinc.github.io/userscripts/scripts/whatsapp.darkdefault.user.js
+// @updateURL    https://javiertinc.github.io/userscripts/scripts/whatsapp.darkgreen.user.js
 // @grant        GM_addStyle
 // @run-at       document-start
 // ==/UserScript==
