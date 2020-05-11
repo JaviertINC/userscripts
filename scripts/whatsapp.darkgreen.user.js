@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      2.6
+// @version      2.7
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
@@ -34,7 +34,10 @@
         "    --secondary-lighter: #e1e1e1;",
         "    --secondary-stronger: #f1f1f1;",
         "    --border-stronger: #4caf50;",
+        "    --button-primary-background: #4caf50;",
         "    --button-secondary: #4caf50;",
+        "    --button-alternative-background: #4caf50;",
+        "    --button-alternative: #fff;",
         "    --background-default: #393939;",
         "    --background-default-active: #4c4c4c;",
         "    --background-default-hover: #4c4c4c;",
@@ -58,25 +61,27 @@
         "    --unread-marker-background: #4caf50;",
         "    --compose-panel-background: #4c4c4c;",
         "    --incoming-background: #4c4c4c;",
-        "    --incoming-background-rgb: 51,51,51;",
+        "    --incoming-background-rgb: 76,76,76;",
         "    --incoming-background-deeper: #333;",
         "    --incoming-background-deeper-rgb: 51,51,51;",
         "    --outgoing-background: #4f4f4f;",
         "    --outgoing-background-deeper: #333;",
         "    --outgoing-background-deeper-rgb: 51,51,51;",
         "    --dropdown-background: #393939;",
+        "    --dropdown-background-hover: #4caf50;",
         "    --conversation-panel-background: #242424;",
         "    --media-viewer-background-rgb: 51,51,51;",
         "    --border-panel: #4caf50;",
         "    --system-message-background: #4c4c4c;",
         "    --conversation-panel-border: #4caf50;",
         "    --thumb-border-active: #4caf50;",
-        "    --button-alternative-background: #4caf50;",
-        "    --button-alternative: #fff;",
         "    --input-border-active: #4caf50;",
         "    --highlight: #4caf50;",
         "    --outgoing-background-rgb: 79, 79, 79;",
         "    --primary-strong-rgb: 170,170,170;",
+        "    --media-viewer-background: #4c4c4c;",
+        "    --modal-backdrop-solid: #242424;",
+        "    --modal-background: #4c4c4c;",
         "}",
         "a{ color: #4caf50!important; }",
         "._1i1U7.jZ4tp,._1i1U7._2DNgV{ background-unset!important; }",
@@ -102,6 +107,9 @@
         ".message-out .tail-container,.message-out .tail-container.highlight{ background-image: unset!important; }",
         ".Pg7Si progress{ background-color: #4c4c4c!important; color: #4caf50!important; }",
         ".Pg7Si progress[value]::-webkit-progress-value{ background-color: #4caf50!important; }",
+        "._2EXPL{ filter: unset!important;}",
+        "._1CnF3{ border: 1px solid #4caf50!important; }",
+        "._3lLzD{ color: #f1f1f1!important; }",
     ].join("\n");
 	GM_addStyle(css);
 
