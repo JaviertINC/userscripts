@@ -2,7 +2,7 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, ayuda a cuidar tus ojos :D
 // @author        @JaviertINC
-// @version       2.0
+// @version       2.2
 // @icon          https://external-content.duckduckgo.com/ip3/www.adf.ly.ico
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -25,7 +25,20 @@
     var legend = "#ccc";
     var bg_input = "#666";
 
+    var hide_unlinks = true;
+
+    var name = "AdFly";
+    var title = document.title;
+    var url = window.location.href;
+
+    if(hide_unlinks){
+        hide_unlinks = "li.forum,li.support{ display: none!important; }";
+    }else{
+        hide_unlinks = "";
+    }
+
 	var css = [
+        hide_unlinks,
         "#top_bar{ background-color: "+ bg_color +"!important; border-bottom: 1px solid "+ main_color +"!important; }",
         "#cookie_notice,.home footer#footer, .secondary footer#footer{ background-color: "+ bg_color +"!important; border-top: 1px solid "+ main_color +"!important; }",
         "body{ background: unset!important; background-color: "+ bg2_color +"!important; }",
@@ -68,7 +81,6 @@
         "section.withdraw section.payment article section{ background-color: "+ bg2_color +"!important; border: 1px solid "+main_color+"!important; border-radius: 8px; background-image: unset!important; }",
         "section.page > .container section.bar{ border-top: 1px solid "+ main_color +"!important;}",
         ".multiplebgs #header nav,.multiplebgs #header nav li,.data nav.menu{ background: unset!important; }",
-        "li.forum{ display: none!important; }",
         "section.tools .data .panels{background-color: "+ bg_color +"!important; }",
         "#tools-tabs .panel .code{ background-color: "+ bg2_color +"!important; }",
         "form input{ background-image:unset!important; background: unset!important; box-shadow: unset!important; background-color: "+ bg_input +"!important; }",
@@ -82,8 +94,30 @@
         "#footer a.payoneer{ background: unset!important; }",
         "#top_bar .language_switcher.hover h5,#top_bar .language_switcher ul{ background-color: "+ bg4_color +"!important; }",
         "#top_bar .language_switcher li:hover{ background: unset!important; background-color: "+ bg5_color +"!important; }",
+        ".dataTables_paginate{ background: unset!important; background-image: unset!important; }",
+        "section.withdraw section.history .dataTables_paginate,form input{ border-color: "+ main_color +"!important; }",
+        ".page table tfoot{ color: "+ title_color +"!important; font-size: 16px!important; }",
+        ".dataTables_paginate span{ background: unset!important; background-color: "+ bg3_color +"!important; color: "+ title_color +"!important; }",
+        ".dataTables_paginate span.paginate_button{ border: unset!important; }",
+        "form label{ color: "+ title_color +"!important; }",
+        ".page table tbody td.total, #links-tabs table tfoot th.total{ background: unset!important; text-shadow: unset!important; color: "+ title_color +"!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
+
+    switch(url){
+        case "https://adf.ly/publisher":
+            document.title = "Dashboard | "+ name;
+        break;
+        case "https://adf.ly/account/referrals":
+            document.title = "Referidos | "+ name;
+        break;
+        case "https://adf.ly/publisher/tools":
+            document.title = "Herramientas | "+ name;
+        break;
+        case "https://adf.ly/account/withdraw":
+            document.title = "Pagos | "+ name;
+        break;
+    }
 
 })();
