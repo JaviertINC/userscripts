@@ -2,7 +2,7 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, ayuda a cuidar tus ojos :D
 // @author        @JaviertINC
-// @version       2.5
+// @version       2.6
 // @icon          https://external-content.duckduckgo.com/ip3/www.adf.ly.ico
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -27,7 +27,6 @@
     var hide_unlinks = true;
 
     var name = "AdFly";
-    var title = document.title;
     var url = window.location.href;
 
     if(hide_unlinks){
@@ -108,14 +107,17 @@
         case "https://adf.ly/publisher":
             document.title = "Dashboard | "+ name;
         break;
-        case "https://adf.ly/account/referrals":
-            document.title = "Referidos | "+ name;
-        break;
         case "https://adf.ly/publisher/tools":
             document.title = "Herramientas | "+ name;
         break;
+        case "https://adf.ly/account/referrals":
+            document.title = "Referidos | "+ name;
+        break;
         case "https://adf.ly/account/withdraw":
             document.title = "Pagos | "+ name;
+        break;
+        case "https://adf.ly/account":
+            document.title = "Mi Cuenta | "+ name;
         break;
     }
 
