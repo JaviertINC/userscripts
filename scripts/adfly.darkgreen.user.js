@@ -2,7 +2,7 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, ayuda a cuidar tus ojos :D
 // @author        @JaviertINC
-// @version       2.6
+// @version       2.8
 // @icon          https://external-content.duckduckgo.com/ip3/www.adf.ly.ico
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -26,7 +26,6 @@
 
     var hide_unlinks = true;
 
-    var name = "AdFly";
     var url = window.location.href;
 
     if(hide_unlinks){
@@ -99,10 +98,12 @@
         ".dataTables_paginate span.paginate_button{ border: unset!important; }",
         "form label{ color: "+ c_title +"!important; }",
         ".page table tbody td.total, #links-tabs table tfoot th.total{ background: unset!important; text-shadow: unset!important; color: "+ c_title +"!important; }",
+        "section.page > .container{ box-shadow: "+ c_main +" 0 0 5px 1px!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
 
+    var name = "AdFly";
     switch(url){
         case "https://adf.ly/publisher":
             document.title = "Dashboard | "+ name;
@@ -118,6 +119,9 @@
         break;
         case "https://adf.ly/account":
             document.title = "Mi Cuenta | "+ name;
+        break;
+        case "https://adf.ly/rates":
+            document.title = "Tarifas de Editor | "+ name;
         break;
     }
 
