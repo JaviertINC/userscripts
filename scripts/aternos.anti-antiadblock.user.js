@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name          Aternos | AntiAdblock
+// @name          Aternos | Anti-AntiAdblock
 // @description   Elimina el antiadblock sin dañar la usabilidad del sitio :D (Prefiere ver la publicidad, son servidores gratis, es su forma de ingresos)
 // @author        @JaviertINC
-// @version       0.2
+// @version       0.3
 // @icon          https://www.google.com/s2/favicons?domain=aternos.org
-// @updateURL     https://javiertinc.github.io/aternos-antiadblock/aternos.antiadblock.user.js
+// @updateURL     https://javiertinc.github.io/aternos-antiadblock/aternos.anti-antiadblock.user.js
 // @match         *://aternos.org/*
 // @run-at        document-end
 // @grant         GM_addStyle
