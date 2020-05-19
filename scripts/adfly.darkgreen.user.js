@@ -2,7 +2,7 @@
 // @name          Adf.ly | DarkGreen
 // @description   Una versión oscura, ayuda a cuidar tus ojos :D
 // @author        @JaviertINC
-// @version       2.8
+// @version       2.9
 // @icon          https://external-content.duckduckgo.com/ip3/www.adf.ly.ico
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/adfly.darkgreen.user.js
 // @match         *://adf.ly/*
@@ -99,6 +99,17 @@
         "form label{ color: "+ c_title +"!important; }",
         ".page table tbody td.total, #links-tabs table tfoot th.total{ background: unset!important; text-shadow: unset!important; color: "+ c_title +"!important; }",
         "section.page > .container{ box-shadow: "+ c_main +" 0 0 5px 1px!important; }",
+        "#container.secondary #main .container > section header{ background-color: "+ c_bg_1 +"!important; border-bottom-color: "+ c_main +"!important; }",
+        "#container.secondary #main .container > section header h2{ color: "+ c_title +"!important; text-shadow: unset!important; }",
+        "#container.secondary #main .container > section{ background-color: "+ c_bg_1 +"!important; box-shadow: "+ c_main +" 0 0 5px 1px!important; }",
+        "#container.secondary .wrapper,#container.secondary #main,.ui-widget-header{ background: unset!important; }",
+        "#container.secondary .wrapper{ padding-bottom: 50px!important; }",
+        "#rates table.rates{ width: 100%!important; background-color: "+ c_bg_1 +"!important; }",
+        ".ui-widget-header,.ui-widget-content{ border-color: "+ c_main +"!important; background: unset!important;}",
+        "#rates table.rates .even, table.rates tbody{ background-color: #444!important; }",
+        "#rates table.rates .odd{ background-color: #555!important; }",
+        "#rates table.rates{ color: #f1f1f1!important; }",
+        "#rates table.rates tr.rateVals td.cpmRaw{ border-color: "+ c_main +"!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
