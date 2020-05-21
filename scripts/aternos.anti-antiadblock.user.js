@@ -2,7 +2,7 @@
 // @name          Aternos | Anti-AntiAdblock
 // @description   Elimina el antiadblock sin dañar la usabilidad del sitio :D (Prefiere ver la publicidad, son servidores gratis, es su forma de ingresos)
 // @author        @JaviertINC
-// @version       0.3
+// @version       0.4
 // @icon          https://www.google.com/s2/favicons?domain=aternos.org
 // @updateURL     https://javiertinc.github.io/aternos-antiadblock/aternos.anti-antiadblock.user.js
 // @match         *://aternos.org/*
@@ -17,8 +17,12 @@
         ".ad-replacement{ display: none!important; }",
         ".main{ height: 100vh!important; }",
         ".navigation{ height: 100vh!important; }",
-        "#VIWzovhkdzsrlHBImsoCljRcaXsoSwvYqreKNGDNPdT{ display: none!important; }",
         ".header{ display: unset!important; height: 100px!important; }",
+
+        "#VIWzovhkdzsrlHBImsoCljRcaXsoSwvYqreKNGDNPdT",
+        "#OwzpsPGcxFveFvZJaukzsFsZbRDIWOdSLCDnINijwkvyHfP",
+        "{ display: none!important; }",
+
 
 	].join("\n");
     GM_addStyle(css);
@@ -28,14 +32,17 @@
             this.style.setProperty('display', '');
             this.style.setProperty('height', '');
         });
-        $('#VIWzovhkdzsrlHBImsoCljRcaXsoSwvYqreKNGDNPdT')[0].style.display = 'none';
-        $('.XcvLfpUfgbNTIbChEtgXdxUTTsyODyanOBWl').html("");
+
+        document.getElementById("OwzpsPGcxFveFvZJaukzsFsZbRDIWOdSLCDnINijwkvyHfP").remove();
+
         $('#start').each(function() {
             this._ready = true;
         });
     }
 
-			re_start();
+
+
+		re_start();
 
 		setTimeout(() => {
 			re_start();
