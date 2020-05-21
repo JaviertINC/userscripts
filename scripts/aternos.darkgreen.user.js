@@ -2,7 +2,7 @@
 // @name          Aternos | DarkGreen
 // @description   Una versión oscura, ayuda a cuidar tus ojos :D
 // @author        @JaviertINC
-// @version       2.0
+// @version       2.1
 // @icon          https://www.google.com/s2/favicons?domain=aternos.org
 // @updateURL     https://javiertinc.github.io/aternos-antiadblock/aternos.darkgreen.user.js
 // @match         *://aternos.org/*
@@ -56,6 +56,9 @@
         ".or-line{ border-top-color: #4caf50!important; }",
         ".go-input-group{ background-color: #666!important; color: #fff!important; border: 1px solid #4caf50!important; }",
         ".user{ border-left-color: #4caf50!important; }",
+        ".status-console{ background-color: #000!important; color: #4caf50!important; }",
+        ".pgb-blue .pgb-bar{ background-color: #4caf50!important; }",
+        ".mclist-edit{ color: #4caf50!important; }",
 
 	].join("\n");
     GM_addStyle(css);
