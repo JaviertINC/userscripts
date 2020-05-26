@@ -2,7 +2,7 @@
 // @name          FontAwesome | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       0.3
+// @version       0.4
 // @icon          https://www.google.com/s2/favicons?domain=fontawesome.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/fontawesome.darkgreen.user.js
 // @match         https://fontawesome.com/*
@@ -24,7 +24,10 @@
 	var css = [
 		"#top_bar{ background-color: "+ bg_color +"!important; border-bottom: 1px solid "+ main_color +"!important; }",
         ".bg-gray0{ background-color: "+ bg2_color +"!important; }",
+        "header.header-app{ background-color: "+ bg_color +"!important; border-bottom: 1px solid "+ main_color +"!important; }",
+        "nav.nav-app{ color: "+ subtitle +"!important; }",
+        "aside.search-facets{ border-right-color: "+ main_color +"!important; }",
+        "ul.list .link:hover, ul.list .link.active{ background-color: "+ main_color +"!important; color: "+ title_color +"!important; }",
 	].join("\n");
 	GM_addStyle(css);
-
 })();
