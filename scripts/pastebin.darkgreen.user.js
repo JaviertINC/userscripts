@@ -2,7 +2,7 @@
 // @name          Pastebin | DarkGreen
 // @description   Una versión oscura, cuida tus ojos :D
 // @author        @JaviertINC
-// @version       0.3
+// @version       0.4
 // @icon          https://www.google.com/s2/favicons?domain=pastebin.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/pastebin.darkgreen.user.js
 // @match         *://pastebin.com/*
@@ -30,6 +30,10 @@
         "button.i_highlight{ background-size: 15px!important; }",
         ".button1.btnbig { border-color: #4caf50!important; text-decoration: none!important; color: #f1f1f1!important; background-color: #4c4c4c!important; } ",
         ".button1.btnbig:hover{ background-color: #333!important; }",
+        ".code_box{ background-color: #000!important; border-color: #4caf50!important; color: #4caf50!important; }",
+        "span.mark{ background-color: #3c3c3c!important; border-color: #4caf50!important; color: #4caf50!important; }",
+        "#error, #notice, #success{ background-color: #3c3c3c!important; }",
+        "#error, #notice, #success{ border-color: #4caf50!important; }",
 
 	].join("\n");
 	GM_addStyle(css);
