@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      3.2
+// @version      3.3
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
@@ -15,7 +15,7 @@
     'use strict';
 
     var hidden_privacy = false; // Protege tus otros chats (true, false)
-    var background_img = "https://sypkrum/img/bg1.jpeg"; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
+    var background_img = ""; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
     var background_opacity = "0.18"; //Modifica la opacidad de tu fondo
 
 	var css = [
@@ -57,6 +57,8 @@
         "    --panel-background-lighter: #242424;",
         "    --panel-background-colored: #4caf50;",
         "    --panel-background-hover: #333;",
+        "    --panel-header-background: #4c4c4c;",
+        "    --panel-header-icon: #fff;",
         "    --unread-background: #4caf50;",
         "    --unread-marker-background: #4caf50;",
         "    --compose-panel-background: #4c4c4c;",
@@ -73,6 +75,7 @@
         "    --media-viewer-background-rgb: 51,51,51;",
         "    --border-panel: #4caf50;",
         "    --system-message-background: #4c4c4c;",
+        "    --system-message-text: #fff;",
         "    --conversation-panel-border: #4caf50;",
         "    --thumb-border-active: #4caf50;",
         "    --input-border-active: #4caf50;",
@@ -87,6 +90,9 @@
         "    --drawer-section-background: #4c4c4c;",
         "    --drawer-background: #333;",
         "    --teal-lighter: #4caf50;",
+        "    --bubble-meta: #aaa;",
+        "    --bubble-meta-icon: #aaa;",
+        "    --chatlist-icon: #aaa;",
         "}",
         "a{ color: #4caf50!important; }",
         "._1i1U7.jZ4tp,._1i1U7._2DNgV{ background-unset!important; }",
@@ -118,6 +124,7 @@
         "._2u2Mg ._1WliW,._1wCju ._2UkYn,.Qgzj8.gqwaM._3FXB1{ border-radius: 0!important;}",
         "._2u2Mg ._1WliW,._1wCju ._2UkYn{ border: 1px solid #4caf50!important; }",
         "._2fq0t{ border: 1px solid #4caf50!important; border-left: 0!important;}",
+        ".app-wrapper-web .h70RQ,._1E1g0{ border: 1px solid #4caf50!important; }",
     ].join("\n");
 	GM_addStyle(css);
 
