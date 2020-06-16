@@ -16,7 +16,8 @@
       "script": "whatsapp.darkgreen.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
       "code": "rt5VfKg",
-      "updated": "2020-06-04T00:00:00.000Z",
+      "video": [],
+      "updated": "2020-06-16T00:00:00.000Z",
       "type": 3
     },
     {
@@ -32,10 +33,11 @@
         "oscuro",
         "version"
       ],
-      "script": "whatsapp.darkgreen.user.js",
+      "script": "whatsapp.darkdefault.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
       "code": "k09uRvG",
-      "updated": "2020-06-04T00:00:00.000Z",
+      "video": [],
+      "updated": "2020-06-16T00:00:00.000Z",
       "type": 1
     },
     {
@@ -55,6 +57,7 @@
       "script": "youtube.darkgreen.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/www.youtube.com.ico",
       "code": "A5CNqos",
+      "video": [],
       "updated": "2020-04-27T00:00:00.000Z",
       "type": 1
     },
@@ -76,6 +79,7 @@
       "script": "youtube.embed.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/www.youtube.com.ico",
       "code": "BXYYLnU",
+      "video": [],
       "updated": "2020-03-06T00:00:00.000Z",
       "type": 1
     },
@@ -94,6 +98,7 @@
       "script": "ytmp3cc.dark.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/ytmp3.cc.ico",
       "code": "htOrjRs",
+      "video": [],
       "updated": "2020-03-18T00:00:00.000Z",
       "type": 1
     }
