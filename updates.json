@@ -7,6 +7,7 @@
       "desc": "Una versión oscura, ayuda a cuidar tus ojos :D",
       "script": "whatsapp.darkgreen.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
+      "code": "DKFootg",
       "updated": "2020-06-04T00:00:00.000Z"
     },
     {
@@ -16,6 +17,7 @@
       "desc": "¡El verde es magnifico!",
       "script": "youtube.darkgreen.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/www.youtube.com.ico",
+      "code": "A5CNqos",
       "updated": "2020-04-27T00:00:00.000Z"
     },
     {
@@ -25,6 +27,7 @@
       "desc": "",
       "script": "youtube.embed.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/www.youtube.com.ico",
+      "code": "BXYYLnU",
       "updated": "2020-03-06T00:00:00.000Z"
     },
     {
@@ -34,6 +37,7 @@
       "desc": "Una versión oscura, ayuda a cuidar tu vista",
       "script": "ytmp3cc.dark.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/ytmp3.cc.ico",
+      "code": "htOrjRs",
       "updated": "2020-03-18T00:00:00.000Z"
     }
   ]
