@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Whatsapp Web | Dark Mode
-// @version      0.1
+// @version      0.2
 // @description  Activa la version Dark de Whatsapp Web  (Modo oscuro de whatsapp por defecto)
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
@@ -14,6 +14,8 @@
 (function() {
     'use strict';
 
-    document.querySelector('body').classList.add('dark');
+    setTimeout(() => {
+        document.querySelector('body').classList.add('dark');
+    }, 3000);
 
 })();
