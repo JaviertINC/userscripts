@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      3.3
+// @version      3.4
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
@@ -14,9 +14,10 @@
 (function() {
     'use strict';
 
-    var hidden_privacy = false; // Protege tus otros chats (true, false)
+    var hidden_privacy = true; // Protege tus otros chats (true, false)
     var background_img = ""; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
     var background_opacity = "0.18"; //Modifica la opacidad de tu fondo
+    var disable_blur = true; //Desactiva el blur en las imagenes que ya no están disponibles
 
 	var css = [
         "body.darkgreen{ background-color: #242424!important; background-image: unset!important;}",
@@ -106,8 +107,8 @@
         "._1-iDe.Wu52Z{ border-right: 1px solid #4caf50!important; }",
         "._2y17h,.gQzdc{ border-top: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }",
         "_1vDUw B5rWa{ border-left: 1px solid #4caf50!important; }",
-        "[data-asset-intro-image] { background-image: url(\""+ atob('aHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pby9pbWFnZXMvd2hhdHNhcHAtY29ubmVjdGlvbi5wbmc=') +"\") !important; }",
-        "[data-asset-chat-background] {background-image: url(\""+ background_img +"\") !important;}",
+        "[data-asset-intro-image-light] { background-image: url(\""+ atob('aHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pby9pbWFnZXMvd2hhdHNhcHAtY29ubmVjdGlvbi5wbmc=') +"\") !important; }",
+        "[data-asset-chat-background-light]{background-image: url(\""+ background_img +"\") !important;}",
         ".Zq3Mc{ border: 1px solid #4caf50!important; color: #fff!important; }",
         ".rRAIq[style\"background-color: rgb(251, 251, 251);\"]{ background-color: #222!important; }",
         "path[fill=\"#009588\"]{ fill:#4caf50!important; }",
@@ -125,17 +126,23 @@
         "._2u2Mg ._1WliW,._1wCju ._2UkYn{ border: 1px solid #4caf50!important; }",
         "._2fq0t{ border: 1px solid #4caf50!important; border-left: 0!important;}",
         ".app-wrapper-web .h70RQ,._1E1g0{ border: 1px solid #4caf50!important; }",
+        ".YUoyu{ opacity: "+ background_opacity +"!important; }",
     ].join("\n");
 	GM_addStyle(css);
 
     if(hidden_privacy){
         var hidden_privacy_css = [
-            "._2EXPL{ transition: all 0.3s; filter: blur(5px)!important; }",
-            "._2EXPL._1f1zm,._2EXPL._1f1zm:hover{ filter: blur(0px)!important; }",
-            "._2EXPL:hover{ filter: blur(1px)!important; }",
-            ".YUoyu{ opacity: "+ background_opacity +"!important; }",
+            "._210SC .eJ0yJ{ transition: all 0.3s; filter: blur(5px)!important; }",
+            "._210SC .eJ0yJ._13opk,._210SC:hover .eJ0yJ{ filter: blur(0px)!important; }",
+            "._210SC:hover{ filter: blur(1px)!important; }",
         ].join("\n");
         GM_addStyle(hidden_privacy_css);
+    }
+    if(disable_blur){
+        var disable_blur_css = [
+            "._20GbR { -webkit-filter: unset!important; filter: unset!important; }"
+        ].join("\n");
+        GM_addStyle(disable_blur_css);
     }
 
     document.querySelector('body').classList.add('darkgreen');
