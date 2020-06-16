@@ -5,9 +5,35 @@
       "subname": "DarkGreen",
       "version": "3.3",
       "desc": "Una versión oscura, ayuda a cuidar tus ojos :D",
+      "search": [
+        "whatsapp web",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
       "script": "whatsapp.darkgreen.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
       "code": "rt5VfKg",
+      "updated": "2020-06-04T00:00:00.000Z"
+    },
+    {
+      "name": "Whatsapp Web",
+      "subname": "DarkDefault",
+      "version": "0.2",
+      "desc": "Una versión oscura, ayuda a cuidar tus ojos :D",
+      "search": [
+        "whatsapp web",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "whatsapp.darkgreen.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
+      "code": "k09uRvG",
       "updated": "2020-06-04T00:00:00.000Z"
     },
     {
@@ -15,6 +41,15 @@
       "subname": "DarkGreen",
       "version": "0.7",
       "desc": "¡El verde es magnifico!",
+      "search": [
+        "youtube",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "claro",
+        "version"
+      ],
       "script": "youtube.darkgreen.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/www.youtube.com.ico",
       "code": "A5CNqos",
@@ -25,6 +60,16 @@
       "subname": "Better Youtube Embed",
       "version": "0.8",
       "desc": "",
+      "search": [
+        "youtube",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "claro",
+        "version",
+        "embed"
+      ],
       "script": "youtube.embed.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/www.youtube.com.ico",
       "code": "BXYYLnU",
@@ -35,6 +80,13 @@
       "subname": "DarkDefault",
       "version": "0.1",
       "desc": "Una versión oscura, ayuda a cuidar tu vista",
+      "search": [
+        "ytmp3",
+        "dark",
+        "estilos",
+        "oscuro",
+        "version"
+      ],
       "script": "ytmp3cc.dark.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/ytmp3.cc.ico",
       "code": "htOrjRs",
