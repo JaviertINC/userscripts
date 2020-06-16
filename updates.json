@@ -1,0 +1,40 @@
+{
+  "us": [
+    {
+      "name": "Whatsapp Web",
+      "subname": "DarkGreen",
+      "version": "3.3",
+      "desc": "Una versión oscura, ayuda a cuidar tus ojos :D",
+      "script": "whatsapp.darkgreen.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
+      "updated": "2020-06-04T00:00:00.000Z"
+    },
+    {
+      "name": "Youtube",
+      "subname": "DarkGreen",
+      "version": "0.7",
+      "desc": "¡El verde es magnifico!",
+      "script": "youtube.darkgreen.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/www.youtube.com.ico",
+      "updated": "2020-04-27T00:00:00.000Z"
+    },
+    {
+      "name": "Youtube Embed",
+      "subname": "Better Youtube Embed",
+      "version": "0.8",
+      "desc": "",
+      "script": "youtube.embed.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/www.youtube.com.ico",
+      "updated": "2020-03-06T00:00:00.000Z"
+    },
+    {
+      "name": "YTmp3.cc",
+      "subname": "DarkDefault",
+      "version": "0.1",
+      "desc": "Una versión oscura, ayuda a cuidar tu vista",
+      "script": "ytmp3cc.dark.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/ytmp3.cc.ico",
+      "updated": "2020-03-18T00:00:00.000Z"
+    }
+  ]
+}
