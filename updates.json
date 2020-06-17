@@ -21,6 +21,153 @@
       "type": 3
     },
     {
+      "name": "APIUX Odoo",
+      "subname": "DarkGreen",
+      "version": "2.8",
+      "desc": "Una versión oscura, ayuda a cuidar tus ojos.",
+      "search": [
+        "apiux",
+        "odoo",
+        "backoffice",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "api-ux.backoffice.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/www.api-ux.com.ico",
+      "code": "AkMKWSd",
+      "video": [],
+      "updated": "2020-03-13T00:00:00.000Z",
+      "type": 1
+    },
+    {
+      "name": "Aternos",
+      "subname": "Anti-AntiAdblock",
+      "version": "0.4",
+      "desc": "Elimina el antiadblock sin dañar la usabilidad del sitio :D (Prefiere ver la publicidad, son servidores gratis, es su forma de generar ingresos)",
+      "search": [
+        "aternos",
+        "server",
+        "servidores",
+        "minecraft",
+        "adblock",
+        "funcional"
+      ],
+      "script": "aternos.anti-antiadblock.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/aternos.org.ico",
+      "code": "8Sf1bTK",
+      "video": [],
+      "updated": "2020-05-20T00:00:00.000Z",
+      "type": 2
+    },
+    {
+      "name": "Aternos",
+      "subname": "DarkGreen",
+      "version": "2.1",
+      "desc": "Una versión oscura, ayuda a cuidar tus ojos :D",
+      "search": [
+        "aternos",
+        "server",
+        "servidores",
+        "minecraft",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "aternos.darkgreen.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/aternos.org.ico",
+      "code": "PAi7g0M",
+      "video": [],
+      "updated": "2020-05-20T00:00:00.000Z",
+      "type": 1
+    },
+    {
+      "name": "Github",
+      "subname": "DarkGreen",
+      "version": "4.3",
+      "desc": "Una versión oscura, ayuda a cuidar tus ojos :D (Aún falta mucho por reparar)",
+      "search": [
+        "github",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "github.darkgreen.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/github.com.ico",
+      "code": "ZKtIbdx",
+      "video": [],
+      "updated": "2020-05-31T00:00:00.000Z",
+      "type": 1
+    },
+    {
+      "name": "Netflix",
+      "subname": "DarkGreen",
+      "version": "0.8",
+      "desc": "¡El verde es Magnifico!",
+      "search": [
+        "netflix",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "netflix.darkgreen.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/netflix.com.ico",
+      "code": "CE1Uo0f",
+      "video": [],
+      "updated": "2020-04-04T00:00:00.000Z",
+      "type": 1
+    },
+    {
+      "name": "TweetDeck",
+      "subname": "DarkGreen",
+      "version": "1.2",
+      "desc": "Twitter - Twitter Deck DarkGreen Style",
+      "search": [
+        "twitter",
+        "tweetdeck",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "twitter.tweetdeck.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/twitter.com.ico",
+      "code": "xjkHGoE",
+      "video": [],
+      "updated": "2020-03-10T00:00:00.000Z",
+      "type": 1
+    },
+    {
+      "name": "W3Schools Editor",
+      "subname": "DarkGreen",
+      "version": "0.5",
+      "desc": "Una versión oscura, ayuda a cuidar tus ojos :D",
+      "search": [
+        "w3schools",
+        "editor",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "w3schools.editor.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/w3schools.com.ico",
+      "code": "aT3K4qH",
+      "video": [],
+      "updated": "2020-02-26T00:00:00.000Z",
+      "type": 1
+    },
+    {
       "name": "Whatsapp Web",
       "subname": "DarkGreen",
       "version": "3.4",
