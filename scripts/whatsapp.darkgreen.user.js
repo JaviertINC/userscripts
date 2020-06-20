@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      3.4
+// @version      3.5
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @author       @JaviertINC
@@ -14,8 +14,8 @@
 (function() {
     'use strict';
 
-    var hidden_privacy = true; // Protege tus otros chats (true, false)
-    var background_img = ""; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
+    var hidden_privacy = false; // Protege tus otros chats (true, false)
+    var background_img = "https://i.yesly.cl/lNmTEA4s"; //Pon tu fondo favorito :D (se recomienda que la imagen esté en un servidor seguro con HTTPS)
     var background_opacity = "0.18"; //Modifica la opacidad de tu fondo
     var disable_blur = true; //Desactiva el blur en las imagenes que ya no están disponibles
 
@@ -94,6 +94,12 @@
         "    --bubble-meta: #aaa;",
         "    --bubble-meta-icon: #aaa;",
         "    --chatlist-icon: #aaa;",
+        "    --intro-secondary: #f1f1f1;",
+        "    --message-primary: #fff;",
+        "    --compose-border: #4caf50;",
+        "    --notification-biz-text: #fff;",
+        "    --notification-e2e-text: #fff;",
+        "    --search-input-background: #666;",
         "}",
         "a{ color: #4caf50!important; }",
         "._1i1U7.jZ4tp,._1i1U7._2DNgV{ background-unset!important; }",
@@ -127,6 +133,8 @@
         "._2fq0t{ border: 1px solid #4caf50!important; border-left: 0!important;}",
         ".app-wrapper-web .h70RQ,._1E1g0{ border: 1px solid #4caf50!important; }",
         ".YUoyu{ opacity: "+ background_opacity +"!important; }",
+        "._9a59P{ color: #fff!important; }",
+        "[data-icon=\"search\"]{ color: #fff!important; }",
     ].join("\n");
 	GM_addStyle(css);
 
