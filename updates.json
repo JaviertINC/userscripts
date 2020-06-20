@@ -169,8 +169,26 @@
     },
     {
       "name": "Whatsapp Web",
+      "subname": "DarkDefault",
+      "version": "0.2",
+      "desc": "Activa la version Dark de Whatsapp Web. Este modo es la versión oscura oficial de Whatsapp Web, aún está bajo desarrollo por lo que está incompleta y por eso aún no la han publicado.",
+      "search": [
+        "whatsapp web",
+        "estilos",
+        "oscuro",
+        "version"
+      ],
+      "script": "whatsapp.darkdefault.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
+      "code": "k09uRvG",
+      "video": [],
+      "updated": "2020-06-16T00:00:00.000Z",
+      "type": 1
+    },
+    {
+      "name": "Whatsapp Web",
       "subname": "DarkGreen",
-      "version": "3.4",
+      "version": "3.5",
       "desc": "Una versión oscura, ayuda a cuidar tus ojos. Además, con este script, podrás cambiar el fondo de tu Whatsapp y proteger tus otros chats, muy útil cuando se está en una oficina o compartiendo pantalla.",
       "search": [
         "whatsapp web",
@@ -184,28 +202,8 @@
       "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
       "code": "rt5VfKg",
       "video": [],
-      "updated": "2020-06-16T00:00:00.000Z",
+      "updated": "2020-06-20T00:00:00.000Z",
       "type": 3
-    },
-    {
-      "name": "Whatsapp Web",
-      "subname": "DarkDefault",
-      "version": "0.2",
-      "desc": "Activa la version Dark de Whatsapp Web. Este modo es la versión oscura oficial de Whatsapp Web, aún está bajo desarrollo por lo que está incompleta y por eso aún no la han publicado.",
-      "search": [
-        "whatsapp web",
-        "darkgreen",
-        "estilos",
-        "verde",
-        "oscuro",
-        "version"
-      ],
-      "script": "whatsapp.darkdefault.user.js",
-      "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
-      "code": "k09uRvG",
-      "video": [],
-      "updated": "2020-06-16T00:00:00.000Z",
-      "type": 1
     },
     {
       "name": "Youtube",
