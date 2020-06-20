@@ -6,4 +6,4 @@ whatsapp.darkgreen 3.5 | 2020-06-20
     * Reparación del color de mensajes del sistema
     * Reparado el color de fondo en el buscador
 
----
+--- by @JaviertINC
