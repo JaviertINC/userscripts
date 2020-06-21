@@ -1,9 +1,0 @@
-whatsapp.darkgreen 3.5 | 2020-06-20
-    ! Se actualizó Whatsapp Web
-    + Se agregó una Imagen de Fondo Predeterminada
-    * Reparado el color de texto del mensaje de Bienvenida
-    * Reparación de color del chat
-    * Reparación del color de mensajes del sistema
-    * Reparado el color de fondo en el buscador
-
---- by @JaviertINC
