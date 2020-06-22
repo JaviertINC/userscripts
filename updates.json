@@ -188,7 +188,7 @@
     {
       "name": "Whatsapp Web",
       "subname": "DarkGreen",
-      "version": "3.5",
+      "version": "3.6",
       "desc": "Una versión oscura, ayuda a cuidar tus ojos. Además, con este script, podrás cambiar el fondo de tu Whatsapp y proteger tus otros chats, muy útil cuando se está en una oficina o compartiendo pantalla.",
       "search": [
         "whatsapp web",
@@ -202,7 +202,7 @@
       "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
       "code": "rt5VfKg",
       "video": [],
-      "updated": "2020-06-20T00:00:00.000Z",
+      "updated": "2020-06-22T00:00:00.000Z",
       "type": 3
     },
     {
@@ -212,6 +212,7 @@
       "desc": "¡El verde es magnifico! Con este script podrás reemplazar el color rojo de YouTube por el Verde, ideal para utilizarse con el modo oscuro de YouTube.",
       "search": [
         "youtube",
+        "yt",
         "darkgreen",
         "estilos",
         "verde",
@@ -233,6 +234,7 @@
       "desc": "",
       "search": [
         "youtube",
+        "yt",
         "darkgreen",
         "estilos",
         "verde",
