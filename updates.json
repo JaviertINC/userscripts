@@ -106,6 +106,27 @@
       "type": 1
     },
     {
+      "name": "Index Of",
+      "subname": "DarkGreen",
+      "version": "0.9",
+      "desc": "Una versión oscura, ayuda a cuidar tus ojos, cuando visitas páginas web que no tienen un archivo index, se muestra la carpeta y todo su conenido, pero ahora podrás verla con el fantástico estilo DarkGreen",
+      "search": [
+        "indexof",
+        "index of",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "indexof.darkgreen.user.js",
+      "ico": "https://www.google.com/s2/favicons?domain=javiertinc.cl",
+      "code": "iSUWFEf",
+      "video": [],
+      "updated": "2020-06-25T00:00:00.000Z",
+      "type": 1
+    },
+    {
       "name": "Netflix",
       "subname": "DarkGreen",
       "version": "0.8",
