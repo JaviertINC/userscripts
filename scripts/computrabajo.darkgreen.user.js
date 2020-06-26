@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
-// @version      0.4
+// @version      0.5
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=computrabajo.cl
 // @author       @JaviertINC
@@ -14,9 +14,15 @@
 (function() {
     'use strict';
 
+    var ads = false;
+
 	var css = [
         "body{ background-color: #242424!important; color: #f1f1f1!important;}",
+
         ".m_web{ background-color: #4c4c4c!important; border-bottom: 1px solid #4caf50!important; }",
+        ".cS{ background-color: #444!important; }",
+        ".logo_svg h1{ color: #fff!important; }",
+
         ".nav.activo, .nav.activo:focus, .nav.activo:hover{ background-color: #4caf50!important; color: #fff!important; border: 0!important;}",
         ".nav:hover{ background-color: rgba(255,255,255,.2)!important; }",
         ".nav.new span{ background-color: #4caf50!important; }",
@@ -25,6 +31,15 @@
 
         "a{ color: #4caf50!important; }",
         ".breadcrumb .breadcrumb .active{ color: #f1f1f1!important; }",
+
+        ".sC{ background-color: rgba(40, 40, 40, .8)!important; }",
+        ".bS .submit_n{ border-color: #4caf50!important; }",
+
+        ".t_log{ background-color: #4c4c4c!important; color: #fff!important; border-top: 1px solid #4caf50!important; }",
+        ".bxS{ background-color: #373737!important; }",
+        ".iS a h2, .iS a h3{ color: #fff!important; }",
+
+        ".bCF{ background-color: #4c4c4c!important; }",
 
         ".lO.parrilla_oferta{ width: 80%!important; padding: 0!important; }",
         ".box_order_by{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
@@ -86,9 +101,26 @@
 
         ".boxWhite.fl.w_100 .fl100{ padding: 1rem!important; }",
 
+        ".lL{ background-color: #242424!important; }",
+        ".lS{ margin: 0 0 40px!important; padding: 1rem 0!important; background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+        ".sL{ border-bottom-color: #4caf50!important; color: #fff!important; }",
+        ".sL .active,.sL .active:hover,.sL .active:focus{ background-color: #4caf50!important; border: 1px solid #4caf50!important; color: #fff!important; }",
+        ".sL li{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; color: #fff!important; }",
+        ".sL li:hover,.sL li:focus{ background-color: #5d5d5d!important; }",
+
+        ".footer_countries{ border-top-color: #4caf50!important; }",
+
+        ".socialicon .twitter:hover, .socialicon .twitter:focus,.socialicon .facebook:hover,.socialicon .facebook:focus{ background-color: #4caf50!important; }",
+
         ".footer_c{ border-top-color: #4caf50!important; background-color: #4c4c4c!important; }",
         ".info_footer{ color: #f1f1f1!important; }",
+        "last_footer{ color: #f1f1f1!important; }",
     ].join("\n");
 	GM_addStyle(css);
+
+    if(!ads){
+        document.getElementById("logosSection").remove();
+        document.getElementById("divPromoteAppResponsive").remove();
+    }
 
 })();
