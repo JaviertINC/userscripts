@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
-// @version      0.3
+// @version      0.4
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=computrabajo.cl
 // @author       @JaviertINC
@@ -22,7 +22,10 @@
         ".nav.new span{ background-color: #4caf50!important; }",
         ".nav.new span::before{ border-bottom: 5px solid #4caf50!important; }",
         ".nav a{ color: #fff!important; }",
+
         "a{ color: #4caf50!important; }",
+        ".breadcrumb .breadcrumb .active{ color: #f1f1f1!important; }",
+
         ".lO.parrilla_oferta{ width: 80%!important; padding: 0!important; }",
         ".box_order_by{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         ".box_order_by p{ color: #f1f1f1!important; padding: 10px 15px!important; }",
@@ -55,7 +58,7 @@
         ".box_filtrar_cl input[type=\"text\"]{ background-color: #666!important; color: #fff!important; border: 1px solid #4caf50!important; }",
         ".box_filtrar_t{ border-top: 7px solid #4caf50!important; }",
         ".box_filtrar_cl{ background-color: #333!important; padding: 0!important; }",
-        ".submit_n{ background: unset!important; background-color: #4caf50!important; }",
+        ".submit_n{ background: unset!important; background-color: #4caf50!important; color: #fff!important; }",
         ".box_filtrar .deshacer{ background-color: #444!important; color: #fff!important; font-weight: bold!important; }",
         ".box_filtrar_sel{ background-color: #333!important; }",
         ".box_filtrar_sel li{ border-bottom-color: #4caf50!important; padding: 0!important; }",
@@ -64,6 +67,27 @@
         ".iC img{ box-shadow: 0 0 13px #4caf50!important; }",
         ".box_filtrar_ch{ padding: 0!important; }",
         ".box_filtrar_t{ margin-bottom: 0!important; }",
+
+        ".boxWhite{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; padding: 0!important; }",
+        ".menuV.dTabs{ background-color: #4c4c4c!important;  border-bottom: 5px solid #4caf50!important; }",
+        ".menuV.dTabs .tabs a{ color: #fff!important; border: none!important; padding: .7rem 1rem!important; font-weight: bold!important; }",
+        ".menuV.dTabs .tabs a:hover,.menuV.dTabs .tabs a:focus{ background-color: rgba(255,255,255,.2)!important; }",
+        ".menuV.dTabs .tabs a.selec{ background-color: #4caf50!important; border-bottom: none!important; }",
+        ".menuV.dTabs.fixed h2{ line-height: 1.2rem!important; }",
+        ".boxWhite h1.m0{ padding-top: 1rem!important;}",
+        ".fc80,.datePosted{ color: #ddd!important; }",
+        ".boxWhite ul.m0{ padding: 1rem!important; }",
+        ".boxWhite.fl.w_100.ocultar_mvl.p30 h2{ padding-top: 1rem!important; padding-left: 1rem!important; }",
+        ".boxWhite.fl.w_100.ocultar_mvl.p30 ul.m0{ padding-top: 0rem!important; padding-left: 1rem!important; }",
+        ".menuV.dTabs.fixed .fixed_btn .submit_n{ position: absolute!important; top: 2rem!important; right: 3rem!important; color: #fff!important; }",
+        ".btn_postular{ margin: 1rem auto!important; }",
+        ".boxWhite.fl.w_100.links_search.mt20.mb20.ocultar_mvl{ padding: 1rem!important; }",
+        ".boxWhite.fl.w_100.mb20.mt20.mt10_r.mb0_r{ padding: 1rem!important; }",
+
+        ".boxWhite.fl.w_100 .fl100{ padding: 1rem!important; }",
+
+        ".footer_c{ border-top-color: #4caf50!important; background-color: #4c4c4c!important; }",
+        ".info_footer{ color: #f1f1f1!important; }",
     ].join("\n");
 	GM_addStyle(css);
 
