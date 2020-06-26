@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
-// @version      0.0.3
+// @version      0.3
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=computrabajo.cl
 // @author       @JaviertINC
