@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
-// @version      0.5
+// @version      0.6
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @icon         https://www.google.com/s2/favicons?domain=computrabajo.cl
 // @author       @JaviertINC
@@ -28,6 +28,18 @@
         ".nav.new span{ background-color: #4caf50!important; }",
         ".nav.new span::before{ border-bottom: 5px solid #4caf50!important; }",
         ".nav a{ color: #fff!important; }",
+
+        ".menu_right .box_cand_sub{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; top: 47px!important; border-top: none!important; }",
+        ".triangulo_inf_login{ background: unset!important; }",
+        ".menu_right .box_cand_sub .content_subnav .icon{ border-color: #4caf50!important; }",
+        ".menu_right .box_cand_sub .subnav_btn{ background-color: #4caf50!important; color: #fff!important; padding: .5rem 1rem!important; display: flex!important; border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important; }",
+        ".menu_right .box_cand_sub .subnav_btn span:not(.subnav_icon){ margin-top: .4rem !important; padding: 0 .3rem !important; display: block !important; }",
+        ".menu_right .box_cand_sub .subnav_btn span.subnav_icon{ margin-top: .5rem!important; }",
+        ".menu_right .box_cand_sub .content_subnav .links_cand{ text-align: unset!important; }",
+        ".menu_right .box_cand_sub .content_subnav .links_cand li{ text-align: left!important; display: block!important; }",
+        ".menu_right .box_cand_sub .content_subnav .links_cand li:nth-child(1){ text-align: center!important; }",
+        ".menu_right .box_cand_sub .content_subnav .links_cand li a{ display: block!important; padding: .4rem 1rem!important; }",
+        ".menu_right .box_cand_sub .content_subnav .links_cand li a:hover,.menu_right .box_cand_sub .content_subnav .links_cand li a:focus{ background-color: rgba(255,255,255,.1)!important; }",
 
         "a{ color: #4caf50!important; }",
         ".breadcrumb .breadcrumb .active{ color: #f1f1f1!important; }",
@@ -108,15 +120,18 @@
         ".sL li{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; color: #fff!important; }",
         ".sL li:hover,.sL li:focus{ background-color: #5d5d5d!important; }",
 
-        ".footer_countries{ border-top-color: #4caf50!important; }",
+        ".footer_countries{ border-top-color: #4caf50!important; background-color: #333!important;  }",
+        ".footer_countries ul li a{ color: #fff!important; }",
 
         ".socialicon .twitter:hover, .socialicon .twitter:focus,.socialicon .facebook:hover,.socialicon .facebook:focus{ background-color: #4caf50!important; }",
 
         ".footer_c{ border-top-color: #4caf50!important; background-color: #4c4c4c!important; }",
         ".info_footer{ color: #f1f1f1!important; }",
-        "last_footer{ color: #f1f1f1!important; }",
+        ".last_footer{ color: #f1f1f1!important; }",
     ].join("\n");
 	GM_addStyle(css);
+    document.getElementsByClassName("footer_countries")[0].setAttribute("data-original","");
+    document.getElementsByClassName("footer_countries")[0].setAttribute("style","");
 
     if(!ads){
         document.getElementById("logosSection").remove();
