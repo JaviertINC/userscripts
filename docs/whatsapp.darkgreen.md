@@ -1,7 +1,7 @@
 # WhatsApp Web | DarkGreen
 #### Una versión oscura, ayuda a cuidar tus ojos :D
 
-Este script modifica el estilo de WhatsApp Web con un estilo DarkGreen basado en los estilos de la página oficial de @JaviertINC.
+Este script modifica el estilo de WhatsApp Web con un estilo DarkGreen basado en los estilos de la página oficial de [@JaviertINC](https://javiertinc.cl).
 
 Sitio Web: [JaviertINC.cl/userscripts](https://javiertinc.cl/userscripts/script/whatsapp.darkgreen)
 
