@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
-// @version      0.6
+// @namespace    https://javiertinc.cl/userscripts
+// @version      0.7
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
-// @icon         https://www.google.com/s2/favicons?domain=computrabajo.cl
+// @homepage     https://javiertinc.cl/userscripts/script/computrabajo.darkgreen
 // @author       @JaviertINC
 // @match        *://www.computrabajo.cl/*
 // @include      *://candidato.computrabajo.cl/*
 // @updateURL    https://javiertinc.github.io/userscripts/scripts/computrabajo.darkgreen.user.js
+// @icon         https://www.google.com/s2/favicons?domain=computrabajo.cl
 // @grant        GM_addStyle
 // @run-at       document-start
 // ==/UserScript==
@@ -17,7 +19,7 @@
     var ads = false;
 
 	var css = [
-        "body{ background-color: #242424!important; color: #f1f1f1!important;}",
+        "html,body{ background-color: #242424!important; color: #f1f1f1!important;}",
 
         ".m_web{ background-color: #4c4c4c!important; border-bottom: 1px solid #4caf50!important; }",
         ".cS{ background-color: #444!important; }",
@@ -42,7 +44,43 @@
         ".menu_right .box_cand_sub .content_subnav .links_cand li a:hover,.menu_right .box_cand_sub .content_subnav .links_cand li a:focus{ background-color: rgba(255,255,255,.1)!important; }",
 
         "a{ color: #4caf50!important; }",
+        ".submit_n{ background: unset!important; background-color: #4caf50!important; color: #fff!important; }",
         ".breadcrumb .breadcrumb .active{ color: #f1f1f1!important; }",
+
+        ".buscador, .companies_logos, .offers_insc, .offers_suggest, .publi_apli, .publi_banner_lateral, .user_info, .visitas_perfil{ background-color: #4c4c4c!important; color: #f1f1f1!important; }",
+        ".ccp_menu{ background-color: #444!important; border-bottom: 5px solid #4caf50!important; }",
+        ".ccp_menu li.selec .ccp_flecha, .ccp_menu li:hover .ccp_flecha{ background: unset!important; }",
+        ".ccp_menu li.selec{ background-color: #4caf50!important; }",
+        ".ccp_menu li:not(.selec):hover{ background-color: rgba(255,255,255,.1)!important; }",
+        ".ccp_menu li{ border-right-color: #666!important; }",
+        ".ccp_menu ul{ border-left-color: #666!important; }",
+        ".ccp_menu li a{ color: #fff!important; }",
+
+        ".block_cand_offers .user_info{ border: 1px solid #4caf50!important; }",
+        ".block_cand_offers .img{ background-color: #4c4c4c!important; border: none!important; border-radius: 2px 0 0 2px!important; -webkit-border-radius: 2px 0 0 2px!important; -moz-border-radius: 2px 0 0 2px!important; }",
+        ".cv_completed.box_green .cv_user_complete{ background-color: #4caf50!important; }",
+        ".cv_completed .cv_100{ background-color: #343434!important; }",
+        ".cv_completed .txt,.cv_completed.box_green .txt + span{ color: #fff!important; }",
+        ".block_cand_offers .info .block_link{ background-color: #4c4c4c!important; border: none!important; border-left: 1px solid #3c3c3c!important; color: #fff!important; border-radius: 0 0 1px 0!important; -webkit-border-radius: 0 0 1px 0!important; -moz-border-radius: 0 0 1px 0!important; }",
+        ".block_cand_offers .info{ background-color: rgba(0,0,0,.2)!important; }",
+        ".block_cand_offers .info h1{ color: #fff!important; }",
+
+        ".mis_aplicaciones{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
+        ".mis_aplicaciones:hover{ border-radius: 3px 0 3px 3px!important; }",
+        ".mis_aplicaciones .acciones{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; border-left: none!important; right: -42px!important; border-radius: 0 5px 5px 0!important; }",
+        ".progress li{ background-color: #666!important; border-color: #4caf50!important; color: #fff!important; }",
+        ".progress li .triangulo{ border-left-color: #666!important; right: -11.7px!important; }",
+        ".progress .completa{ background-color: #444!important; }",
+        ".progress .completa .triangulo{ border-left-color: #444!important; right: -11.7px!important; }",
+        ".progress .en_progreso::before, .progress .finalista::before, .progress .leida::before { border-left-color: #4caf50!important; }",
+        ".progress .aplicada.activa,.progress .leida.activa,.progress .en_progreso.activa,.progress .finalista.activa{ background-color: #4caf50!important; }",
+        ".progress .aplicada.activa .triangulo,.progress .leida.activa .triangulo,.progress .en_progreso.activa .triangulo,.progress .finalista.activa .triangulo{ border-left-color: #4caf50!important; }",
+
+        ".alert .bx{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+        ".alert .form{ background-color: #5c5c5c!important; border-color: #4caf50!important; }",
+
+        ".content_popup .c_t, .t_c.container .c_t{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+        ".content_popup .c_t p, .t_c.container .c_t p{ color: #f1f1f1!important; }",
 
         ".sC{ background-color: rgba(40, 40, 40, .8)!important; }",
         ".bS .submit_n{ border-color: #4caf50!important; }",
@@ -72,11 +110,14 @@
         ".oD{ background-color: #5d5d5d!important; }",
         ".bRS h2 a{ color: #fff!important; font-weight: bold; }",
         ".lT, .lT a, .lT a:hover,.dO{ color: #ddd!important; }",
+
+        ".paginas{ margin-bottom: 1rem!important; }",
         ".paginas ul{ border-color: #4caf50!important; }",
-        ".paginas li{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
+        ".paginas li,.paginas ul li a{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
         ".paginas li:hover a,.paginas li:focus a{ background-color: #5c5c5c!important; }",
         ".paginas a,.paginas a:hover,.paginas a:focus{ color: #fff!important; }",
         ".paginas .active,.paginas .active:hover,.paginas .active:focus,.paginas .active a,.paginas .active:hover a,.paginas .active:focus a{ background-color: #4caf50!important; }",
+
         ".box_filtrar{ border-color: #4caf50!important; }",
         ".box_filtro{ background-color: #4c4c4c!important; border-top-left-radius: 3px!important; border-top-right-radius: 3px!important; border-bottom: 1px solid #4caf50!important; }",
         ".box_filtrar_t2 .icon + *, .box_filtrar_t .icon + *{ color: #fff!important; }",
@@ -85,7 +126,6 @@
         ".box_filtrar_cl input[type=\"text\"]{ background-color: #666!important; color: #fff!important; border: 1px solid #4caf50!important; }",
         ".box_filtrar_t{ border-top: 7px solid #4caf50!important; }",
         ".box_filtrar_cl{ background-color: #333!important; padding: 0!important; }",
-        ".submit_n{ background: unset!important; background-color: #4caf50!important; color: #fff!important; }",
         ".box_filtrar .deshacer{ background-color: #444!important; color: #fff!important; font-weight: bold!important; }",
         ".box_filtrar_sel{ background-color: #333!important; }",
         ".box_filtrar_sel li{ border-bottom-color: #4caf50!important; padding: 0!important; }",
@@ -130,12 +170,30 @@
         ".last_footer{ color: #f1f1f1!important; }",
     ].join("\n");
 	GM_addStyle(css);
-    document.getElementsByClassName("footer_countries")[0].setAttribute("data-original","");
-    document.getElementsByClassName("footer_countries")[0].setAttribute("style","");
+    if(window.location.href == "https://www.computrabajo.cl/"){
+        document.getElementsByClassName("footer_countries")[0].setAttribute("data-original","");
+        document.getElementsByClassName("footer_countries")[0].setAttribute("style","");
+    }
+
+    if(window.location.href == "https://candidato.computrabajo.cl/Candidate/ofertas-de-trabajo/"){
+        window.location.href = "https://www.computrabajo.cl/ofertas-de-trabajo/";
+    }
 
     if(!ads){
-        document.getElementById("logosSection").remove();
-        document.getElementById("divPromoteAppResponsive").remove();
+        if(document.getElementById("logosSection") === true){
+            document.getElementById("logosSection").remove();
+        }
+        if(document.getElementById("divPromoteAppResponsive") === true){
+            document.getElementById("divPromoteAppResponsive").remove();
+        }
+        /* */
+        var add_css = [
+            ".publi_apli{ display: none!important; }",
+            ".publi_logos{ display: none!important; }",
+        ].join("\n");
+        GM_addStyle(add_css);
+        /* */
+
     }
 
 })();
