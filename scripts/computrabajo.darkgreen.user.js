@@ -1,14 +1,12 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
-// @namespace    https://javiertinc.cl/userscripts
-// @version      0.7
+// @version      0.8
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
-// @homepage     https://javiertinc.cl/userscripts/script/computrabajo.darkgreen
+// @icon         https://www.google.com/s2/favicons?domain=computrabajo.cl
 // @author       @JaviertINC
 // @match        *://www.computrabajo.cl/*
 // @include      *://candidato.computrabajo.cl/*
 // @updateURL    https://javiertinc.github.io/userscripts/scripts/computrabajo.darkgreen.user.js
-// @icon         https://www.google.com/s2/favicons?domain=computrabajo.cl
 // @grant        GM_addStyle
 // @run-at       document-start
 // ==/UserScript==
@@ -90,6 +88,9 @@
         ".iS a h2, .iS a h3{ color: #fff!important; }",
 
         ".bCF{ background-color: #4c4c4c!important; }",
+
+        ".box, .boxn{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
+        ".bContact ul{ background-color: rgba(255,255,255,.1)!important; border-color: #4caf50!important; color: #fff!important; font-weight: bold!important; box-shadow: unset!important; -webkit-box-shadow: unset!important; -moz-box-shadow: unset!important; }",
 
         ".lO.parrilla_oferta{ width: 80%!important; padding: 0!important; }",
         ".box_order_by{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
