@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
+// @namespace    https://javiertinc.cl/userscripts
 // @version      0.8
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
-// @icon         https://www.google.com/s2/favicons?domain=computrabajo.cl
+// @homepage     https://javiertinc.cl/userscripts/script/computrabajo.darkgreen
 // @author       @JaviertINC
 // @match        *://www.computrabajo.cl/*
 // @include      *://candidato.computrabajo.cl/*
 // @updateURL    https://javiertinc.github.io/userscripts/scripts/computrabajo.darkgreen.user.js
+// @icon         https://www.google.com/s2/favicons?domain=computrabajo.cl
 // @grant        GM_addStyle
 // @run-at       document-start
 // ==/UserScript==
