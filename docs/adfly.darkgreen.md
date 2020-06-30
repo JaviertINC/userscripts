@@ -8,12 +8,14 @@ Sitio Web: [JaviertINC.cl/userscripts](https://javiertinc.cl/userscripts/script/
 | Ínidce |
 |---|
 | [Descripción Breve](#adfly--darkgreen) |
-| [Funciones](#funciones) |
+| [Funciones y Cambios](#funciones-y-cambios) |
 | [Screenshots](#screenshots) |
 | [Videos](#videos) |
 
-## Funciones
-- Modifica el estilo de Adfly con el estilo DarkGreen, mira las [Screenshots](#screenshots)
+## Funciones y Cambios
+- Modifica el estilo de Adfly con el estilo DarkGreen, mira las [Screenshots](#screenshots).
+- Deshabilita algunos botones que no funcionan o que son inútiles.
+- Modifica el contador de días faltantes para pagos.
 
 ## Screenshots
 _Pronto_
