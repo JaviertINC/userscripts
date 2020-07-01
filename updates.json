@@ -148,6 +148,25 @@
       "type": 1
     },
     {
+      "name": "Instagram",
+      "subname": "DarkDefault",
+      "version": "0.1",
+      "desc": "Una versión oscura, ayuda a cuidar tus ojos, habilita la versión oscura oficial de Instagram Web",
+      "search": [
+        "instagram",
+        "estilos",
+        "oscuro",
+        "version",
+        "dark"
+      ],
+      "script": "instagram.darkdefault.user.js",
+      "ico": "https://www.google.com/s2/favicons?domain=instagram.com",
+      "code": "D07O5Nh",
+      "video": [],
+      "updated": "2020-07-01T00:00:00.000Z",
+      "type": 1
+    },
+    {
       "name": "Netflix",
       "subname": "DarkGreen",
       "version": "0.8",
@@ -218,7 +237,8 @@
         "whatsapp web",
         "estilos",
         "oscuro",
-        "version"
+        "version",
+        "dark"
       ],
       "script": "whatsapp.darkdefault.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/web.whatsapp.com.ico",
