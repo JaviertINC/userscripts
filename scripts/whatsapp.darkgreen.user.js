@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
-// @version      3.6
+// @namespace    https://javiertinc.cl/userscripts
+// @version      3.7
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
-// @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
+// @homepage     https://javiertinc.cl/userscripts/script/whatsapp.darkgreen
 // @author       @JaviertINC
 // @match        *://web.whatsapp.com/*
 // @include      https://web.whatsapp.com/JaviertINC
 // @updateURL    https://javiertinc.github.io/userscripts/scripts/whatsapp.darkgreen.user.js
+// @icon         https://www.google.com/s2/favicons?domain=whatsapp.com
 // @grant        GM_addStyle
 // @run-at       document-start
 // ==/UserScript==
@@ -21,7 +23,6 @@
 
 	var css = [
         "body.darkgreen{ background-color: #242424!important; background-image: unset!important;}",
-        "._2zynu::after{ border-top: 6px solid #4caf50!important; }",
 		".darkgreen {",
         "    --gray-200: #4caf50;",
         "    --teal: #4caf50;",
@@ -93,50 +94,67 @@
         "    --teal-lighter: #4caf50;",
         "    --bubble-meta: #aaa;",
         "    --bubble-meta-icon: #aaa;",
+        "    --button-bubble: #4caf50;",
+        "    --button-secondary-background-hover: #343434;",
         "    --chatlist-icon: #aaa;",
         "    --intro-secondary: #f1f1f1;",
         "    --message-primary: #fff;",
-        "    --compose-border: #4caf50;",
         "    --compose-primary: #fff;",
+        "    --compose-input-background: #343434;",
+        "    --compose-input-border: #4caf50;",
         "    --notification-biz-text: #fff;",
         "    --notification-e2e-text: #fff;",
         "    --search-input-background: #666;",
+        "    --search-container-background: #4c4c4c;",
+        "    --active-tab-marker: #4caf50;",
+        "    --butterbar-update-background: #4caf50;",
+        "    --spinner-highlight: #4caf50;",
+        "    --modal-backdrop: rgba(0,0,0,.7);",
+        "    --button-plain-background: #4caf50;",
+        "",
         "}",
-        "a{ color: #4caf50!important; }",
-        "._1i1U7.jZ4tp,._1i1U7._2DNgV{ background-unset!important; }",
-        "#startup{ background-color: #242424!important; }",
-        "#startup._1UDDE{ fill: #4caf50!important; }",
-        "._1RQfk{ background-color: #393939!important; }",
-        "._3pkkz{ border-bottom: 1px solid #4caf50!important; border-right: 1px solid #4caf50!important; }",
-        "._2nmDZ{ border-right: 1px solid #4caf50!important; }",
-        "._3auIg{ border: 1px solid #4caf50!important; }",
-        "._2y17h::after{ border: unset!important; background-color: unset!important; }",
-        "._1-iDe.Wu52Z{ border-right: 1px solid #4caf50!important; }",
-        "._2y17h,.gQzdc{ border-top: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }",
-        "_1vDUw B5rWa{ border-left: 1px solid #4caf50!important; }",
-        "[data-asset-intro-image-light] { background-image: url(\""+ atob('aHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pby9pbWFnZXMvd2hhdHNhcHAtY29ubmVjdGlvbi5wbmc=') +"\") !important; }",
-        "[data-asset-chat-background-light]{background-image: url(\""+ background_img +"\") !important;}",
-        ".Zq3Mc{ border: 1px solid #4caf50!important; color: #fff!important; }",
-        ".rRAIq[style\"background-color: rgb(251, 251, 251);\"]{ background-color: #222!important; }",
-        "path[fill=\"#009588\"]{ fill:#4caf50!important; }",
-        "span[data-icon=\"back-blue\"]{ color: #4caf50!important; }",
-        ".B5rWa{ border-left: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }",
-        ".gQzdc{ border-top: none!important; border-left: 1px solid #4caf50!important; }",
-        ".message-in .tail-container, .message-in .tail-override-right .tail-container, .message-out .tail-override-right .tail-container, .message-in .tail-override-left .tail-container{ background-image: unset!important; }",
-        ".message-out .tail-container,.message-out .tail-container.highlight{ background-image: unset!important; }",
-        ".Pg7Si progress{ background-color: #4c4c4c!important; color: #4caf50!important; }",
-        ".Pg7Si progress[value]::-webkit-progress-value{ background-color: #4caf50!important; }",
-        "._2EXPL{ filter: unset!important;}",
-        "._1CnF3{ border: 1px solid #4caf50!important; }",
-        "._3lLzD{ color: #f1f1f1!important; }",
-        "._2u2Mg ._1WliW,._1wCju ._2UkYn,.Qgzj8.gqwaM._3FXB1{ border-radius: 0!important;}",
-        "._2u2Mg ._1WliW,._1wCju ._2UkYn{ border: 1px solid #4caf50!important; }",
-        "._2fq0t{ border: 1px solid #4caf50!important; border-left: 0!important;}",
-        ".app-wrapper-web .h70RQ,._1E1g0{ border: 1px solid #4caf50!important; }",
-        ".YUoyu{ opacity: "+ background_opacity +"!important; }",
-        "._9a59P{ color: #fff!important; }",
-        "[data-icon=\"search\"]{ color: #fff!important; }",
-        "._2vJ01{ border-top: 1px solid #4caf50!important; }",
+        ".darkgreen a{ color: #4caf50!important; }",
+        ".darkgreen ._1i1U7.jZ4tp,.darkgreen ._1i1U7._2DNgV{ background-unset!important; }",
+        ".darkgreen #startup{ background-color: #242424!important; }",
+        ".darkgreen #startup._1UDDE{ fill: #4caf50!important; }",
+        ".darkgreen ._1RQfk{ background-color: #393939!important; }",
+        ".darkgreen ._3pkkz{ border-bottom: 1px solid #4caf50!important; border-right: 1px solid #4caf50!important; }",
+        ".darkgreen ._2nmDZ{ border-right: 1px solid #4caf50!important; }",
+        ".darkgreen ._3auIg{ border: 1px solid #4caf50!important; }",
+        ".darkgreen ._2y17h::after{ border: unset!important; background-color: unset!important; }",
+        ".darkgreen ._1-iDe.Wu52Z{ border-right: 1px solid #4caf50!important; }",
+        ".darkgreen ._2y17h,.darkgreen .gQzdc{ border-top: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }",
+        ".darkgreen _1vDUw B5rWa{ border-left: 1px solid #4caf50!important; }",
+        ".darkgreen [data-asset-intro-image-light] { background-image: url(\""+ atob('aHR0cHM6Ly9qYXZpZXJ0aW5jLmdpdGh1Yi5pby9pbWFnZXMvd2hhdHNhcHAtY29ubmVjdGlvbi5wbmc=') +"\") !important; }",
+        ".darkgreen [data-asset-chat-background-light]{background-image: url(\""+ background_img +"\") !important;}",
+        ".darkgreen .Zq3Mc{ border: 1px solid #4caf50!important; color: #fff!important; }",
+        ".darkgreen .rRAIq[style\"background-color: rgb(251, 251, 251);\"]{ background-color: #222!important; }",
+        ".darkgreen path[fill=\"#009588\"]{ fill:#4caf50!important; }",
+        ".darkgreen span[data-icon=\"back-blue\"]{ color: #4caf50!important; }",
+        ".darkgreen .B5rWa{ border-left: 1px solid #4caf50!important; border-bottom: 1px solid #4caf50!important; }",
+        ".darkgreen .gQzdc{ border-top: none!important; border-left: 1px solid #4caf50!important; }",
+        ".darkgreen .message-in .tail-container,.darkgreen .message-in .tail-override-right .tail-container, .darkgreen .message-out .tail-override-right .tail-container, .darkgreen .message-in .tail-override-left .tail-container{ background-image: unset!important; }",
+        ".darkgreen .message-out .tail-container,.darkgreen .message-out .tail-container.highlight{ background-image: unset!important; }",
+        ".darkgreen .Pg7Si progress{ background-color: #4c4c4c!important; color: #4caf50!important; }",
+        ".darkgreen .Pg7Si progress[value]::-webkit-progress-value{ background-color: #4caf50!important; }",
+        ".darkgreen ._2EXPL{ filter: unset!important;}",
+        ".darkgreen ._1CnF3{ border: 1px solid #4caf50!important; }",
+        ".darkgreen ._3lLzD{ color: #f1f1f1!important; }",
+        ".darkgreen ._2u2Mg ._1WliW,.darkgreen ._1wCju ._2UkYn,.darkgreen .Qgzj8.gqwaM._3FXB1{ border-radius: 0!important;}",
+        ".darkgreen ._2u2Mg ._1WliW,.darkgreen ._1wCju ._2UkYn{ border: 1px solid #4caf50!important; }",
+        ".darkgreen ._2fq0t{ border: 1px solid #4caf50!important; border-left: 0!important;}",
+        ".darkgreen .app-wrapper-web .h70RQ,.darkgreen ._1E1g0{ border: 1px solid #4caf50!important; }",
+        ".darkgreen .YUoyu{ opacity: "+ background_opacity +"!important; }",
+        ".darkgreen ._9a59P{ color: #fff!important; }",
+        ".darkgreen [data-icon=\"search\"]{ color: #fff!important; }",
+        ".darkgreen ._2vJ01{ border-top: 1px solid #4caf50!important; }",
+        ".darkgreen header{ border-bottom: 1px solid #4caf50!important; }",
+        ".darkgreen .G_MLO{ border: 1px solid #4caf50!important; }",
+        ".darkgreen ._3pTi5{ color: var(--message-primary)!important; }",
+        ".darkgreen ._39vRn{ color: var(--message-primary)!important; }",
+        "[title=\"Theme\"]{ display: none!important; }",
+        ".jt-theme-btn{ background-color: #4c4c4c; color: #fff; border: 1px solid #4caf50; border-right: none; position: fixed; top: 140px; right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }",
+        ".jt-theme-btn:hover{ background-color: #555; }",
     ].join("\n");
 	GM_addStyle(css);
 
@@ -155,6 +173,81 @@
         GM_addStyle(disable_blur_css);
     }
 
-    document.querySelector('body').classList.add('darkgreen');
+
+
+    setTimeout(() => {
+        init();
+    }, 100);
+
+    function init(){
+        var ct = get_current_theme();
+        var dg = "darkgreen";
+        if(ct == '"' + dg + '"'){
+            document.querySelector('body').classList.add(dg);
+            if(document.querySelector('body').classList.contains("dark")){
+                document.querySelector('body').classList.remove('dark');
+            }
+        }else{
+            //alert(ct + " != " + dg);
+        }
+        setTimeout(() => {
+            add_theme_config();
+        }, 3100);
+    }
+
+    function get_current_theme(){
+        return localStorage.theme;
+    }
+
+
+    function add_theme_config(){
+        var jt_theme_btn = document.createElement('div');
+		jt_theme_btn.classList.add("jt-theme-btn");
+        jt_theme_btn.setAttribute("onclick", "allThemes()");
+        jt_theme_btn.setAttribute("title", "¡Cambia el estilo de WhatsApp!");
+        jt_theme_btn.innerHTML = '<span data-icon="settings-theme"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 1l3.22 3.22h4.56v4.56L23 12l-3.22 3.22v4.56h-4.56L12 23l-3.22-3.22H4.22v-4.56L1 12l3.22-3.22V4.22h4.56L12 1zm0 5v12c3.31 0 6-2.69 6-6a6.005 6.005 0 0 0-5.775-5.996L12 6z" fill="currentColor"></path></svg></span>';
+		document.body.appendChild(jt_theme_btn);
+        add_theme_config_script();
+    }
+    function add_theme_config_script(){
+        var jt_theme_script = document.createElement('script');
+        var jt_script = [
+            'function allThemes(){',
+            '   var theme = prompt(\'Ingresa el numero del estilo que deseas:\\n\\n1) Light (Default)\\n2) Dark (By WhatsApp)\\n3) DarkGreen (By @JaviertINC)\\n\', "3");',
+            '   if (theme != null || theme != "") {',
+            '     setTheme(theme);',
+            '   }',
+            '}',
+            'function setTheme(theme){',
+            '   switch(theme){',
+            '     case "1":',
+            '       localStorage.theme = \'"light"\'',
+            '       if(document.querySelector(\'body\').classList.contains("dark")){',
+            '         document.querySelector(\'body\').classList.remove(\'dark\');',
+            '       }',
+            '       if(document.querySelector(\'body\').classList.contains("darkgreen")){',
+            '         document.querySelector(\'body\').classList.remove(\'darkgreen\');',
+            '       }',
+            '     break;',
+            '     case "2":',
+            '       localStorage.theme = \'"dark"\'',
+            '       document.querySelector(\'body\').classList.add("dark");',
+            '       if(document.querySelector(\'body\').classList.contains("darkgreen")){',
+            '         document.querySelector(\'body\').classList.remove(\'darkgreen\');',
+            '       }',
+            '     break;',
+            '     case "3":',
+            '       localStorage.theme = \'"darkgreen"\'',
+            '       document.querySelector(\'body\').classList.add("darkgreen");',
+            '       if(document.querySelector(\'body\').classList.contains("dark")){',
+            '         document.querySelector(\'body\').classList.remove(\'dark\');',
+            '       }',
+            '     break;',
+            '   }',
+            '}',
+        ].join("\n");
+        jt_theme_script.innerHTML = jt_script;
+		document.body.appendChild(jt_theme_script);
+    }
 
 })();
