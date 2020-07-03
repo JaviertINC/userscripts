@@ -23,7 +23,7 @@
 
 	var css = [
         "body.darkgreen{ background-color: #242424!important; background-image: unset!important;}",
-		".darkgreen {",
+        ".darkgreen {",
         "    --gray-200: #4caf50;",
         "    --teal: #4caf50;",
         "    --app-background-stripe: #4caf50;",
@@ -192,6 +192,7 @@
         }
         setTimeout(() => {
             add_theme_config();
+            add_config_script();
         }, 3100);
     }
 
@@ -207,9 +208,8 @@
         jt_theme_btn.setAttribute("title", "¡Cambia el estilo de WhatsApp!");
         jt_theme_btn.innerHTML = '<span data-icon="settings-theme"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 1l3.22 3.22h4.56v4.56L23 12l-3.22 3.22v4.56h-4.56L12 23l-3.22-3.22H4.22v-4.56L1 12l3.22-3.22V4.22h4.56L12 1zm0 5v12c3.31 0 6-2.69 6-6a6.005 6.005 0 0 0-5.775-5.996L12 6z" fill="currentColor"></path></svg></span>';
 		document.body.appendChild(jt_theme_btn);
-        add_theme_config_script();
     }
-    function add_theme_config_script(){
+    function add_config_script(){
         var jt_theme_script = document.createElement('script');
         var jt_script = [
             'function allThemes(){',

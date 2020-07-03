@@ -92,7 +92,7 @@
     {
       "name": "CompuTrabajo",
       "subname": "DarkGreen",
-      "version": "0.8",
+      "version": "0.9",
       "desc": "Una versión oscura, ayuda a cuidar tus ojos :D",
       "search": [
         "computrabajo",
@@ -107,7 +107,7 @@
       "ico": "https://www.google.com/s2/favicons?domain=computrabajo.cl",
       "code": "kBM69fJ",
       "video": [],
-      "updated": "2020-06-28T00:00:00.000Z",
+      "updated": "2020-07-03T00:00:00.000Z",
       "type": 1,
       "status": 1
     },

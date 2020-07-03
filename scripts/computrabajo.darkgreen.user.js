@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      0.8
+// @version      0.9
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @homepage     https://javiertinc.cl/userscripts/script/computrabajo.darkgreen
 // @author       @JaviertINC
@@ -47,7 +47,7 @@
         ".submit_n{ background: unset!important; background-color: #4caf50!important; color: #fff!important; }",
         ".breadcrumb .breadcrumb .active{ color: #f1f1f1!important; }",
 
-        ".buscador, .companies_logos, .offers_insc, .offers_suggest, .publi_apli, .publi_banner_lateral, .user_info, .visitas_perfil{ background-color: #4c4c4c!important; color: #f1f1f1!important; }",
+        ".buscador, .companies_logos, .offers_insc, .offers_suggest, .publi_apli, .publi_banner_lateral, .user_info, .visitas_perfil{ background-color: #4c4c4c!important; color: #f1f1f1!important; border-color: #4caf50!important; }",
         ".ccp_menu{ background-color: #444!important; border-bottom: 5px solid #4caf50!important; }",
         ".ccp_menu li.selec .ccp_flecha, .ccp_menu li:hover .ccp_flecha{ background: unset!important; }",
         ".ccp_menu li.selec{ background-color: #4caf50!important; }",
@@ -55,6 +55,24 @@
         ".ccp_menu li{ border-right-color: #666!important; }",
         ".ccp_menu ul{ border-left-color: #666!important; }",
         ".ccp_menu li a{ color: #fff!important; }",
+
+        ".config .bx{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
+        ".formulario .forms{ background-color: #4c4c4c!important; }",
+        ".forms{ border-color: #4caf50!important; }",
+        ".forms h2{ border-top: unset!important; border-bottom-color: #4caf50!important; color: #fff!important; }",
+        "input, select, textarea{ background-color: #333!important; border: 1px solid #4caf50!important; color: #fff!important; }",
+        ".fields p, .form_inputs p{ color: #ccc!important; }",
+        ".forms p span{ color: #fc0000!important; }",
+        ".formulario .experiencia_texto p span{ color: #ccc!important; }",
+        ".fields ul:not(.autocomplete):not(.list) li, .form_inputs ul:not(.autocomplete):not(.list) li{ background-color: #4caf50!important; }",
+        ".fields ul:not(.autocomplete):not(.list) li a, .form_inputs ul:not(.autocomplete):not(.list) li a{ color: #fff!important; }",
+        "#DetalleExperiencias, #DetalleFormaciones{ background-color: #4c4c4c!important; }",
+        ".forms_info{ background-color: #666!important; border-color: #4caf50!important; }",
+        ".forms_info2 p, .forms_info p{ color: #fff!important; }",
+        ".experiencia_texto.new .experiencia_title{ border-bottom-color: #4caf50!important; }",
+        ".formulario footer{ border-top-color: #4caf50!important; }",
+        ".home_ac_v2 .buscador .input_select, .home_ac_v2 .buscador .input_text{ border: none!important; background: unset!important; }",
+        ".filter.box{ width: unset!important; }",
 
         ".block_cand_offers .user_info{ border: 1px solid #4caf50!important; }",
         ".block_cand_offers .img{ background-color: #4c4c4c!important; border: none!important; border-radius: 2px 0 0 2px!important; -webkit-border-radius: 2px 0 0 2px!important; -moz-border-radius: 2px 0 0 2px!important; }",
@@ -155,6 +173,13 @@
         ".boxWhite.fl.w_100.mb20.mt20.mt10_r.mb0_r{ padding: 1rem!important; }",
 
         ".boxWhite.fl.w_100 .fl100{ padding: 1rem!important; }",
+
+        ".b_i_r, .b_t_c{ background-color: #4c4c4c!important; border-color: #4caf50!important; color: #f1f1f1!important; }",
+        ".offers_insc li > span, .offers_insc li a{ color: #fff!important; }",
+        ".offers_insc li a span{ color: #4caf50!important; }",
+        ".offers_suggest li span{ color: #ccc!important; }",
+        ".btnwhite, .submit_wh2{ background: unset!important; background-color: #4caf50!important; color: #fff!important; border-color: #4caf50!important; }",
+        ".btnwhite:not(.no_hover):hover, .submit_wh2:not(.no_hover):hover{ background: unset!important; background-color: #5dbf61!important; color: #fff!important; }",
 
         ".lL{ background-color: #242424!important; }",
         ".lS{ margin: 0 0 40px!important; padding: 1rem 0!important; background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
