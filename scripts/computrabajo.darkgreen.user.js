@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      0.9
+// @version      1.0
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @homepage     https://javiertinc.cl/userscripts/script/computrabajo.darkgreen
 // @author       @JaviertINC
@@ -93,6 +93,7 @@
         ".progress .en_progreso::before, .progress .finalista::before, .progress .leida::before { border-left-color: #4caf50!important; }",
         ".progress .aplicada.activa,.progress .leida.activa,.progress .en_progreso.activa,.progress .finalista.activa{ background-color: #4caf50!important; }",
         ".progress .aplicada.activa .triangulo,.progress .leida.activa .triangulo,.progress .en_progreso.activa .triangulo,.progress .finalista.activa .triangulo{ border-left-color: #4caf50!important; }",
+        ".progress .finalizado_txt{ color: #fff!important; background-color: #4c4c4caa!important; margin: 0!important; padding: .9rem!important;  }",
 
         ".alert .bx{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         ".alert .form{ background-color: #5c5c5c!important; border-color: #4caf50!important; }",
@@ -111,6 +112,8 @@
 
         ".box, .boxn{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
         ".bContact ul{ background-color: rgba(255,255,255,.1)!important; border-color: #4caf50!important; color: #fff!important; font-weight: bold!important; box-shadow: unset!important; -webkit-box-shadow: unset!important; -moz-box-shadow: unset!important; }",
+        ".ins_attach_cv{ background-color: #4c4c4c!important; border-top-color: #4caf50!important; border-bottom-color: #4caf50!important; }",
+        ".ins_attach_cv label{ background-color: #555!important; border-color: #4caf50!important; }",
 
         ".lO.parrilla_oferta{ width: 80%!important; padding: 0!important; }",
         ".box_order_by{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
@@ -157,11 +160,14 @@
         ".box_filtrar_t{ margin-bottom: 0!important; }",
 
         ".boxWhite{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; padding: 0!important; }",
-        ".menuV.dTabs{ background-color: #4c4c4c!important;  border-bottom: 5px solid #4caf50!important; }",
-        ".menuV.dTabs .tabs a{ color: #fff!important; border: none!important; padding: .7rem 1rem!important; font-weight: bold!important; }",
-        ".menuV.dTabs .tabs a:hover,.menuV.dTabs .tabs a:focus{ background-color: rgba(255,255,255,.2)!important; }",
-        ".menuV.dTabs .tabs a.selec{ background-color: #4caf50!important; border-bottom: none!important; }",
+        ".menuV.dTabs, .menuV{ background-color: #4c4c4c!important;  border-bottom: 5px solid #4caf50!important; }",
+        ".menuV.dTabs .tabs a,.menuV .tabs a{ color: #fff!important; border: none!important; padding: .7rem 1rem!important; font-weight: bold!important; }",
+        ".menuV.dTabs .tabs a:hover,.menuV.dTabs .tabs a:focus,.menuV .tabs a:hover,.menuV .tabs a:focus{ background-color: rgba(255,255,255,.2)!important; }",
+        ".menuV.dTabs .tabs a.selec,.menuV .tabs a.selec{ background-color: #4caf50!important; border-bottom: none!important; }",
         ".menuV.dTabs.fixed h2{ line-height: 1.2rem!important; }",
+        ".menuV .tabs a span{ color: #fff!important; }",
+        ".menuV .tabs a::before{ height: 0!important; background: unset!important; }",
+        ".menuV .tabs .selec::after, .menuV .tabs a:hover::after { height: unset!important; background: unset!important; }",
         ".boxWhite h1.m0{ padding-top: 1rem!important;}",
         ".fc80,.datePosted{ color: #ddd!important; }",
         ".boxWhite ul.m0{ padding: 1rem!important; }",
@@ -173,6 +179,22 @@
         ".boxWhite.fl.w_100.mb20.mt20.mt10_r.mb0_r{ padding: 1rem!important; }",
 
         ".boxWhite.fl.w_100 .fl100{ padding: 1rem!important; }",
+        ".box_offer{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
+        ".comparativa_inscritos .legend_graph{ background-color: #4c4c4c!important; border-left-color: #4caf50!important; }",
+
+        ".box_i ul{ background-color: #4c4c4c!important; }",
+        ".btn_scroll_mobile{ background-color: #4caf50!important; box-shadow: unset!important; -webkit-box-shadow: unset!important; -moz-box-shadow: unset!important; }",
+        ".btn_scroll_mobile::before { border-bottom-color: #4caf50!important; border-right: 1px solid #4caf50!important; }",
+        ".btn_scroll_mobile #it-fixed-print{ color: #fff!important; font-weight: bold!important; }",
+        ".btn_scroll_mobile .submit_n{ background-color: #4c4c4c!important; border: unset!important; }",
+        ".box_i ul .info_pub{ color: #ccc!important; }",
+        ".box_i ul .info_pub span{ color: #fff!important; }",
+        ".box_r_titulo{ border-bottom-color: #4caf50!important; }",
+        ".orange .submit_n{ border-color: #4caf50!important; }",
+        ".btnwhite.no_hover, .submit_wh2.no_hover{ color: #fff!important; }",
+        ".btnwhite, .submit_wh2{ text-shadow: unset!important; }",
+        ".empresa_facet .infoEmpVal .text_empresa h1{ color: #fff!important; }",
+        ".tooltip_sello_icon{ color: #4caf50!important; }",
 
         ".b_i_r, .b_t_c{ background-color: #4c4c4c!important; border-color: #4caf50!important; color: #f1f1f1!important; }",
         ".offers_insc li > span, .offers_insc li a{ color: #fff!important; }",
