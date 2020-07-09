@@ -196,6 +196,26 @@
       "status": 1
     },
     {
+      "name": "Nonolive",
+      "subname": "AutoTaps",
+      "version": "0.1",
+      "desc": "¡AutoTaps para Nonolive!",
+      "search": [
+        "nonolive",
+        "automatico",
+        "bot",
+        "taps",
+        "like"
+      ],
+      "script": "nonolive.autotaps.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/nonolive.com.ico",
+      "code": "G6ycrk6",
+      "video": [],
+      "updated": "2020-07-09T00:00:00.000Z",
+      "type": 2,
+      "status": 1
+    },
+    {
       "name": "TweetDeck",
       "subname": "DarkGreen",
       "version": "1.2",
