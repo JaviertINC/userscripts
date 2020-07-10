@@ -349,7 +349,7 @@
     },
     {
       "name": "YTmp3.cc",
-      "subname": "DarkDefault",
+      "subname": "DarkMode",
       "version": "0.2",
       "desc": "Una versión oscura, ayuda a cuidar tu vista",
       "search": [
@@ -357,9 +357,11 @@
         "dark",
         "estilos",
         "oscuro",
-        "version"
+        "version",
+        "mode",
+        "modo"
       ],
-      "script": "ytmp3cc.dark.user.js",
+      "script": "ytmp3cc.darkmode.user.js",
       "ico": "https://external-content.duckduckgo.com/ip3/ytmp3.cc.ico",
       "code": "htOrjRs",
       "video": [],

@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name          YTmp3.cc | Dark Default
+// @name          YTmp3.cc | Dark Mode
 // @namespace     https://javiertinc.cl/userscripts
 // @version       0.2
 // @description   Una versión oscura, ayuda a cuidar tus ojos :D
-// @homepage      https://javiertinc.cl/userscripts/script/ytmp3cc.dark
+// @homepage      https://javiertinc.cl/userscripts/script/ytmp3cc.darkmode
 // @author        @JaviertINC
 // @include       *://ytmp3.cc/*
-// @updateURL     https://javiertinc.github.io/userscripts/scripts/ytmp3cc.dark.user.js
+// @updateURL     https://javiertinc.github.io/userscripts/scripts/ytmp3cc.darkmode.user.js
 // @icon          https://www.google.com/s2/favicons?domain=ytmp3.cc
 // @run-at        document-start
 // ==/UserScript==
