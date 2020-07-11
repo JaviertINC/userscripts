@@ -133,6 +133,27 @@
       "status": 1
     },
     {
+      "name": "HeadWayApp",
+      "subname": "DarkGreen",
+      "version": "0.1",
+      "desc": "Una versión oscura, ayuda a cuidar tus ojos :D",
+      "search": [
+        "headwayapp",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "headwayapp.darkgreen.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/headwayapp.co.ico",
+      "code": "ns2yBAA",
+      "video": [],
+      "updated": "2020-07-10T01:00:00.000Z",
+      "type": 1,
+      "status": 1
+    },
+    {
       "name": "Index Of",
       "subname": "DarkGreen",
       "version": "0.9",
