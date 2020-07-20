@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      1.1
+// @version      1.2
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @homepage     https://javiertinc.cl/userscripts/script/computrabajo.darkgreen
 // @author       @JaviertINC
@@ -94,6 +94,7 @@
         ".progress .aplicada.activa,.progress .leida.activa,.progress .en_progreso.activa,.progress .finalista.activa{ background-color: #4caf50!important; }",
         ".progress .aplicada.activa .triangulo,.progress .leida.activa .triangulo,.progress .en_progreso.activa .triangulo,.progress .finalista.activa .triangulo{ border-left-color: #4caf50!important; }",
         ".progress .finalizado_txt{ color: #fff!important; background-color: #4c4c4caa!important; margin: 0!important; padding: .9rem!important;  }",
+        ".mis_aplicaciones.proceso_finalizado .progress .finalizado_txt{ display: inherit!important; }",
 
         ".alert .bx{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         ".alert .form{ background-color: #5c5c5c!important; border-color: #4caf50!important; }",
@@ -103,6 +104,8 @@
 
         ".sC{ background-color: rgba(40, 40, 40, .8)!important; }",
         ".bS .submit_n{ border-color: #4caf50!important; }",
+
+        ".box_filtrar_t h3,.box_filtrar_t2 h3{margin: 0 !important; display: block; padding: .6rem!important; }",
 
         ".t_log{ background-color: #4c4c4c!important; color: #fff!important; border-top: 1px solid #4caf50!important; }",
         ".bxS{ background-color: #373737!important; }",
@@ -254,5 +257,18 @@
         /* */
 
     }
+
+    function init(){
+		re_footer();
+	}
+    function re_footer(){
+		document.getElementsByClassName("last_footer")[0].innerHTML = atob("Q29weXJpZ2h0IDIwMjAgREdORVQgTFRELiB8IE1vZGlmaWNhZG8gcG9yIDxhIHRhcmdldD0iYmxhbmsiIGhyZWY9Imh0dHBzOi8vamF2aWVydGluYy5jbCI+QEphdmllcnRJTkM8L2E+Lg");
+		document.getElementsByClassName("info_footer")[0].innerHTML = atob("Q29weXJpZ2h0IDIwMjAgREdORVQgTFRELiB8IE1vZGlmaWNhZG8gcG9yIDxhIHRhcmdldD0iYmxhbmsiIGhyZWY9Imh0dHBzOi8vamF2aWVydGluYy5jbCI+QEphdmllcnRJTkM8L2E+PGJyPjxhIGNsYXNzPSJidWlsZExpbmsiIGRhdGEtcGF0aD0iaHR0cHM6Ly93d3cuY29tcHV0cmFiYWpvLmNsL2F2aXNvbGVnYWwvIiBzdHlsZT0iY29sb3I6ICM4MDgwODA7IGRpc3BsYXk6IGlubGluZS1ibG9jazsiIHJlbD0ibm9mb2xsb3ciPkF2aXNvIExlZ2FsPC9hPjxzcGFuPiAtIDwvc3Bhbj48YSBjbGFzcz0iYnVpbGRMaW5rIiBkYXRhLXBhdGg9Imh0dHBzOi8vd3d3LmNvbXB1dHJhYmFqby5jbC9wcml2YWNpZGFkLyIgc3R5bGU9ImNvbG9yOiAjODA4MDgwOyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IiByZWw9Im5vZm9sbG93Ij5Qcml2YWNpZGFkPC9hPjxicj4");
+    }
+    document.addEventListener("DOMContentLoaded", function(){
+		setTimeout(() => {
+			init();
+		}, 500);
+	});
 
 })();
