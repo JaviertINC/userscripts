@@ -3,7 +3,7 @@
 
 Este script habilita automáticamente el modo oscuro nativo de la página web.
 
-Sitio Web: [JaviertINC.cl/userscripts](https://javiertinc.cl/userscripts/script/ytmp3cc.darkmode)
+ Ve la publicación a todo color y detalles [aquí](https://javiertinc.cl/userscripts/script/ytmp3cc.darkmode).
 
 | Ínidce |
 |---|
@@ -16,7 +16,8 @@ Sitio Web: [JaviertINC.cl/userscripts](https://javiertinc.cl/userscripts/script/
 - Habilita el estilo oscuro nativo de YTmp3cc, mira las [Screenshots](#screenshots).
 
 ## Screenshots
-_Pronto_
+Así se ve al momento de ingresar a la página sin hacer ningun click.
+https://javiertinc.cl/captys/c/39j9rvV
 
 ## Videos
 ###### ¿Cómo instalar?
