@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CompuTrabajo | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      1.0
+// @version      1.1
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @homepage     https://javiertinc.cl/userscripts/script/computrabajo.darkgreen
 // @author       @JaviertINC
@@ -58,7 +58,7 @@
 
         ".config .bx{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         ".formulario .forms{ background-color: #4c4c4c!important; }",
-        ".forms{ border-color: #4caf50!important; }",
+        ".forms{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
         ".forms h2{ border-top: unset!important; border-bottom-color: #4caf50!important; color: #fff!important; }",
         "input, select, textarea{ background-color: #333!important; border: 1px solid #4caf50!important; color: #fff!important; }",
         ".fields p, .form_inputs p{ color: #ccc!important; }",
@@ -203,12 +203,21 @@
         ".btnwhite, .submit_wh2{ background: unset!important; background-color: #4caf50!important; color: #fff!important; border-color: #4caf50!important; }",
         ".btnwhite:not(.no_hover):hover, .submit_wh2:not(.no_hover):hover{ background: unset!important; background-color: #5dbf61!important; color: #fff!important; }",
 
+        ".b_c_r .b_t_pdf, .b_c_r .b_v_t, .b_c_r .c_b{ background-color: #4c4c4c!important; border-color: #4caf50!important; color: #f1f1f1!important; }",
+        ".b_c_r .c_q .explain{ background-color: #4c4c4c!important; }",
+        ".explain ul li{ background-color: #666!important; }",
+        ".b_c_r .title{ color: #fff!important; }",
+        ".rTest{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
+
         ".lL{ background-color: #242424!important; }",
         ".lS{ margin: 0 0 40px!important; padding: 1rem 0!important; background-color: #4c4c4c!important; border: 1px solid #4caf50!important; }",
         ".sL{ border-bottom-color: #4caf50!important; color: #fff!important; }",
         ".sL .active,.sL .active:hover,.sL .active:focus{ background-color: #4caf50!important; border: 1px solid #4caf50!important; color: #fff!important; }",
         ".sL li{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; color: #fff!important; }",
         ".sL li:hover,.sL li:focus{ background-color: #5d5d5d!important; }",
+
+        "body #pop-up-webpush-sub{ background-color: #4c4c4c!important; border: 1px solid #4caf50!important; top: 2rem!important; }",
+        "body #pop-up-webpush-sub #webpush_subscribe_ok{  background: unset!important; background-color: #4caf50!important; color: #fff!important; }",
 
         ".footer_countries{ border-top-color: #4caf50!important; background-color: #333!important;  }",
         ".footer_countries ul li a{ color: #fff!important; }",
