@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         HeadWayApp | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      0.1
+// @version      0.2
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @homepage     https://javiertinc.cl/userscripts/script/headwayapp.darkgreen
 // @author       @JaviertINC
@@ -46,8 +46,25 @@
         "footer{ color: #ccc!important;}",
         "footer a{ color: #fff!important; font-weight: bold!important; }",
 
+        ".naggerCont .bodyCont{ background-color: #4c4c4c!important; border-color: #4caf50!important; color: #f1f1f1!important; }",
+        ".naggerCont .closeNagger{ color: #fff!important; }",
+
         ".category_67761,.head.head_category_67761 .background{ background-color: #4caf50!important; }",
     ].join("\n");
 	GM_addStyle(css);
+
+    function init(){
+		re_footer();
+	}
+    function re_footer(){
+		document.getElementsByClassName("changelogModule")[1].innerHTML = atob("PHA+UG93ZXJlZCBieSA8YSBocmVmPSJodHRwczovL2hlYWR3YXlhcHAuY28iPkhlYWR3YXk8L2E+PC9wPgo8cD5Nb2RpZmljYWRvIHBvciA8YSB0YXJnZXQ9ImJsYW5rIiBocmVmPSJodHRwczovL2phdmllcnRpbmMuY2wiPkBKYXZpZXJ0SU5DPC9hPi48L3A+");
+    }
+    document.addEventListener("DOMContentLoaded", function(){
+		setTimeout(() => {
+			init();
+		}, 500);
+	});
+
+
 
 })();
