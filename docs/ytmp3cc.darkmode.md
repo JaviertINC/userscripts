@@ -17,7 +17,7 @@ Este script habilita automáticamente el modo oscuro nativo de la página web.
 
 ## Screenshots
 Así se ve al momento de ingresar a la página sin hacer ningun click.
-https://javiertinc.cl/captys/c/39j9rvV
+[Screenshot #1](https://javiertinc.cl/captys/c/39j9rvV)
 
 ## Videos
 ###### ¿Cómo instalar?
