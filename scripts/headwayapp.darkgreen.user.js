@@ -31,6 +31,7 @@
         "body .changelogItem .actions .edit, body .newPost .actionButton{ display: block!important; margin: 0 auto!important;}",
         "body .changelogItem .actions .edit a{ background-color: #4caf50!important; color: #fff!important; padding: 7px 20px!important; border-radius: 8px!important; }",
         ".changelogItem .content code, .changelogItem .content pre{ background-color: #666!important; border: 1px solid #4caf50!important; color: #fff!important; }",
+        ".changelogItem .content blockquote{ color: #fff!important; border-left-color: #4caf50!important; background-color: rgba(255,255,255,.2)!important; }",
 
         "#editor-body.active #editor{ border-left-color: #4caf50!important; }",
         "#editor-body #editor{ background-color: #000!important; color: #4caf50!important; }",
@@ -48,6 +49,21 @@
 
         ".naggerCont .bodyCont{ background-color: #4c4c4c!important; border-color: #4caf50!important; color: #f1f1f1!important; }",
         ".naggerCont .closeNagger{ color: #fff!important; }",
+
+        ".EditorButtons-module__buttonsGroups___NVb3E svg{ color: #fff!important; }",
+        ".EditorButton-module__button___UDULe:hover svg{ color: #fff!important; }",
+        ".EditorButton-module__button___UDULe:hover{ background-color: #4caf50!important; }",
+
+        ".Tooltip-module__content___2p-vv{ background-color: #4c4c4c!important; color: #f1f1f1; border-color: #4caf50!important; }",
+        ".EditorSelect-module__selectWrapper___1UhnY .EditorSelect-module__selectOption___1EYzl{ color: #f1f1f1!important; }",
+        ".EditorSelect-module__selectWrapper___1UhnY .EditorSelect-module__selectOption___1EYzl:hover{ background-color: #4caf50!important; }",
+        ".EditorButton-module__tooltip___1xtsg div{ color: #f1f1f1!important; }",
+
+        ".Popup-module__content___2kn0-{ background-color: #4c4c4c!important; border-color: #4caf50!important; }",
+        ".Button-module__button___2sdz_{ background-color: #4caf50!important; border-color: #4caf50!important; }",
+        ".Popup-module__closeButton___2k0i7{ background-color: #4c4c4c!important; }",
+        ".Button-module__isMinimal___1gvqd{ color: #fff!important; }",
+        ".Button-module__isTransparent___3clA0,.Button-module__isTransparent___3clA0:hover{ color: #fff!important; }",
 
         ".category_67761,.head.head_category_67761 .background{ background-color: #4caf50!important; }",
     ].join("\n");
