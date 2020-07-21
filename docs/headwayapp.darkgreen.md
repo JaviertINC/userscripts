@@ -25,7 +25,7 @@ El estilo del editor ahora es similar a una consola de comandos.
 La caja para subir una imagen también tiene un estilo DarkGreen.
 [Screenshot #3](https://javiertinc.cl/captys/c/22gIMfr)
 
-La caja para subir una imagen también tiene un estilo DarkGreen.
+El Footer ahora es más vistoso.
 [Screenshot #4](https://javiertinc.cl/captys/c/x08KMsk)
 
 ## Videos
