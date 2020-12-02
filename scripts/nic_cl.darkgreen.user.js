@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nic.cl | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      0.2
+// @version      0.3
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @homepage     https://javiertinc.cl/userscripts/script/nic_cl.darkgreen
 // @author       @JaviertINC
@@ -35,6 +35,7 @@
         ".tablabusqueda td:hover{ background-color: #5f5f5f!important; }",
         ".tablabusqueda td a{ color: #4caf50!important; }",
         ".tablabusqueda td a:hover{ color: #5dbf61!important;}",
+        ".tablabusqueda td a:visited{ color: #3b9d40!important;}",
         ".tablabusqueda tr:first-child td { color: #fff!important; }",
         ".tablabusqueda td{ color: #f1f1f1!important; }",
         ".tablabusqueda td button,#submitButton{ border-color: #4caf50!important; border-radius: 5px!important; }",
