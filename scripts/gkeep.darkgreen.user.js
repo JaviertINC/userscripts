@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Keep | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      1.2
+// @version      1.3
 // @description  Una mejor versión de estilos para el Keep Dark con el toque Green
 // @homepage     https://javiertinc.cl/userscripts/script/gkeep.darkgreen
 // @author       @JaviertINC
@@ -45,6 +45,20 @@
 
         '.Q0hgme-XPtOyb',
             '{background-color: #666!important; box-shadow: inset 0 0 0 1px rgba(76, 175, 80,0.541)!important; color: #fff!important; }',
+
+        '.IZ65Hb-jfdpUb-fmcmS',
+            '{color: #ddd!important; }',
+
+        '.VIpgJd-TUo6Hb.XKSfm-L9AdLc.eo9XGd',
+            '{top: 10px!important; left: 7%!important; width: 93%!important; }',
+
+        '.IZ65Hb-n0tgWb.IZ65Hb-QQhtn.oT9UPb',
+            '{width: 93%!important;}',
+
+        '.IZ65Hb-fbudBf .IZ65Hb-s2gQvd',
+            '{max-height: 90vh!important; min-height: 90vh!important; height: 90vh!important; }',
+
+
     ].join('\n');
 	GM_addStyle(new_css);
 })();
