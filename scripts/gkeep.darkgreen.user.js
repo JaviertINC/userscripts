@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Keep | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      1.4
+// @version      1.5
 // @description  Una mejor versión de estilos para el Keep Dark con el toque Green
 // @homepage     https://javiertinc.cl/userscripts/script/gkeep.darkgreen
 // @author       @JaviertINC
@@ -74,6 +74,21 @@
         '.IZ65Hb-fbudBf .IZ65Hb-s2gQvd',
             '{max-height: 90vh!important; min-height: 90vh!important; height: 90vh!important; }',
 
+        //Fonts
+        '.r4nke-YPqjbf{ font-weight: bold!important; }',
+        '.IZ65Hb-WsjYwc-nUpftc .zfdrlf-WsjYwc-sLO9V{ font-size: .875rem!important; }',
+
+        //Sizers
+        '.IZ65Hb-n0tgWb{ min-height: 300px!important; max-height: 300px!important; }',
+        '.IZ65Hb-TBnied{ min-height: 300px!important; max-height: 300px!important; }',
+        '.IZ65Hb-QQhtn .IZ65Hb-TBnied{ min-height: unset!important; max-height: unset!important; }',
+        '.IZ65Hb-QQhtn .IZ65Hb-TBnied,.IZ65Hb-QQhtn .IZ65Hb-n0tgWb{ min-height: unset!important; max-height: unset!important; }',
+
+        '.IZ65Hb-jfdpUb{ transform: scale(60%)!important; }',
+
+        //Editor
+        '.IZ65Hb-INgbqf{ display: none!important; }',
+        '.VIpgJd-TUo6Hb.XKSfm-L9AdLc.eo9XGd .IZ65Hb-INgbqf{ display: flex!important; }',
 
     ].join('\n');
 	GM_addStyle(jtkeep);
