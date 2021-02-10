@@ -133,6 +133,28 @@
       "status": 1
     },
     {
+      "name": "Google Keep",
+      "subname": "DarkGreen",
+      "version": "1.5",
+      "desc": "Una versión oscura, ayuda a cuidar tus ojos :D (Aún falta mucho por reparar)",
+      "search": [
+        "google",
+        "keep",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "gkeep.darkgreen.user.js",
+      "ico": "https://www.google.com/s2/favicons?domain=keep.google.com",
+      "code": "OtqL7R",
+      "video": [],
+      "updated": "2021-02-09T00:00:01.000Z",
+      "type": 1,
+      "status": 1
+    },
+    {
       "name": "HeadWayApp",
       "subname": "DarkGreen",
       "version": "0.2",
@@ -258,6 +280,27 @@
       "status": 1
     },
     {
+      "name": "SoundCloud",
+      "subname": "DarkGreen",
+      "version": "0.1",
+      "desc": "Una versión oscura ayuda a cuidar tus ojos :D",
+      "search": [
+        "soundcloud",
+        "darkgreen",
+        "estilos",
+        "verde",
+        "oscuro",
+        "version"
+      ],
+      "script": "soundcloud.darkgreen.user.js",
+      "ico": "https://external-content.duckduckgo.com/ip3/soundcloud.com.ico",
+      "code": "UtqSMo",
+      "video": [],
+      "updated": "2021-02-08T00:00:00.000Z",
+      "type": 1,
+      "status": 1
+    },
+    {
       "name": "TweetDeck",
       "subname": "DarkGreen",
       "version": "1.2",
@@ -345,7 +388,7 @@
     {
       "name": "Youtube",
       "subname": "DarkGreen",
-      "version": "0.7",
+      "version": "0.8",
       "desc": "¡El verde es magnifico! Con este script podrás reemplazar el color rojo de YouTube por el Verde, ideal para utilizarse con el modo oscuro de YouTube.",
       "search": [
         "youtube",
@@ -361,7 +404,7 @@
       "ico": "https://external-content.duckduckgo.com/ip3/www.youtube.com.ico",
       "code": "vDb4LM",
       "video": [],
-      "updated": "2020-04-27T00:00:00.000Z",
+      "updated": "2021-02-09T00:00:00.000Z",
       "type": 1,
       "status": 1
     },
