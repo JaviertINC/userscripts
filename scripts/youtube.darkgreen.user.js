@@ -2,7 +2,7 @@
 // @name          YouTube | DarkGreen
 // @description	  Una versión oscura, ayuda a cuidar tu vista :´3
 // @author        @JaviertINC
-// @version       0.7
+// @version       0.8
 // @match         *://www.youtube.com/*
 // @icon          https://www.google.com/s2/favicons?domain=youtube.com
 // @updateURL     https://javiertinc.github.io/userscripts/scripts/youtube.darkgreen.user.js
@@ -21,7 +21,8 @@
         ".ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg,",
         ".ytp-muted-autoplay-endscreen-overlay:hover .ytp-large-play-button-bg,",
         "yt-icon,",
-        ".yt-icon-container.yt-icon",
+        ".yt-icon-container.yt-icon,",
+        "#logo-icon > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1)",
 
         "{ fill: "+ main_color +"!important; }",
 
