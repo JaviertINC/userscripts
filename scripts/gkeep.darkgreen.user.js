@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Keep | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      1.5
+// @version      1.6
 // @description  Una mejor versión de estilos para el Keep Dark con el toque Green
 // @homepage     https://javiertinc.cl/userscripts/script/gkeep.darkgreen
 // @author       @JaviertINC
@@ -56,7 +56,12 @@
         '.v3pZbf-h1U9Be-hxXJme.CmABtb.RNfche,.v3pZbf-h1U9Be-hxXJme.x5ghY-MJoBVe-yOOK0-Bz112c,.v3pZbf-h1U9Be-hxXJme.IZ65Hb-NGme3c,.v3pZbf-h1U9Be-hxXJme .IZ65Hb-DaY83b-gKvOdd,.v3pZbf-h1U9Be-hxXJme.IZ65Hb-n0tgWb.oT9UPb,.v3pZbf-h1U9Be-hxXJme.IZ65Hb-TBnied .r4nke-YPqjbf.fmcmS-x3Eknd',
             '{background-color: #19c1f3!important; }',
 
-        //
+        //Azul Oscuro
+        '.rxVFIc-h1U9Be-hxXJme.IZ65Hb-TBnied',
+            '{ background-color: #0e49b5!important; border-color: #8ac4d0!important; }',
+        '.rxVFIc-h1U9Be-hxXJme.CmABtb.RNfche, .rxVFIc-h1U9Be-hxXJme.x5ghY-MJoBVe-yOOK0-Bz112c, .rxVFIc-h1U9Be-hxXJme.IZ65Hb-NGme3c, .rxVFIc-h1U9Be-hxXJme .IZ65Hb-DaY83b-gKvOdd, .rxVFIc-h1U9Be-hxXJme.IZ65Hb-n0tgWb.oT9UPb, .rxVFIc-h1U9Be-hxXJme.IZ65Hb-TBnied .r4nke-YPqjbf.fmcmS-x3Eknd',
+            '{background-color: #0e49b5!important; }',
+
 
         //Tags
         '.Q0hgme-XPtOyb',
@@ -74,9 +79,23 @@
         '.IZ65Hb-fbudBf .IZ65Hb-s2gQvd',
             '{max-height: 90vh!important; min-height: 90vh!important; height: 90vh!important; }',
 
+        '.IZ65Hb-n0tgWb .IZ65Hb-nQ1Faf',
+            '{top: -4px!important; right: -7px!important; }',
+
+        //Header
+        'header',
+            '{background-color: #4c4c4c!important;}',
+        '.UU3Zxb:not(.vUSp5d), .aSVJYc-UU3Zxb:not(.vUSp5d)',
+            '{ -moz-box-shadow: inset 0 -1px 0 0 #4caf50!important; box-shadow: inset 0 -1px 0 0 #4caf50!important; }',
+
+        //Body
+        'body{background-color: #242424!important; color: #f1f1f1!important; }',
+
+
         //Fonts
-        '.r4nke-YPqjbf{ font-weight: bold!important; }',
+        '.r4nke-YPqjbf{ font-weight: bold!important; line-height: 1rem!important; }',
         '.IZ65Hb-WsjYwc-nUpftc .zfdrlf-WsjYwc-sLO9V{ font-size: .875rem!important; }',
+        '.IZ65Hb-nQ1Faf-cQwEuf{ display: none!important; }',
 
         //Sizers
         '.IZ65Hb-n0tgWb{ min-height: 300px!important; max-height: 300px!important; }',
