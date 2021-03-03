@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tecnova | AutoLogin
 // @namespace    https://javiertinc.cl/userscripts
-// @version      0.7
+// @version      0.8
 // @description  Autologin para los sistemas de Tecnova
 // @homepage     https://javiertinc.cl/userscripts/script/tecnova.autologin
 // @author       @JaviertINC
@@ -20,7 +20,6 @@
     let user = '', //Tu Usuario de Tecnova (No Email)
         pass = '', //Tu Contraseña de Tecnova
 
-        //
         project = '2266', //Colmena Outsorcing
         activity = '10', //Desarrollo
 
@@ -70,11 +69,10 @@
             }
         }
 
-        //Registro de Horas | AutoSet Activity
+        //Registro de Horas | Redirect
         if(url.href == 'https://proyectos.tecnova.cl/ing_horarios.php' && document.title == 'Mensaje'){
             url.href = 'https://proyectos.tecnova.cl/login.php';
         }
-
 
 
         //Correo || AutoLogin
@@ -82,6 +80,14 @@
             $('#rcmloginuser').val(user);
             $('#rcmloginpwd').val(pass);
             $('#rcmloginsubmit').click();
+        }
+
+        //Intranet || AutoLogin
+        if(url.hostname == "intranet.tecnova.cl" && document.title == 'Login – Intranet Tecnova'){
+            $('#user').val(user);
+            $('#pass').val(pass);
+            $('#rememberme').click();
+            $('#wp-submit').click();
         }
 
     });
