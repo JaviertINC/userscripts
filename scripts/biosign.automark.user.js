@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         BioSign | AutoMark
 // @namespace    https://javiertinc.cl/userscripts
-// @version      0.2
+// @version      0.3
 // @description  Registro semi-automático de BioSign
 // @homepage     https://javiertinc.cl/userscripts/script/biosign.automark
 // @author       @JaviertINC
@@ -29,6 +29,9 @@
                 $('label.radio-inline:nth-child(2) > input:nth-child(1)').click();
             }
             $('#btn-login').click();
+            setTimeout(function(){
+                $('#correcto > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > button:nth-child(1)').click();
+            }, 1000);
         }
         if(url.href == "https://app.biosign.cl/Menu/Mantencion"){
             if(document.referrer == "https://app.biosign.cl/MarcaWeb?jt=mark"){
