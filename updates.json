@@ -135,7 +135,7 @@
     {
       "name": "Google Keep",
       "subname": "DarkGreen",
-      "version": "1.5",
+      "version": "1.8",
       "desc": "Una versión oscura, ayuda a cuidar tus ojos :D (Aún falta mucho por reparar)",
       "search": [
         "google",
@@ -150,7 +150,7 @@
       "ico": "https://www.google.com/s2/favicons?domain=keep.google.com",
       "code": "OtqL7R",
       "video": [],
-      "updated": "2021-02-09T00:00:01.000Z",
+      "updated": "2021-05-06T00:00:00.000Z",
       "type": 1,
       "status": 1
     },
