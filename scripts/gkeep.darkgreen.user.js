@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Keep | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      1.7
+// @version      1.8
 // @description  Una mejor versión de estilos para el Keep Dark con el toque Green
 // @homepage     https://javiertinc.cl/userscripts/script/gkeep.darkgreen
 // @author       @JaviertINC
@@ -27,25 +27,33 @@
 
 
         //Gris
-        '.mrxPge-h1U9Be-hxXJme.IZ65Hb-TBnied',
+        '.mrxPge-h1U9Be-hxXJme.IZ65Hb-TBnied,',
+        '[style="background-color: rgb(232, 234, 237);"]',
             '{background-color: #4c4c4c!important; border-color: #4caf50!important; }',
         '.mrxPge-h1U9Be-hxXJme.CmABtb.RNfche, .mrxPge-h1U9Be-hxXJme.x5ghY-MJoBVe-yOOK0-Bz112c, .mrxPge-h1U9Be-hxXJme.IZ65Hb-NGme3c, .mrxPge-h1U9Be-hxXJme .IZ65Hb-DaY83b-gKvOdd, .mrxPge-h1U9Be-hxXJme.IZ65Hb-n0tgWb.oT9UPb, .mrxPge-h1U9Be-hxXJme.IZ65Hb-TBnied .r4nke-YPqjbf.fmcmS-x3Eknd',
             '{background-color: #4c4c4c!important; }',
 
         //Verde
-        '.nllRtd-h1U9Be-hxXJme.IZ65Hb-TBnied',
+        '.nllRtd-h1U9Be-hxXJme.IZ65Hb-TBnied,',
+        '[style="background-color: rgb(204, 255, 144);"]',
             '{background-color: #4caf50!important; border-color: #fff!important; }',
         '.nllRtd-h1U9Be-hxXJme.CmABtb.RNfche, .nllRtd-h1U9Be-hxXJme.x5ghY-MJoBVe-yOOK0-Bz112c, .nllRtd-h1U9Be-hxXJme.IZ65Hb-NGme3c, .nllRtd-h1U9Be-hxXJme .IZ65Hb-DaY83b-gKvOdd, .nllRtd-h1U9Be-hxXJme.IZ65Hb-n0tgWb.oT9UPb, .nllRtd-h1U9Be-hxXJme.IZ65Hb-TBnied .r4nke-YPqjbf.fmcmS-x3Eknd',
             '{background-color: #4caf50!important; }',
 
         //Rojo
-        '.oq6NAc-h1U9Be-hxXJme.IZ65Hb-TBnied',
+        '.oq6NAc-h1U9Be-hxXJme.IZ65Hb-TBnied,',
+        '[style="background-color: rgb(242, 139, 130);"]',
             '{background-color: #b82d2d!important; border-color: #f00!important; }',
         '.oq6NAc-h1U9Be-hxXJme.CmABtb.RNfche, .oq6NAc-h1U9Be-hxXJme.x5ghY-MJoBVe-yOOK0-Bz112c, .oq6NAc-h1U9Be-hxXJme.IZ65Hb-NGme3c, .oq6NAc-h1U9Be-hxXJme .IZ65Hb-DaY83b-gKvOdd, .oq6NAc-h1U9Be-hxXJme.IZ65Hb-n0tgWb.oT9UPb, .oq6NAc-h1U9Be-hxXJme.IZ65Hb-TBnied .r4nke-YPqjbf.fmcmS-x3Eknd',
             '{background-color: #b82d2d!important; }',
+            //GP CardStyling
+            '.Q0hgme-Q7GJAc-h1U9Be .h1U9Be-r4nke.nUpftc-DyVDA-YPqjbf,',
+            '.Q0hgme-Q7GJAc-h1U9Be:not(.zTETae-hxXJme) .fmcmS-h1U9Be-bN97Pc.nUpftc-DyVDA-YPqjbf, .Q0hgme-Q7GJAc-h1U9Be:not(.zTETae-hxXJme) .rymPhb-ibnC6b-bN97Pc.nUpftc-DyVDA-YPqjbf',
+                '{color: #fff!important; }',
 
         //Morado
-        '.O2jK-h1U9Be-hxXJme.IZ65Hb-TBnied',
+        '.O2jK-h1U9Be-hxXJme.IZ65Hb-TBnied,',
+        '[style="background-color: rgb(215, 174, 251);"]',
             '{background-color: #802f7f!important; border-color: #ec0bec!important; }',
         '.O2jK-h1U9Be-hxXJme.CmABtb.RNfche, .O2jK-h1U9Be-hxXJme.x5ghY-MJoBVe-yOOK0-Bz112c, .O2jK-h1U9Be-hxXJme.IZ65Hb-NGme3c, .O2jK-h1U9Be-hxXJme .IZ65Hb-DaY83b-gKvOdd, .O2jK-h1U9Be-hxXJme.IZ65Hb-n0tgWb.oT9UPb, .O2jK-h1U9Be-hxXJme.IZ65Hb-TBnied .r4nke-YPqjbf.fmcmS-x3Eknd',
             '{background-color: #802f7f!important; }',
@@ -115,6 +123,31 @@
         //Editor
         '.IZ65Hb-INgbqf{ display: none!important; }',
         '.VIpgJd-TUo6Hb.XKSfm-L9AdLc.eo9XGd .IZ65Hb-INgbqf{ display: flex!important; }',
+
+
+        //Gmail Plugin (GP)
+        //GP Header
+        '.Kk7lMc-ae3xF-tJHJj{ background-color: #4c4c4c!important; border-bottom-color: #4caf50!important; }',
+        '.Kk7lMc-ae3xF-r4nke-fmcmS, .Kk7lMc-ae3xF-VdSJob-fmcmS{ color: #fff!important; }',
+        '.Kk7lMc-ae3xF-tJHJj-CZjX4e-AHe6Kc .Kk7lMc-ae3xF-tJHJj-OAU7Vd-Bz112c{ fill: #fff!important; }',
+        '.Kk7lMc-ae3xF-tJHJj-LgbsSe:hover{ background-color: #6c6c6c!important; }',
+        '.Kk7lMc-ae3xF-tJHJj-LgbsSe:focus, .Kk7lMc-ae3xF-tJHJj-LgbsSe:active{ background-color: #4caf50!important; }',
+
+        //GP NewNote
+        '.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .Q0hgme-Q7GJAc-h1U9Be-xhiy4{ background-color: #2c2c2c!important; }',
+        '.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .RmniWd-fmcmS-h1U9Be{ color: #ccc!important; }',
+        '.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .Q0hgme-Q7GJAc-h1U9Be-xhiy4 .Q0hgme-LgbsSe:hover, .Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .Q0hgme-Q7GJAc-h1U9Be-xhiy4 .Q0hgme-LgbsSe:focus{ background-color: #6c6c6c!important; }',
+        '.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .Q0hgme-Q7GJAc-h1U9Be-xhiy4 .Q0hgme-LgbsSe:hover .RmniWd-fmcmS-h1U9Be{ color: #fff!important; }',
+        '.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc .RmniWd-rymPhb-h1U9Be{ filter: invert(100%)!important; }',
+
+        //GP Body
+        '.Q0hgme-Q7GJAc-NkyfNe-RFnRab-LYNcwc{ background-color: #2c2c2c!important; color: #fff!important; }',
+
+        //GP Card Styling Generals
+        '.Q0hgme-Q7GJAc-h1U9Be.bJ69tf .nQ1Faf svg{ fill: #fff!important; }',
+        '.Q0hgme-Bz112c-LgbsSe.OAU7Vd-LgbsSe svg{ fill: #fff!important; }',
+
+
 
     ].join('\n');
 	GM_addStyle(jtkeep);
