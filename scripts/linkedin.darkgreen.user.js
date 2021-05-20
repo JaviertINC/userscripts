@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinkedIn | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      0.1
+// @version      0.2
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @homepage     https://javiertinc.cl/userscripts/script/linkedin.darkgreen
 // @author       @JaviertINC
@@ -49,6 +49,8 @@
         ".jt-darkgreen .me-wvmp-viewer-card:hover{ background-color: rgba(255,255,255,.15); }",
         ".jt-darkgreen .me-wvmp-chart .highcharts-tooltip span, .jt-darkgreen .me-wvmp-pills-tab{ background-color: transparent; }",
         ".jt-darkgreen .pv-entity__logo-img{ box-shadow: 0 0 5px #4caf50; border-radius: 5px!important; }",
+        ".jt-darkgreen .live-video-hero-image{ box-shadow: 0 1px 2px #4caf50; }",
+        ".jt-darkgreen .pv-top-card__edit-photo{ box-shadow: 0 0 5px 1px #4caf50; }",
 
 
 	].join("\n");
