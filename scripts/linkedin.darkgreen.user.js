@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LinkedIn | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      0.2
+// @version      0.3
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @homepage     https://javiertinc.cl/userscripts/script/linkedin.darkgreen
 // @author       @JaviertINC
@@ -24,6 +24,7 @@
         "    --color-text-low-emphasis: #e1e1e1!important; ",
         "    --color-text-low-emphasis-shift: #e1e1e1!important; ",
         "    --color-action: #4caf50; ",
+        "    --color-action-active: #4caf50;",
         "    --color-border: #4caf50;",
         "    --color-border-faint: #4caf50;",
         "    --color-border-low-emphasis: #4caf50;",
@@ -31,6 +32,7 @@
         "    --color-background-container: #4c4c4c;",
         "    --color-background-brand-accent-4: #5c5c5c;",
         "    --color-background-new: #6c6c6c;",
+        "    --color-background-none-tint-action-active: #4caf5066;",
         "    --voyager-color-action: #4caf50;",
         "    --voyager-color-action-hover: #5dbf61;",
         "    --voyager-color-action-active: #3b9d40;",
@@ -51,6 +53,12 @@
         ".jt-darkgreen .pv-entity__logo-img{ box-shadow: 0 0 5px #4caf50; border-radius: 5px!important; }",
         ".jt-darkgreen .live-video-hero-image{ box-shadow: 0 1px 2px #4caf50; }",
         ".jt-darkgreen .pv-top-card__edit-photo{ box-shadow: 0 0 5px 1px #4caf50; }",
+        ".jt-darkgreen .scaffold-layout__ad + .scaffold-layout__row{ margin-top: 2.4rem!important; }", //Fix Header & Body space
+        ".jt-darkgreen .org-similar-pages-carousel{ background-color: #5c5c5c!important; }",
+        ".jt-darkgreen .org-similar-pages-carousel::before, .org-similar-pages-carousel__company-card-logo, .org-top-card-listing, .org-top-card-listing__logo:not(.ghost-company) { background-color: #5c5c5c!important; }",
+        ".jt-darkgreen .org-similar-pages-company-connections__relevance-icon{ background-color: #5c5c5c!important; }",
+        ".jt-darkgreen hr{ border-color: #4caf5066!important;}",
+        ".jt-darkgreen li-icon{ fill: #4caf50!important; }",
 
 
 	].join("\n");
