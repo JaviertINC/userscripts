@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      3.9
+// @version      3.10
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @homepage     https://javiertinc.cl/userscripts/script/whatsapp.darkgreen
 // @author       @JaviertINC
@@ -48,6 +48,7 @@
         "    --background-default-active: #4c4c4c;",
         "    --background-default-hover: #4c4c4c;",
         "    --startup-background: #4c4c4c;",
+        "    --round-icon-background: #4caf50;",
         "    --border-list: #4caf50;",
         "    --icon: #fff;",
         "    --icon-lighter: #ddd;",
@@ -67,7 +68,7 @@
         "    --panel-background-hover: #333;",
         "    --panel-header-background: #4c4c4c;",
         "    --panel-header-icon: #fff;",
-        "    --panel-input-background: #6c6c6c;",
+        "    --panel-input-background: #343434;",
         "    --unread-background: #4caf50;",
         "    --unread-marker-background: #4caf50;",
         "    --compose-panel-background: #4c4c4c;",
@@ -88,6 +89,7 @@
         "    --conversation-panel-border: #4caf50;",
         "    --thumb-border-active: #4caf50;",
         "    --input-border-active: #4caf50;",
+        "    --input-empty-value-placeholder: #4caf50;",
         "    --highlight: #4caf50;",
         "    --outgoing-background-rgb: 79, 79, 79;",
         "    --primary-strong-rgb: 170,170,170;",
@@ -123,6 +125,10 @@
         "    --search-input-container-background: #4c4c4c;",
         "    --search-input-container-background-active: #4c4c4c;",
         "    --progress-background: #4caf50;",
+        "    --drawer-background-deep: #2c2c2c;",
+        "    --text-secondary-lighter: #f1f1f1f1;",
+        "    --status-background: #2c2c2c;",
+        "    --status-background-hover: #4c4c4c;",
         "",
         "}",
         ".darkgreen a{ color: #4caf50!important; }",
