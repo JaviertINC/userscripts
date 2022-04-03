@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Whatsapp Web | DarkGreen
 // @namespace    https://javiertinc.cl/userscripts
-// @version      3.8
+// @version      3.9
 // @description  Una versión oscura, ayuda a cuidar tus ojos :D
 // @homepage     https://javiertinc.cl/userscripts/script/whatsapp.darkgreen
 // @author       @JaviertINC
@@ -32,9 +32,13 @@
         "    --primary-title: #fff;",
         "    --primary-strong: #f1f1f1;",
         "    --primary-stronger: #f1f1f1;",
+        "    --primary-strong-rgb: 255,255,255;",
+        "    --primary-rgb: 255,255,255;",
         "    --secondary: #eee;",
         "    --secondary-lighter: #e1e1e1;",
         "    --secondary-stronger: #f1f1f1;",
+        "    --unread-timestamp: #4caf5088;",
+        "    --input-placeholder: #f1f1f1f1;",
         "    --border-stronger: #4caf50;",
         "    --button-primary-background: #4caf50;",
         "    --button-secondary: #4caf50;",
@@ -43,10 +47,12 @@
         "    --background-default: #393939;",
         "    --background-default-active: #4c4c4c;",
         "    --background-default-hover: #4c4c4c;",
+        "    --startup-background: #4c4c4c;",
         "    --border-list: #4caf50;",
         "    --icon: #fff;",
         "    --icon-lighter: #ddd;",
         "    --icon-ack: #4caf50;",
+        "    --icon-search-back: #f1f1f1;",
         "    --icon-strong-rgb: 255,255,255",
         "    --icon-lighter-rgb: 200, 200, 200,.7;",
         "    --rich-text-panel-background: #4c4c4c;",
@@ -61,6 +67,7 @@
         "    --panel-background-hover: #333;",
         "    --panel-header-background: #4c4c4c;",
         "    --panel-header-icon: #fff;",
+        "    --panel-input-background: #6c6c6c;",
         "    --unread-background: #4caf50;",
         "    --unread-marker-background: #4caf50;",
         "    --compose-panel-background: #4c4c4c;",
@@ -111,6 +118,11 @@
         "    --spinner-highlight: #4caf50;",
         "    --modal-backdrop: rgba(0,0,0,.7);",
         "    --button-plain-background: #4caf50;",
+        "    --beta-tag-background: #4caf50;",
+        "    --intro-border: #4caf50;",
+        "    --search-input-container-background: #4c4c4c;",
+        "    --search-input-container-background-active: #4c4c4c;",
+        "    --progress-background: #4caf50;",
         "",
         "}",
         ".darkgreen a{ color: #4caf50!important; }",
@@ -156,18 +168,21 @@
         ".darkgreen ._3Whw5.selectable-text.invisible-space.copyable-text{ color: #f1f1f1!important; }",
         ".darkgreen a._3Whw5.selectable-text.invisible-space.copyable-text{ color: #4caf50!important; }",
         ".darkgreen .matched-mention{ color: #4caf50!important; }",
+        ".darkgreen ._10szZ, .darkgreen .wGgmc{ color:#f1f1f1!important; }",
         "[title=\"Theme\"],[title=\"Tema\"]{ display: none!important; }",
         ".jt-theme-btn{ background-color: #4c4c4c; color: #fff; border: 1px solid #4caf50; border-right: none; position: fixed; top: 140px; right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }",
         ".jt-background-btn{ background-color: #4c4c4c; color: #fff; border: 1px solid #4caf50; border-right: none; position: fixed; top: calc(140px + 58px + .5rem); right: 0; padding: 1rem; border-radius: 5px 0 0 5px; cursor: pointer; z-index: 999; }",
         ".jt-theme-btn,.jt-background-btn:hover{ background-color: #555; }",
+        ".darkgreen [data-icon=\"intro-md-beta-logo-dark\"] [fill=\"#42CBA5\"]{ fill: #4caf50!important; }",
+        ".darkgreen [data-icon=\"intro-md-beta-logo-dark\"] [fill=\"#364147\"] {fill: #6c6c6c!important; }",
     ].join("\n");
 	GM_addStyle(css);
 
     if(hidden_privacy){
         var hidden_privacy_css = [
-            "._210SC .eJ0yJ{ transition: all 0.3s; filter: blur(5px)!important; }",
-            "._210SC .eJ0yJ._13opk,._210SC:hover .eJ0yJ{ filter: blur(0px)!important; }",
-            "._210SC:hover{ filter: blur(1px)!important; }",
+            ".jt-privacy [aria-label=\"Chat list\"] ._2aBzC{ transition: all 0.3s; filter: blur(5px)!important; }",
+            ".jt-privacy [aria-label=\"Chat list\"] ._2aBzC._13opk,.jt-privacy [aria-label=\"Chat list\"] ._2aBzC:hover .eJ0yJ{ filter: blur(0px)!important; }",
+            ".jt-privacy [aria-label=\"Chat list\"] ._2aBzC:hover{ filter: blur(1px)!important; }",
         ].join("\n");
         GM_addStyle(hidden_privacy_css);
     }
@@ -181,7 +196,9 @@
 
 
     setTimeout(() => {
-        init();
+        setTimeout(() => {
+            init();
+        }, 200);
     }, 100);
 
     function init(){
