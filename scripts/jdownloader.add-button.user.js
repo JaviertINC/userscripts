@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         jDownloader | Add Button
-// @version      1.2
+// @version      1.3.0
 // @namespace    https://javiertinc.cl/userscripts
-// @description  Agrega el botón "Add to jDownloader" a los enlaces de descarga de UpToBox, MediaFire
+// @description  Agrega el botón "Add to jDownloader" a los enlaces de descarga de UpToBox, MediaFire, PixelDrain
 // @author       @JaviertINC
 // @match        *://uptobox.com/*
 // @match        *://www.mediafire.com/file/*
 // @match        *://www.mediafire.com/file/*/*
+// @match        *://pixeldrain.com/u/*
 // @updateURL    https://javiertinc.github.io/userscripts/scripts/jdownloader.add-button.user.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=jdownloader.org
 // @grant        none
@@ -14,6 +15,9 @@
 
 (function() {
     'use strict';
+
+    //Configuraciones
+    const autoAddToJDownloader = true;
 
     // Define las variables para los valores de los atributos
     const password = 'myPassword';
@@ -28,6 +32,7 @@
     form.action = 'http://127.0.0.1:9666/flash/add';
     form.target = 'hidden';
     form.method = 'POST';
+    form.id = 'jdownloader';
 
     // Crea un input type="hidden" para la contraseña
     const passwordInput = document.createElement('input');
@@ -60,6 +65,7 @@
     submitInput.style.padding = "1rem 2rem";
     submitInput.style.margin = "auto";
     submitInput.style.cursor = "pointer";
+    submitInput.id = 'btnjDownloader';
     submitInput.value = 'Add to JDownloader';
 
     // Agrega los elementos al formulario
@@ -72,10 +78,57 @@
     switch(domain){
         case "uptobox.com":
             document.getElementById("dl").appendChild(form);
-        break;
-        case "mediafire.com":
+            if(autoAddToJDownloader){
+                setTimeout(() => {
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    var code = 'document.getElementById("btnjDownloader").click();setTimeout(() => {window.close();},500);';
+                    try {
+                        s.appendChild(document.createTextNode(code));
+                        document.body.appendChild(s);
+                    } catch (e) {
+                        s.text = code;
+                        document.body.appendChild(s);
+                    }
+                    window.close('','_parent','');
+                }, 500);
+            }
+            break;
         case "www.mediafire.com":
             document.querySelector('form[name="download"]').appendChild(form);
-        break;
+            if(autoAddToJDownloader){
+                setTimeout(() => {
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    var code = 'document.getElementById("btnjDownloader").click();setTimeout(() => {window.close();},500);';
+                    try {
+                        s.appendChild(document.createTextNode(code));
+                        document.body.appendChild(s);
+                    } catch (e) {
+                        s.text = code;
+                        document.body.appendChild(s);
+                    }
+                    window.close('','_parent','');
+                }, 500);
+            }
+            break;
+        case "pixeldrain.com":
+            document.querySelector('#body .file_preview_row .toolbar').appendChild(form);
+            if(autoAddToJDownloader){
+                setTimeout(() => {
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    var code = 'document.getElementById("btnjDownloader").click();setTimeout(() => {window.close();},500);';
+                    try {
+                        s.appendChild(document.createTextNode(code));
+                        document.body.appendChild(s);
+                    } catch (e) {
+                        s.text = code;
+                        document.body.appendChild(s);
+                    }
+                    window.close('','_parent','');
+                }, 500);
+            }
+            break;
     }
 })();
