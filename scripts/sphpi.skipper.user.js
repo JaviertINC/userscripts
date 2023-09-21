@@ -1,10 +1,9 @@
 // ==UserScript==
 // @name         s.php?i=* | Skipper
-// @version      0.1
+// @version      0.2
 // @namespace    https://javiertinc.cl/userscripts
 // @description  Saltando la publicidaaaaaaaaa
 // @author       @JaviertINC
-// @updateURL    https://javiertinc.github.io/userscripts/scripts/sphpi.skipper.user.js
 // @match        */s.php?i=*
 // @grant        none
 // ==/UserScript==
@@ -12,7 +11,6 @@
 (function() {
     'use strict';
 
-    //
     let url = window.location.href;
     let code = url.split("s.php?i=")[1];
     let enc_url = atob(atob(atob(atob(atob(code)))));
@@ -20,7 +18,7 @@
     let dec_url = affineDecipher(enc_url);
     console.log('URL: ', dec_url);
 
-    window.location.href = dec_url;
+    window.location.href = cleanURL(dec_url);
 
     function affineDecipher(cipherText) {
         var plainText = "";
@@ -50,5 +48,10 @@
         }
 
         return plainText;
+    }
+
+    function cleanURL(url){
+        let urlParsed = url.split('|');
+        return urlParsed[0];
     }
 })();
